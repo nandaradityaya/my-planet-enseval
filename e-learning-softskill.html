@@ -1,0 +1,409 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <!--bootstrap harus tetep di atas file css-->
+    <link rel="stylesheet" href="css/custom.css" />
+    <link
+      href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="body-elearning">
+    <!-- NAVBAR -->
+    <div class="">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+              <img
+                src="assets/logo.png"
+                alt=""
+                width="322"
+                height="98"
+                class="d-inline-block align-text-top"
+              />
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <!--ms itu margin kiri-->
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="index.html"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="e-learning.html"
+                    >E-Learning</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Policy</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="podtret.html">Podtret</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Ensight</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Community</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Aplication
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">HRIS Pro Int</a></li>
+                    <li><a class="dropdown-item" href="#">LOAN Online</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">FPTK Online</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Assesment Online</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#"
+                        >Administrasi Assesment</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">AP & PA Online</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">MPP Online</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Orens</a>
+                    </li>
+                  </ul>
+                </li>
+
+                <!-- <a class="btn btn-login ms-2" href="#" role="button">Sign Up</a> -->
+              </ul>
+              <form class="form-inline d-sm-block d-md-none">
+                <!--d sm block itu buat layar small yaitu hp jadi dia ngeblok buttonnya, klo d md none itu buat layar medium yaitu tablet, klo tablet dia bakal sama ky desktop-->
+                <button class="btn btn-login my-2 my-sm-0">Sign In</button>
+              </form>
+              <!-- Desktop Button -->
+              <form
+                class="form-inline ms-2 mt-3 d-none d-md-block vl"
+                style="border-left: solid 2px #ededed"
+              >
+                <!--koordinat y jarak 2, koordinat y layar gede gada jarak, d md block munculin blok di layar medium-->
+                <button class="btn btn-login btn-navbar-right ms-3">
+                  <!--my itu koordinat y berarti atas bawah dan px adalah padding koordinat x yaitu atas bawah-->
+                  Sign In
+                </button>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+
+    <!-- E-Learning -->
+    <section class="section-popular mt-5" id="popular">
+      <div class="container">
+        <div class="row">
+          <div class="col text-center section-popular-heading">
+            <h2>E-Learning</h2>
+            <div class="nav-menu-learning justify-content-center mt-4">
+              <a href="e-learning.html" class="ms-2 d-inline-block"
+                ><button class="">All</button></a
+              >
+              <a href="e-learning-general.html" class="ms-4 d-inline-block"
+                ><button>General</button></a
+              >
+              <a href="e-learning-qas.html" class="ms-4 d-inline-block"
+                ><button class="">QA & Security</button></a
+              >
+              <a
+                href="e-learning-technical.html"
+                class="ms-4 py-2 d-inline-block"
+                ><button>Technical</button></a
+              >
+              <a href="e-learning-softskill.html" class="ms-4 d-inline-block"
+                ><button class="active">Soft Skill</button></a
+              >
+            </div>
+            <!-- <div class="nav-menu d-flex justify-content-center mt-4">
+              <a href="e-learning.html" class="">All</a>
+              <a href="e-learning-general.html" class="ms-4">General</a>
+              <a href="e-learning-qas.html" class="ms-4">QA & Security</a>
+              <a href="e-learning-technical.html" class="ms-4">Technical</a>
+              <a href="e-learning-softskill.html" class="ms-4 active-softskill"
+                >Soft Skill</a
+              >
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-popular-content" id="popularContent">
+      <div class="container">
+        <div class="section-popular-learning row mt-5">
+          <!-- Floating Button -->
+          <button
+            type="button"
+            class="btn btn-danger btn-floating btn-lg"
+            id="btn-back-to-top"
+          >
+            <img src="assets/ic-arrow-up.png" alt="" width="24" />
+          </button>
+          <!-- Floating Button -->
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div
+              class="card card-learning"
+              data-aos="fade-down"
+              data-aos-duration="950"
+            >
+              <a href=""
+                ><img
+                  src="images/Operational Excellence.png"
+                  class="card-img-top py-2 px-2"
+                  alt="..."
+              /></a>
+              <div class="card-body">
+                <h5 class="card-title-learning">
+                  <a href="">Operational Excellence</a>
+                </h5>
+                <div class="row">
+                  <div class="col">
+                    <p class="card-text-learning">
+                      <img
+                        src="assets/list_alt_FILL1_wght400_GRAD0_opsz48.png"
+                        alt=""
+                      />
+                      13 Lesson
+                    </p>
+                  </div>
+                  <div class="col">
+                    <a href="" class="btn-go">
+                      <img
+                        src="assets/arrow_right_alt_FILL1_wght400_GRAD0_opsz48.svg"
+                        alt=""
+                        class=""
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div
+              class="card card-learning"
+              data-aos="fade-down"
+              data-aos-duration="950"
+            >
+              <a href=""
+                ><img
+                  src="images/Leadership.png"
+                  class="card-img-top py-2 px-2"
+                  alt="..."
+              /></a>
+              <div class="card-body">
+                <h5 class="card-title-learning"><a href="">Leadership</a></h5>
+                <div class="row">
+                  <div class="col">
+                    <p class="card-text-learning">
+                      <img
+                        src="assets/list_alt_FILL1_wght400_GRAD0_opsz48.png"
+                        alt=""
+                      />
+                      13 Lesson
+                    </p>
+                  </div>
+                  <div class="col">
+                    <a href="" class="btn-go">
+                      <img
+                        src="assets/arrow_right_alt_FILL1_wght400_GRAD0_opsz48.svg"
+                        alt=""
+                        class=""
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div
+              class="card card-learning"
+              data-aos="fade-down"
+              data-aos-duration="950"
+            >
+              <a href=""
+                ><img
+                  src="images/Communication & Human Relation.png"
+                  class="card-img-top py-2 px-2"
+                  alt="..."
+              /></a>
+              <div class="card-body">
+                <h5 class="card-title-learning">
+                  <a href="">Communication & Hu...</a>
+                </h5>
+                <div class="row">
+                  <div class="col">
+                    <p class="card-text-learning">
+                      <img
+                        src="assets/list_alt_FILL1_wght400_GRAD0_opsz48.png"
+                        alt=""
+                      />
+                      13 Lesson
+                    </p>
+                  </div>
+                  <div class="col">
+                    <a href="" class="btn-go">
+                      <img
+                        src="assets/arrow_right_alt_FILL1_wght400_GRAD0_opsz48.svg"
+                        alt=""
+                        class=""
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div
+              class="card card-learning"
+              data-aos="fade-down"
+              data-aos-duration="950"
+            >
+              <a href=""
+                ><img
+                  src="images/Becoming Effective People.png"
+                  class="card-img-top py-2 px-2"
+                  alt="..."
+              /></a>
+              <div class="card-body">
+                <h5 class="card-title-learning">
+                  <a href="">Becoming Effective Pe...</a>
+                </h5>
+                <div class="row">
+                  <div class="col">
+                    <p class="card-text-learning">
+                      <img
+                        src="assets/list_alt_FILL1_wght400_GRAD0_opsz48.png"
+                        alt=""
+                      />
+                      13 Lesson
+                    </p>
+                  </div>
+                  <div class="col">
+                    <a href="" class="btn-go">
+                      <img
+                        src="assets/arrow_right_alt_FILL1_wght400_GRAD0_opsz48.svg"
+                        alt=""
+                        class=""
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div
+              class="card card-learning"
+              data-aos="fade-down"
+              data-aos-duration="950"
+            >
+              <a href=""
+                ><img
+                  src="images/Becoming Effective People Catatan si Bejo Eps2.png"
+                  class="card-img-top py-2 px-2"
+                  alt="..."
+              /></a>
+              <div class="card-body">
+                <h5 class="card-title-learning">
+                  <a href="">Becoming Effective People...</a>
+                </h5>
+                <div class="row">
+                  <div class="col">
+                    <p class="card-text-learning">
+                      <img
+                        src="assets/list_alt_FILL1_wght400_GRAD0_opsz48.png"
+                        alt=""
+                      />
+                      13 Lesson
+                    </p>
+                  </div>
+                  <div class="col">
+                    <a href="" class="btn-go">
+                      <img
+                        src="assets/arrow_right_alt_FILL1_wght400_GRAD0_opsz48.svg"
+                        alt=""
+                        class=""
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer class="section-footer mt-5 mb-4 border-top text-center">
+      <div class="container-fluid">
+        <div
+          class="row border-top justify-content-center align-items-center pt-4"
+        >
+          <div class="col-auto font-weight-light" style="color: #ffffff">
+            2022 Copyright My Planet Enseval • All rights reserved • Made in
+            Jakarta
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+      integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/floating-btn.js"></script>
+  </body>
+</html>

@@ -1,0 +1,491 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <!--bootstrap harus tetep di atas file css-->
+    <link rel="stylesheet" href="css/custom.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="body-profile">
+    <!-- NAVBAR -->
+    <div class="">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+              <img
+                src="assets/logo.png"
+                alt=""
+  
+                class="d-inline-block align-text-top"
+              />
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <!--ms itu margin kiri-->
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="index.html"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="e-learning.html">E-Learning</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="policy.html">Policy</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="podtret.html">Podtret</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Ensight</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Community</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Aplication
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">HRIS Pro Int</a></li>
+                    <li><a class="dropdown-item" href="#">LOAN Online</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">FPTK Online</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Assesment Online</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#"
+                        >Administrasi Assesment</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">AP & PA Online</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">MPP Online</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Orens</a>
+                    </li>
+                  </ul>
+                </li>
+                <!-- <a class="btn btn-login ms-2" href="#" role="button">Sign Up</a> -->
+              </ul>
+              <!-- Button trigger modal -->
+              <div class="vl ms-2" style="border-left: solid 2px #ededed">
+                <img
+                  src="images/image-profile.jpg"
+                  alt=""
+                  class="image-navbar ms-3"
+                  onclick="toggleMenu()"
+                />
+                <span class="badge">1</span>
+
+                <div class="sub-menu-wrap" id="subMenu">
+                  <div class="sub-menu">
+                    <div class="user-info">
+                      <a href="profile.html"
+                        ><img
+                          src="images/image-profile.jpg"
+                          alt=""
+                          class="img-nav-submenu"
+                      /></a>
+                      <a href="profile.html"><h3>Harry Maguire</h3></a>
+                    </div>
+                    <hr />
+
+                    <a href="edit-profile.html" class="sub-menu-link">
+                      <i class="fa fa-user"></i>
+                      <!-- <img src="assets/user-info.png" alt="" /> -->
+                      <p>Edit Profile</p>
+                      <span>></span>
+                    </a>
+
+                    <a
+                      href=""
+                      class="sub-menu-link"
+                      data-bs-toggle="modal"
+                      data-bs-target="#exampleModal"
+                    >
+                      <i class="fa fa-bell"><span class="badge-not">1</span></i>
+                      <!-- <img src="assets/user-info.png" alt="" /> -->
+                      <p>Notification</p>
+                      <span>></span>
+                    </a>
+
+                    <a href="" class="sub-menu-link">
+                      <i class="fa fa-sign-out"></i>
+                      <!-- <img src="assets/logout.png" alt="" /> -->
+                      <p>Log Out</p>
+                      <span>></span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+
+    <!-- Modal Notifikasi -->
+    <!-- Scrollable modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-scrollable">
+        <div class="modal-content modal-notification">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Notification</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="d-flex list-notification">
+              <a href="e-learning-neopgeneral.html"
+                ><img src="images/img-notif.jpg" alt="" class="img-nav-submenu"
+              /></a>
+              <a href="e-learning-neopgeneral.html"></a>
+                <div class="berita">
+                  <p>
+                    Undangan! Kamu di undang untuk mengikuti kegiatan training
+                    mengenai IT Security
+                  </p>
+                  <p1>18 September 2022</p1>
+                  <a href=""><i class="fa fa-trash  fa-lg trash-notification"></i></a>
+                </div>
+              </a>
+            </div>
+            <hr />
+            <div class="d-flex list-notification">
+              <a href="profile.html"
+                ><img src="images/img-notif.jpg" alt="" class="img-nav-submenu"
+              /></a>
+              <a href="profile.html"
+                >
+                <div class="berita">
+                  <p>
+                    Selamat! sertifikat anda sudah terbit, untuk melihat silahkan kunjungi halaman profile
+                  </p>
+                  <p1>12 September 2022</p1>
+                  <a href=""><i class="fa fa-trash  fa-lg trash-notification"></i></a>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container profile-page">
+      <h2>Hello Harry!</h2>
+      <p>Welcome back, glad to see you again.</p>
+      <div class="card card-profile mt-5">
+        <div class="row">
+          <div class="col-lg-3 text-center align-self-center">
+            <img
+              src="images/image-profile.jpg"
+              alt=""
+              class="py-4 ms-2 avatar-large"
+            />
+          </div>
+          <div
+            class="col card-title-profile align-self-lg-center flex-column flex-lg-row mt-4 ms-2"
+          >
+            <a href="">Harry Maguire</a>
+            <p class="mt-2">IT Programmer</p>
+            <p1>Jakarta, Indonesia</p1>
+            <a href=""
+              ><button type="button" class="btn btn-edit" style="float: right">
+                <img src="assets/edit.svg" alt="" width="20" class="me-1" />
+                Edit Profile
+              </button></a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container info mt-4">
+      <div class="card personal-info">
+        <ul class="d-lg-flex menu-profile text-center mt-2">
+          <li>
+            <a
+              class="btn btn-profile tablinks selected"
+              type="button"
+              onclick="toggleBtn(event, 'profile')"
+            >
+              Profile
+            </a>
+          </li>
+          <li>
+            <a
+              class="btn btn-profile tablinks"
+              type="button"
+              onclick="toggleBtn(event, 'training')"
+            >
+              Training History
+            </a>
+          </li>
+          <li>
+            <a
+              class="btn btn-profile tablinks"
+              type="button"
+              onclick="toggleBtn(event, 'certificate')"
+            >
+              Training Certificate
+            </a>
+          </li>
+          <li>
+            <a
+              href="change-password.html"
+              class="btn btn-profile"
+              type="button"
+            >
+              Change Password
+            </a>
+          </li>
+        </ul>
+        <!-- <div class="nav-menu d-lg-flex ms-4 mt-4">
+          <button
+            class="btn btn-profile"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseProfile"
+            aria-expanded="false"
+            aria-controls="collapseProfile"
+          >
+            Profile
+          </button>
+          <a href="e-learning-general.html" class="ms-4">Training History</a>
+          <a href="e-learning-qas.html" class="ms-4">Training Certificate</a>
+          <a href="e-learning-technical.html" class="ms-4">Change Password</a>
+        </div> -->
+        <div id="profileTab">
+          <div class="profile-info" id="profile">
+            <div class="card card-profile mb-4">
+              <h3 class="text-center mt-2">Personal Information</h3>
+              <div class="row">
+                <div class="col">
+                  <div class="d-flex nama-user ms-4 mt-3">
+                    <img src="assets/user-info.png" alt="" width="25" height="25" />
+                    <h5 class="ms-3">
+                      Harry Maguire <br />
+                      <span> Name</span>
+                    </h5>
+                  </div>
+                  <div class="d-flex nama-user ms-4 mt-3">
+                    <img src="assets/nik.png" alt="" width="25" height="25" />
+                    <h5 class="ms-3">
+                      180500450 <br />
+                      <span> NIK</span>
+                    </h5>
+                  </div>
+                  <div class="d-flex nama-user ms-4 mt-3">
+                    <img src="assets/organization.png" alt="" width="25" height="25" />
+                    <h5 class="ms-3">
+                      Human Resource Development <br />
+                      <span> Organization Name</span>
+                    </h5>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="d-flex nama-user ms-4 mt-3">
+                    <img src="assets/telp.png" alt="" width="25" height="25" />
+                    <h5 class="ms-3">
+                      081245677654 <br />
+                      <span> Phone</span>
+                    </h5>
+                  </div>
+                  <div class="d-flex nama-user ms-4 mt-3">
+                    <img src="assets/gmail-abu.png" alt="" width="25" height="25" />
+                    <h5 class="ms-3">
+                      harrymager@gmail.com <br />
+                      <span> Mail</span>
+                    </h5>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+          <div class="profile-info" id="training">
+            <div class="card card-profile mb-4">
+              <h3 class="text-center mt-2">Training History</h3>
+              <div class="px-3">
+                <table class="table table-training-history mt-3" width="520px">
+                  <thead>
+                    <tr class="table-success">
+                      <th scope="col" class="text-center" width="200px">
+                        Nama Course
+                      </th>
+                      <th scope="col" class="text-center" width="200px">
+                        Nama Lesson
+                      </th>
+                      <th scope="col" class="text-center" width="60px">
+                        Percobaan
+                      </th>
+                      <th scope="col" class="text-center" width="60px">
+                        Score
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="table-secondary">
+                      <th scope="row" class="text-center">NEOP GENERAL</th>
+                      <td class="text-center">Post Test Etika Bisnis</td>
+                      <td class="text-center">1</td>
+                      <td class="text-center">90</td>
+                    </tr>
+                    <tr>
+                      <th scope="row" class="text-center">NEOP GENERAL</th>
+                      <td class="text-center">Etika Bisnis PDF</td>
+                      <td class="text-center">3</td>
+                      <td class="text-center"></td>
+                    </tr>
+                    <tr class="table-secondary">
+                      <th scope="row" class="text-center">NEOP GENERAL</th>
+                      <td class="text-center">Etika Bisnis PDF</td>
+                      <td class="text-center">2</td>
+                      <td class="text-center">90</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="profile-info" id="certificate">
+            <div class="card card-profile mb-4">
+              <h3 class="text-center mt-2">Training Certificate</h3>
+              <div class="px-2">
+                <table class="table table-training-certificate mt-3">
+                  <thead>
+                    <tr class="table-success">
+                      <th scope="col" class="text-center">Nama Course</th>
+                      <th scope="col" class="text-center">No Lesson</th>
+                      <th scope="col" class="text-center">
+                        No Lesson Completed
+                      </th>
+                      <th scope="col" class="text-center">Status Sertifikat</th>
+                      <th scope="col" class="text-center">Action</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="table-secondary">
+                      <th scope="row" class="text-center">NEOP GENERAL</th>
+                      <td class="text-center">21</td>
+                      <td class="text-center">14</td>
+                      <td class="text-center">Completed</td>
+                      <td class="text-center">
+                        <button class="btn btn-lihat text-center">Lihat</button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row" class="text-center">NEOP WAREHOUSE</th>
+                      <td class="text-center">31</td>
+                      <td class="text-center">14</td>
+                      <td class="text-center">Completed</td>
+                      <td class="text-center">
+                        <button class="btn btn-lihat text-center">Lihat</button>
+                      </td>
+                    </tr>
+                    <tr class="table-secondary">
+                      <th scope="row" class="text-center">
+                        NEOP Transportation
+                      </th>
+                      <td class="text-center">19</td>
+                      <td class="text-center">14</td>
+                      <td class="text-center">Completed</td>
+                      <td class="text-center">
+                        <button class="btn btn-lihat text-center">Lihat</button>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+
+    <footer class="section-footer mt-5 mb-4 border-top">
+      <div class="container-fluid text-center">
+        <div
+          class="row border-top justify-content-center align-items-center pt-4"
+        >
+          <div class="col-auto font-weight-light" style="color: #ffffff">
+            2022 Copyright My Planet Enseval • All rights reserved • Made in
+            Jakarta
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+      integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script src="js/floating-btn.js"></script>
+    <script src="js/submenu-profile.js"></script>
+    <script src="js/profile.js"></script>
+  </body>
+</html>

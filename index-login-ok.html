@@ -1,0 +1,888 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home - Harry Maguire</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <!--bootstrap harus tetep di atas file css-->
+    <link rel="stylesheet" href="css/custom.css" />
+        <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-home">
+    <!-- NAVBAR -->
+    <header>
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <img
+              src="assets/logo.png"
+              alt=""
+              class="d-inline-block align-text-top"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <!--ms itu margin kiri-->
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="e-learning.html">E-Learning</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="policy.html">Policy</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="podtret.html">Podtret</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="ensight.html">Ensight</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Community</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Aplication
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">HRIS Pro Int</a></li>
+                  <li><a class="dropdown-item" href="#">LOAN Online</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">FPTK Online</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Assesment Online</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      >Administrasi Assesment</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">AP & PA Online</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">MPP Online</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Orens</a>
+                  </li>
+                </ul>
+              </li>
+              
+              <!-- <a class="btn btn-login ms-2" href="#" role="button">Sign Up</a> -->
+            </ul>
+            <!-- Button trigger modal -->
+            <div class="vl ms-2" style="border-left: solid 2px #ededed">
+              <img
+                  src="images/image-profile.jpg"
+                  alt=""
+                  class="image-navbar ms-3"
+                  onclick="toggleMenu()"
+                />
+
+                <div class="sub-menu-wrap" id="subMenu">
+                  <div class="sub-menu">
+                    <div class="user-info">
+                      <a href="profile.html"><img src="images/image-profile.jpg" alt="" class="img-nav-submenu"></a>
+                      <a href="profile.html"><h3>Harry Maguire</h3></a>
+                    </div>
+                    <hr>
+
+                    <a href="edit-profile.html" class="sub-menu-link">
+                      <i class="fa fa-user"></i>
+                      <!-- <img src="assets/user-info.png" alt="" /> -->
+                      <p>Edit Profile</p>
+                      <span>></span>
+                    </a>
+  
+                    <a href="" class="sub-menu-link"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal">
+                      <i class="fa fa-bell"></i>
+                      <!-- <img src="assets/user-info.png" alt="" /> -->
+                      <p>Notification</p>
+                      <span>></span>
+                    </a>
+  
+                    <a href="" class="sub-menu-link">
+                      <i class="fa fa-sign-out"></i>
+                      <!-- <img src="assets/logout.png" alt="" /> -->
+                      <p>Log Out</p>
+                      <span>></span>
+                    </a>
+
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+        <!-- Modal Notifikasi -->
+    <!-- Scrollable modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-scrollable">
+        <div class="modal-content modal-notification">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Notification</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="d-flex list-notification">
+              <a href="e-learning-neopgeneral.html"
+                ><img src="images/img-notif.jpg" alt="" class="img-nav-submenu"
+              /></a>
+              <a href="e-learning-neopgeneral.html"></a>
+                <div class="berita">
+                  <p>
+                    Undangan! Kamu di undang untuk mengikuti kegiatan training
+                    mengenai IT Security
+                  </p>
+                  <p1>18 September 2022</p1>
+                  <a href=""><i class="fa fa-trash fa-lg trash-notification"></i></a>
+                </div>
+              </a>
+            </div>
+            <hr />
+            <div class="d-flex list-notification">
+              <a href="profile.html"
+                ><img src="images/img-notif.jpg" alt="" class="img-nav-submenu"
+              /></a>
+              <a href="profile.html"
+                >
+                <div class="berita">
+                  <p>
+                    Selamat! sertifikat anda sudah terbit, untuk melihat silahkan kunjungi halaman profile
+                  </p>
+                  <p1>12 September 2022</p1>
+                  <a href=""><i class="fa fa-trash fa-lg trash-notification"></i></a>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  
+      <!--Konten header-->
+      
+      <section class="hero mt-4 hero-section">
+        <div class="container">
+          <div class="row">
+            <div class="col align-self-center">
+              <!--align self center biar column yg kiri sejajar tengah sama column yang kanan-->
+              <h1 class="mb-4">
+                <!--margin bottom 4-->
+                Investing in <br />
+                Knowledge and <br />
+                <span>Your Future</span>
+              </h1>
+              <p class="mb-5">
+                Our e-learning programs has been developed to be a vehicle of
+                delivering multimedia learning solutions for your business
+              </p>
+              <div class="btn-header">
+                <a class="btn btn-get-started" href="#" role="button"
+                  >Get Started</a
+                >
+                <!-- <img src="assets/Play Button.png" alt="" class="icon" /> -->
+                <a class="btn btn-watch" href="#" role="button">
+                  <img src="assets/Play Button.svg" alt="" class="icon-play" />
+                  Watch Tutorial</a
+                >
+              </div>
+            </div>
+            <!--bagian column kiri-->
+            <div class="col d-none d-sm-block">
+              <!--bagian column kanan, Hidden only on xs-->
+              <img
+                width=""
+                src="images/ilustrasi-myplanet.png"
+                class="banner-img"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+      
+    
+    
+    
+
+    <!-- E-Learning -->
+    <section class="section-popular mt-5" id="popular">
+      <div class="container">
+        <div class="row">
+          <div class="col text-center section-popular-heading">
+            <p>E-Learning</p>
+            <h2>Explore our Learning</h2>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-popular-content" id="popularContent">
+      <div class="container">
+        <div class="section-popular-travel row justify-content-center mt-5">
+          <!-- Floating Button -->
+          <button
+            type="button"
+            class="btn btn-danger btn-floating btn-lg"
+            id="btn-back-to-top"
+          >
+            <img src="assets/ic-arrow-up.png" alt="" width="24" />
+            <!-- <i class="fas fa-arrow-up"
+              ><img src="assets/Arrow up.svg" alt="" width="18"
+            /></i> -->
+          </button>
+          <!-- Floating Button -->
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card card-learning"  data-aos="fade-down" data-aos-duration="950">
+              <a href="e-learning-neopgeneral.html"><img
+                src="images/Cover-Neop-General_min.png"
+                class="card-img-top py-2 px-2"
+                alt="..."
+              /></a>
+              <div class="card-body">
+                <h5 class="card-title-learning"><a href="">Neop General</a></h5>
+                <div class="row">
+                  <div class="col">
+                    <p class="card-text-learning">
+                      <img
+                        src="assets/list_alt_FILL1_wght400_GRAD0_opsz48.png"
+                        alt=""
+                      />
+                      26 Lesson
+                    </p>
+                  </div>
+                  <div class="col">
+                    <a href="e-learning-neopgeneral.html" class="btn-go">
+                      <img
+                        src="assets/arrow_right_alt_FILL1_wght400_GRAD0_opsz48.svg"
+                        alt=""
+                        class=""
+                      />
+                    </a>
+                    <!-- <a href="#" class="btn btn-go">Go</a> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card card-learning"  data-aos="fade-down" data-aos-duration="950">
+              <a href=""><img
+                src="images/Card Image Warehouse.png"
+                class="card-img-top py-2 px-2"
+                alt="..."
+              /></a>
+              <div class="card-body">
+                <h5 class="card-title-learning">
+                  <a href="">Neop Warehouse</a>
+                </h5>
+                <div class="row">
+                  <div class="col">
+                    <p class="card-text-learning">
+                      <img
+                        src="assets/list_alt_FILL1_wght400_GRAD0_opsz48.png"
+                        alt=""
+                      />
+                      31 Lesson
+                    </p>
+                  </div>
+                  <div class="col">
+                    <a href="" class="btn-go">
+                      <img
+                        src="assets/arrow_right_alt_FILL1_wght400_GRAD0_opsz48.svg"
+                        alt=""
+                        class=""
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card card-learning" data-aos="fade-down" data-aos-duration="950">
+              <a href=""><img
+                src="images/Neop Transport.png"
+                class="card-img-top py-2 px-2"
+                alt="..."
+              /></a>
+              <div class="card-body">
+                <h5 class="card-title-learning">
+                  <a href="">Neop Transport</a>
+                </h5>
+                <div class="row">
+                  <div class="col">
+                    <p class="card-text-learning">
+                      <img
+                        src="assets/list_alt_FILL1_wght400_GRAD0_opsz48.png"
+                        alt=""
+                      />
+                      13 Lesson
+                    </p>
+                  </div>
+                  <div class="col">
+                    <a href="" class="btn-go">
+                      <img
+                        src="assets/arrow_right_alt_FILL1_wght400_GRAD0_opsz48.svg"
+                        alt=""
+                        class=""
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card card-learning" data-aos="fade-down" data-aos-duration="950">
+              <a href=""><img
+                src="images/CDOB.png"
+                class="card-img-top py-2 px-2"
+                alt="..."
+              /></a>
+              <div class="card-body">
+                <h5 class="card-title-learning"><a href="">CDOB</a></h5>
+                <div class="row">
+                  <div class="col">
+                    <p class="card-text-learning">
+                      <img
+                        src="assets/list_alt_FILL1_wght400_GRAD0_opsz48.png"
+                        alt=""
+                      />
+                      13 Lesson
+                    </p>
+                  </div>
+                  <div class="col">
+                    <a href="" class="btn-go">
+                      <img
+                        src="assets/arrow_right_alt_FILL1_wght400_GRAD0_opsz48.svg"
+                        alt=""
+                        class=""
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="text-center">
+            <a href="e-learning.html"><button
+              type="button"
+              class="btn btn-show-all btn-outline-primary mt-2"
+            >
+              Show All
+            </button></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PODTRET -->
+    <main class="mt-5">
+    <section class="section-podtret mt-5" id="podtret">
+      <div class="container">
+        <div class="row"> 
+          <div class="col text-center section-popular-podtret">
+            <p>Podtret</p>
+            <h2>Explore Our Podtret</h2>
+          </div>
+        </div>
+      </div>
+    
+
+    <section class="section-popular-content" id="popularContent">
+      <div class="container">
+        <div class="section-popular-podtret row justify-content-center mt-3">
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card card-podtret" data-aos="zoom-in" data-aos-duration="950">
+              <a href="video-play.html"><img
+                src="images/videoplaceholdit.png"
+                class="card-img-top py-2 px-2"
+                alt="..."
+              /></a>
+              <div class="card-body">
+                <h5 class="card-title-podtret"><a href="video-play.html"> Rumpi Yuk! SPEAK UP? <br />
+                  Siapa Takut ?! </a></h5>
+                <div class="row">
+                  <div class="col-12">
+                    <p class="card-text-podtret">
+                      47x ditonton • 2 bulan lalu
+                    </p>
+                  </div>
+                  <div class="col">
+                    <a href="video-play-podtret.html" class="btn-go-podtret">
+                      <img
+                        src="assets/arrow_right_alt_FILL1_wght400_GRAD0_opsz48.svg"
+                        alt=""
+                        class=""
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card card-podtret" data-aos="zoom-in" data-aos-duration="950">
+              <a href="video-play.html"><img
+                src="images/videoplaceholdit.png"
+                class="card-img-top py-2 px-2"
+                alt="..."
+              /></a>
+              <div class="card-body">
+                <h5 class="card-title-podtret"><a href="video-play.html"> Rumpi Yuk! SPEAK UP? <br />
+                  Siapa Takut ?! </a></h5>
+                <div class="row">
+                  <div class="col-12">
+                    <p class="card-text-podtret">
+                      47x ditonton • 2 bulan lalu
+                    </p>
+                  </div>
+                  <div class="col">
+                    <a href="video-play-podtret.html" class="btn-go-podtret">
+                      <img
+                        src="assets/arrow_right_alt_FILL1_wght400_GRAD0_opsz48.svg"
+                        alt=""
+                        class=""
+                      />
+                    </a>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card card-podtret" data-aos="zoom-in" data-aos-duration="950">
+              <a href=""><img
+                src="images/videoplaceholdit.png"
+                class="card-img-top py-2 px-2"
+                alt="..."
+              /></a>
+              <div class="card-body">
+                <h5 class="card-title-podtret"><a href=""> Rumpi Yuk! SPEAK UP? <br />
+                  Siapa Takut ?! </a></h5>
+                <div class="row">
+                  <div class="col-12">
+                    <p class="card-text-podtret">
+                      47x ditonton • 2 bulan lalu
+                    </p>
+                  </div>
+                  <div class="col">
+                    <!-- <a href=""><button type="button" class="btn btn-go-podtret">
+                      <img
+                        src="assets/arrow_right_alt_FILL1_wght400_GRAD0_opsz48.svg"
+                        alt=""
+                        class=""
+                      />
+                    </button></a> -->
+                    <a href="video-play-podtret.html" class="btn-go-podtret">
+                      <img
+                        src="assets/arrow_right_alt_FILL1_wght400_GRAD0_opsz48.svg"
+                        alt=""
+                        class=""
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card card-podtret" data-aos="zoom-in" data-aos-duration="950">
+              <a href=""><img
+                src="images/videoplaceholdit.png"
+                class="card-img-top py-2 px-2"
+                alt="..."
+              /></a>
+              <div class="card-body">
+                <h5 class="card-title-podtret"><a href=""> Rumpi Yuk! SPEAK UP? <br />
+                  Siapa Takut ?! </a></h5>
+                <div class="row">
+                  <div class="col-12">
+                    <p class="card-text-podtret">
+                      47x ditonton • 2 bulan lalu
+                    </p>
+                  </div>
+                  <div class="col">
+                    <a href="video-play-podtret.html" class="btn-go-podtret">
+                      <img
+                        src="assets/arrow_right_alt_FILL1_wght400_GRAD0_opsz48.svg"
+                        alt=""
+                        class=""
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card card-podtret" data-aos="zoom-in" data-aos-duration="950">
+              <a href=""><img
+                src="images/videoplaceholdit.png"
+                class="card-img-top py-2 px-2"
+                alt="..."
+              /></a>
+              <div class="card-body">
+                <h5 class="card-title-podtret"><a href=""> Rumpi Yuk! SPEAK UP? <br />
+                  Siapa Takut ?! </a></h5>
+                <div class="row">
+                  <div class="col-12">
+                    <p class="card-text-podtret">
+                      47x ditonton • 2 bulan lalu
+                    </p>
+                  </div>
+                  <div class="col">
+                    <a href="video-play-podtret.html" class="btn-go-podtret">
+                      <img
+                        src="assets/arrow_right_alt_FILL1_wght400_GRAD0_opsz48.svg"
+                        alt=""
+                        class=""
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card card-podtret" data-aos="zoom-in" data-aos-duration="950">
+              <a href=""><img
+                src="images/videoplaceholdit.png"
+                class="card-img-top py-2 px-2"
+                alt="..."
+              /></a>
+              <div class="card-body">
+                <h5 class="card-title-podtret"><a href=""> Rumpi Yuk! SPEAK UP? <br />
+                  Siapa Takut ?! </a></h5>
+                <div class="row">
+                  <div class="col-12">
+                    <p class="card-text-podtret">
+                      47x ditonton • 2 bulan lalu
+                    </p>
+                  </div>
+                  <div class="col">
+                    <a href="video-play-podtret.html" class="btn-go-podtret">
+                      <img
+                        src="assets/arrow_right_alt_FILL1_wght400_GRAD0_opsz48.svg"
+                        alt=""
+                        class=""
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- <div class="container">
+        <div class="section-popular-podtret row justify-content-center mt-3">
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card card-podtret" data-aos="zoom-in" data-aos-duration="950">
+              <a href=""><img
+                src="images/videoplaceholdit.png"
+                class="card-img-top py-2 px-2"
+                alt="..."
+              /></a>
+              <div class="card-body">
+                <h5 class="card-title-podtret"><a href=""> Rumpi Yuk! SPEAK UP? <br />
+                  Siapa Takut ?! </a></h5>
+                <div class="row">
+                  <div class="col-12">
+                    <p class="card-text-podtret">
+                      47x ditonton • 2 bulan lalu
+                    </p>
+                  </div>
+                  <div class="col">
+                    <a href="video-play-podtret.html" class="btn-go-podtret">
+                      <img
+                        src="assets/arrow_right_alt_FILL1_wght400_GRAD0_opsz48.svg"
+                        alt=""
+                        class=""
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card card-podtret" data-aos="zoom-in" data-aos-duration="950">
+              <a href=""><img
+                src="images/videoplaceholdit.png"
+                class="card-img-top py-2 px-2"
+                alt="..."
+              /></a>
+              <div class="card-body">
+                <h5 class="card-title-podtret"><a href=""> Rumpi Yuk! SPEAK UP? <br />
+                  Siapa Takut ?! </a></h5>
+                <div class="row">
+                  <div class="col-12">
+                    <p class="card-text-podtret">
+                      47x ditonton • 2 bulan lalu
+                    </p>
+                  </div>
+                  <div class="col">
+                    <a href="video-play-podtret.html" class="btn-go-podtret">
+                      <img
+                        src="assets/arrow_right_alt_FILL1_wght400_GRAD0_opsz48.svg"
+                        alt=""
+                        class=""
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card card-podtret" data-aos="zoom-in" data-aos-duration="950">
+              <a href=""><img
+                src="images/videoplaceholdit.png"
+                class="card-img-top py-2 px-2"
+                alt="..."
+              /></a>
+              <div class="card-body">
+                <h5 class="card-title-podtret"><a href=""> Rumpi Yuk! SPEAK UP? <br />
+                  Siapa Takut ?! </a></h5>
+                <div class="row">
+                  <div class="col-12">
+                    <p class="card-text-podtret">
+                      47x ditonton • 2 bulan lalu
+                    </p>
+                  </div>
+                  <div class="col">
+                    <a href="video-play-podtret.html" class="btn-go-podtret">
+                      <img
+                        src="assets/arrow_right_alt_FILL1_wght400_GRAD0_opsz48.svg"
+                        alt=""
+                        class=""
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> -->
+
+      <div class="text-center">
+        <a href="podtret.html"><button
+          type="button"
+          class="btn btn-show-all-podtret btn-outline mt-3"
+        >
+          Show All
+        </button></a>
+      </div>
+    </div>
+    </section>
+  </section>
+</main>
+
+    <!-- COMMUNITY -->
+    <section class="section-community mt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col text-center community">
+            <h1>Build Up The Community</h1>
+            <h2>Join the <span>biggest</span> community of learning</h2>
+            <p>
+              Learn, share the knowledge with community members & shine from
+              <br />
+              wherever you're through online learning web app.
+            </p>
+          </div>
+          <img src="images/community-2.png" alt="" />
+          <div class="text-center">
+            <button type="button" class="btn btn-discover btn-lg">
+              Discover
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- FOOTER -->
+
+
+    <footer class="section-footer mt-5 mb-4 border-top">
+      <div class="container pt-5 pb-5">
+        <div class="row justify-content-center">
+          <div class="col-12">
+            <div class="row">
+              <div class="col-12 col-lg-3">
+                <!-- <h5>FEATURES</h5> -->
+                <ul class="list-unstyled">
+                  <li><a href="#"><img src="assets/logo.png" alt="" width="212" height="50"></a></li>
+                  <li class="mt-3" style="color: #ffffff;">Begin a new stage of <br>
+                    your career</li>
+                  
+                </ul>
+              </div>
+              <div class="col-12 col-lg-3">
+                <h5></h5>
+                <ul class="list-unstyled">                 
+                  <li><a href="#"></a></li>
+                  <li><a href="#"></a></li>
+                  <li><a href="#"></a></li>
+                </ul>
+              </div>
+              <div class="col-12 col-lg-3">
+                <h5></h5>
+                <ul class="list-unstyled">
+                  <li><a href="#"></a></li>
+                  <li><a href="#"></a></li>
+                  <li><a href="#"></a></li>
+                </ul>
+              </div>
+              <div class="col-12 col-lg-3">
+                <h5>GET CONNECTED</h5>
+                <ul class="list-unstyled">
+                  <li>Kawasan Industri Pulo Gadung <br> Jl. Pulo Lentut No. 10 Jakarta Timur</li>
+                  <li><a href="#">training.enseval.pm.gmail.com</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid text-center">
+        <div
+          class="row border-top justify-content-center align-items-center pt-4"
+        >
+          <div class="col-auto font-weight-light" style="color: #ffffff;">
+            2022 Copyright My Planet Enseval • All rights reserved • Made in Jakarta
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- <footer class="section-footer mt-5 mb-4 border-top">
+      <div class="container pt-5 pb-5">
+        <div class="row justify-content-center">
+          <div class="col-12">
+            <div class="row">
+              <div class="col-12 col-lg-3">
+                <h5>FEATURES</h5>
+                <ul class="list-unstyled">
+                  
+                  <li><a href="#">Community</a></li>
+                  <li><a href="#">Social Media Kit</a></li>
+                  <li><a href="#">Blog</a></li>
+                  <li><a href="#">Privacy Policy</a></li>
+                </ul>
+              </div>
+              <div class="col-12 col-lg-3">
+                <h5>ACCOUNT</h5>
+                <ul class="list-unstyled">
+                  
+                  <li><a href="#">Security</a></li>
+                  <li><a href="#">Reward</a></li>
+                </ul>
+              </div>
+              <div class="col-12 col-lg-3">
+                <h5>COMPANY</h5>
+                <ul class="list-unstyled">
+                  <li><a href="#">Career</a></li>
+                  <li><a href="#">Help Center</a></li>
+                  <li><a href="#">Media</a></li>
+                </ul>
+              </div>
+              <div class="col-12 col-lg-3">
+                <h5>GET CONNECTED</h5>
+                <ul class="list-unstyled">
+                  <li><a href="#">Jakarta Timur</a></li>
+                  <li><a href="#">Indonesia</a></li>
+                  <li><a href="#">0821-2477-6437</a></li>
+                  <li><a href="#">enseval.com</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid">
+        <div
+          class="row border-top justify-content-center align-items-center pt-4"
+        >
+          <div class="col-auto text-gray-500 font-weight-light">
+            2019 Copyright Nomads • All rights reserved • Made in Jakarta
+          </div>
+        </div>
+      </div>
+    </footer> -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/submenu-profile.js"></script>
+    <script src="js/floating-btn.js"></script>
+  </body>
+</html>
