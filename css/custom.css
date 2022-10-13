@@ -2314,3 +2314,619 @@ p {
     margin-left: 0px;
   }
 }
+
+.btn-opsi-play {
+  float: right;
+  padding: 8px;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+
+/* COMMUNITY PAGE */
+
+.card-profile-community {
+  border-radius: 20px;
+}
+
+.avatar-user-community {
+  width: 152px;
+  height: 152px;
+  border-radius: 50%;
+}
+
+.section-left .card-profile-community h5 {
+  color: #000000;
+  font-size: 25px;
+}
+
+.section-left .card-profile-community a {
+  text-decoration: none;
+}
+
+.section-left .card-profile-community p {
+  color: #000000;
+  font-weight: 300;
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+
+.section-left .card-profile-community p1 {
+  color: #b4bbc5;
+  font-weight: 300;
+  font-size: 18px;
+}
+
+.section-left .card-profile-community .post-view {
+  margin-top: 40px;
+}
+
+.section-left .card-profile-community .post-view p {
+  color: #000000;
+  font-weight: 400;
+}
+
+.section-left .card-profile-community .post-view span {
+  margin-left: 134px;
+  color: #000000;
+  font-weight: 500;
+}
+
+.section-left .card-profile-community .post-view hr {
+  margin-left: 50px;
+  margin-right: 50px;
+  border-top: 3px solid #000;
+}
+
+.btn-see-profile {
+  background-color: #0396a6;
+  border-color: transparent;
+  border-radius: 10px;
+  padding: 8px 80px;
+  font-weight: 500;
+  font-size: 20px;
+  color: #ffffff;
+  margin-bottom: 40px;
+}
+
+.btn-see-profile:hover {
+  background-color: #03a8ba;
+  border-color: transparent;
+  border-radius: 10px;
+  padding: 8px 80px;
+  font-weight: 500;
+  font-size: 20px;
+  color: #ffffff;
+  margin-bottom: 40px;
+}
+
+.box {
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  height: 30px;
+}
+
+.box > i {
+  font-size: 20px;
+  color: #777;
+}
+
+.box > input {
+  flex: 1;
+  height: 40px;
+  border: none;
+  outline: none;
+  font-size: 18px;
+}
+
+.avatar-status {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.make-status {
+  padding: 20px 20px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.make-status textarea {
+  border-radius: 10px;
+  background-color: #edeef9;
+}
+
+.list-status {
+  list-style-type: none;
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+
+.list-status a {
+  text-decoration: none;
+  color: #000;
+}
+
+.list-status li {
+  margin-left: 20px;
+}
+
+.ic-status {
+  width: 22px;
+  height: 22px;
+  margin-right: 5px;
+}
+
+.menu-categories a {
+  text-decoration: none;
+  color: #000;
+}
+
+.menu-categories .active {
+  padding: 8px 20px;
+  background-color: #c4eef1;
+  color: #000000;
+  border-radius: 10px;
+  font-weight: 600;
+}
+
+.sub-menu-categories {
+  padding: 8px 20px;
+  background-color: #ededed;
+  color: #7a7a7a;
+  border-radius: 10px;
+  font-weight: 500;
+}
+
+.card-leaderboard {
+  border-radius: 20px;
+  padding-top: 30px;
+}
+
+.card-leaderboard .ic-trophy {
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+}
+
+.card-leaderboard .title-leaderboard {
+  margin-left: 20px;
+  color: #000;
+  font-weight: 500;
+}
+
+.card-leaderboard a {
+  text-decoration: none;
+}
+
+.rank-one h5 {
+  margin-top: 10px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #000000;
+}
+
+.rank-two h5 {
+  margin-top: 10px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #000000;
+}
+
+.rank-three h5 {
+  margin-top: 10px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #000000;
+}
+
+.rank-one {
+  margin-right: 15px;
+  margin-top: 82px;
+}
+
+.rank-two {
+  margin-right: 15px;
+}
+
+.rank-three {
+  margin-top: 135px;
+}
+
+.card-leaderboard p {
+  color: #7a7a7a;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.img-rank {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+}
+
+.effect-level-two {
+  background-image: linear-gradient(#b4bbc5, #ffffff);
+  border-radius: 20px;
+  height: 131px;
+  color: transparent;
+}
+
+.effect-level-one {
+  background-image: linear-gradient(#fce16c, #ffffff);
+  border-radius: 20px;
+  height: 131px;
+  color: transparent;
+}
+
+.effect-level-three {
+  background-image: linear-gradient(#d48b00, #ffffff);
+  border-radius: 20px;
+  height: 131px;
+  color: transparent;
+}
+
+.rank-four {
+  margin-left: 20px;
+}
+
+.rank-more .img-user {
+  width: 44px;
+  height: 46px;
+  border-radius: 50%;
+}
+
+.rank-more .name-point {
+  margin-left: 10px;
+}
+
+.rank-four p {
+  font-size: 15;
+  font-weight: 500;
+  color: #000;
+}
+
+.rank-four p span {
+  font-size: 15;
+  font-weight: 400;
+  color: #7a7a7a;
+}
+
+.ic-dash {
+  width: 25px;
+  height: 25px;
+  margin-top: 10px;
+}
+
+.section-left {
+  max-height: 900px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.section-left::-webkit-scrollbar {
+  display: none; /* for Chrome, Safari, and Opera */
+}
+
+.card-games {
+  border-radius: 20px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+.card-games .title-games {
+  margin-left: 20px;
+  color: #000;
+  font-weight: 500;
+}
+
+.card-games .ic-games {
+  width: 25px;
+  height: 25px;
+  margin-top: -5px;
+  margin-right: 10px;
+}
+
+.quiz-games {
+  margin-left: 10px;
+}
+
+.quiz-games .img-games {
+  width: 44px;
+  height: 44px;
+}
+
+.quiz-games p {
+  font-size: 15;
+  font-weight: 500;
+  color: #000;
+}
+
+.quiz-games p span {
+  font-size: 15;
+  font-weight: 400;
+  color: #7a7a7a;
+}
+
+.card-games a {
+  text-decoration: none;
+}
+
+.card-leaderboard .btn-show-all-leaderboard {
+  color: #03a8ba;
+  border-color: #03a8ba;
+  background-color: transparent;
+  border-radius: 10px;
+  padding: 6px 12px;
+}
+
+.card-leaderboard .btn-show-all-leaderboard:hover {
+  color: #03a8ba;
+  border-color: #03a8ba;
+  background-color: transparent;
+  border-radius: 10px;
+}
+
+.postingan-konten {
+  background-color: #ffffff;
+  border-radius: 20px;
+  border-color: transparent;
+  padding: 20px;
+}
+
+.profile-user .img-user {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.profile-user p {
+  font-size: 20px;
+  font-weight: 500;
+  color: #000000;
+}
+
+.profile-user span {
+  font-size: 15px;
+  font-weight: 300;
+  color: #b4bbc5;
+}
+
+.profile-user a {
+  text-decoration: none;
+}
+
+.button-more .ic-more {
+  width: 27px;
+  height: 7px;
+}
+
+.button-more-img {
+  background-color: transparent;
+  border-color: transparent;
+  float: right;
+}
+
+.sub-menu-popovers.open-popovers {
+  max-height: 300px;
+}
+
+.user-info a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.sub-popovers {
+  /* background: rgba(109, 24, 220, 0.5); */
+  background: #ededed;
+
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 20px;
+  border-radius: 10px;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+}
+
+.sub-menu-popovers {
+  position: absolute;
+  z-index: 1;
+  max-height: 0px;
+  overflow: hidden;
+  transition: max-height 0.5s;
+  margin-left: -85px;
+  margin-top: 10px;
+}
+
+.sub-popovers a {
+  text-decoration: none;
+}
+
+.sub-popovers p {
+  color: #000000;
+  font-weight: 500;
+  margin-top: -3px;
+  margin-left: 5px;
+  margin-bottom: 0px;
+}
+
+/* --------------------------------- */
+
+/* Make a Post */
+
+.make-post {
+  text-align: center;
+  padding: 3%;
+  border: thin solid #ced4da;
+  border-radius: 10px;
+  background-color: #edeef9;
+}
+
+.input-tag-post {
+  display: none;
+}
+.label-make-post {
+  cursor: pointer;
+}
+#imageName {
+  color: green;
+}
+
+.btn-post {
+  background-color: #0396a6;
+  border-radius: 10px;
+  border-color: transparent;
+  color: #ffffff;
+  font-weight: 500;
+  padding: 6px 24px;
+}
+
+.btn-cancel {
+  background-color: #6c757d;
+  border-radius: 10px;
+  border-color: transparent;
+  color: #ffffff;
+  font-weight: 500;
+  padding: 6px 16px;
+}
+
+/* -------------------------------- */
+
+/* .notification_wrap {
+  width: 500px;
+  margin: 120px auto 0;
+} */
+
+.notification_wrap .notification_icon {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  font-size: 32px;
+  /* margin: 0 auto; */
+  float: right;
+  z-index: 1;
+  /* color: #605dff; */
+}
+
+.notification_wrap .notification_icon .delete-edit {
+  cursor: pointer;
+  width: 27px;
+  height: 7px;
+  float: right;
+}
+
+.notification_wrap .dropdown {
+  height: auto;
+  background: #ededed;
+  border-radius: 10px;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.125);
+  /* margin: 15px auto 0; */
+  margin-top: 30px;
+  padding: 5px 20px 5px 5px;
+  position: absolute;
+  display: none;
+}
+
+.notification_wrap .dropdown .notify_item {
+  display: flex;
+  align-items: center;
+  /* padding: 10px 0; */
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  /* border-bottom: 1px solid #dbdaff; */
+}
+
+.notification_wrap .dropdown .notify_item .notify_img {
+  margin-right: 10px;
+}
+
+.notification_wrap .dropdown .notify_item .notify_info p {
+  margin-bottom: 5px;
+  color: #000000;
+  font-weight: 500;
+  /* margin-right: 40px; */
+}
+
+.notification_wrap .dropdown:before {
+  content: "";
+  position: absolute;
+  top: -30px;
+  /* margin-left: 60px; */
+  transform: translateX(280%);
+  border: 15px solid;
+  border-color: transparent transparent #ededed transparent;
+}
+
+.notification_wrap .dropdown.active {
+  display: block;
+}
+
+.postingan-konten .text-post p {
+  color: #000000;
+}
+
+.like-comment-info .whos-like {
+  margin-left: 8px;
+  color: #b4bbc5;
+}
+
+.like-comment-info .count-comment {
+  color: #b4bbc5;
+  margin-left: auto;
+  text-decoration: none;
+}
+
+.button-like-comment .button-like .btn-like {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.button-like-comment .btn-like-comment i {
+  font-style: normal;
+}
+
+.button-like-comment .button-like {
+  display: flex;
+}
+
+.button-like-comment .button-like p {
+  color: #7a7a7a;
+  font-weight: 500;
+  margin-bottom: 0px;
+  font-size: 15px;
+}
+
+.postingan-konten .card-comment-section {
+  border-color: transparent;
+}
+
+.postingan-konten .card-comment-section .profile-user .user-comment-post {
+  font-weight: 500;
+  font-size: 16px;
+  color: #000000;
+}
+
+.postingan-konten .card-comment-section .profile-user .text-comment {
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: -10px;
+  margin-bottom: 5px;
+}
+
+.btn-reply-comment {
+  border-color: transparent;
+  background-color: transparent;
+  color: #707070;
+  font-weight: 600;
+  font-size: 15px;
+  padding: 0px;
+}
