@@ -2868,6 +2868,81 @@ p {
   display: block;
 }
 
+/* -------------------------- */
+
+.notification_wrap .more-btn-section-comment {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  font-size: 32px;
+  /* margin: 0 auto; */
+  float: right;
+  z-index: 1;
+  /* color: #605dff; */
+}
+
+.notification_wrap .menu-sec-comment .notify_item {
+  display: flex;
+  align-items: center;
+  /* padding: 10px 0; */
+  padding-left: 10px;
+  padding-top: 10px;
+  /* padding-bottom: 10px; */
+  /* border-bottom: 1px solid #dbdaff; */
+}
+
+.notification_wrap .menu-sec-comment .notify_item .notify_img {
+  margin-right: 10px;
+}
+
+.notification_wrap .menu-sec-comment .notify_item .notify_info p {
+  margin-bottom: 5px;
+  color: #000000;
+  font-weight: 500;
+  font-size: 14px;
+  /* margin-right: 40px; */
+}
+
+.notification_wrap .more-btn-section-comment .delete-edit-section-comment {
+  cursor: pointer;
+  width: 27px;
+  height: 7px;
+  float: right;
+  /* margin-top: -30px; */
+}
+
+.notification_wrap .menu-sec-comment:before {
+  content: "";
+  position: absolute;
+  top: -25px;
+  /* margin-left: 60px; */
+  transform: translateX(355%);
+  border: 15px solid;
+  border-color: transparent transparent #ededed transparent;
+}
+
+.notification_wrap .menu-sec-comment.active {
+  display: block;
+  /* z-index: 2; */
+}
+
+.notification_wrap .menu-sec-comment {
+  height: auto;
+  background: #ededed;
+  border-radius: 10px;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.125);
+  /* margin: 15px auto 0; */
+  margin-top: 30px;
+  padding: 5px 20px 5px 5px;
+  position: absolute;
+  display: none;
+  margin-left: -90px;
+  width: 150px;
+  margin-top: 20px;
+}
+
+/* -------------------------- */
+
 .postingan-konten .text-post p {
   color: #000000;
 }
@@ -2930,3 +3005,19 @@ p {
   font-size: 15px;
   padding: 0px;
 }
+
+/*------------------------ */
+
+.img-reply .img-user {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+}
+
+/* .reply-comment-section .btn-comment-reply {
+  background-color: #ededed;
+  font-weight: 500;
+  border-color: transparent;
+  border-radius: 0 10px 10px 0;
+  padding: 10px;
+} */

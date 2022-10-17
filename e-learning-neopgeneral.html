@@ -1,147 +1,116 @@
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Neop General</title>
-    <link rel="stylesheet" href="css/bootstrap.css" />
-    <!--bootstrap harus tetep di atas file css-->
-    <link rel="stylesheet" href="css/custom.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body class="body-elearning">
-    <!-- NAVBAR -->
-    <div class="">
-      <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-dark">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">
-              <img
-              src="assets/logo.png"
-              alt=""
-              width="322"
-              height="98"
-              class="d-inline-block align-text-top"
-            />
-            </a>
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                <!--ms itu margin kiri-->
-                <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="index.html"
-                    >Home</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active" href="e-learning.html"
-                    >E-Learning</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="policy.html">Policy</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="podtret.html">Podtret</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="ensight.html">Ensight</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Community</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a
-                    class="nav-link dropdown-toggle"
-                    href="#"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    Aplication
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">HRIS Pro Int</a></li>
-                    <li><a class="dropdown-item" href="#">LOAN Online</a></li>
-                    <li>
-                      <a class="dropdown-item" href="#">FPTK Online</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">Assesment Online</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#"
-                        >Administrasi Assesment</a
-                      >
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">AP & PA Online</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">MPP Online</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">Orens</a>
-                    </li>
-                  </ul>
-                </li>
 
-                <!-- <a class="btn btn-login ms-2" href="#" role="button">Sign Up</a> -->
-              </ul>
-              <form class="form-inline d-sm-block d-md-none">
-                <!--d sm block itu buat layar small yaitu hp jadi dia ngeblok buttonnya, klo d md none itu buat layar medium yaitu tablet, klo tablet dia bakal sama ky desktop-->
-                <button class="btn btn-login my-2 my-sm-0">Sign In</button>
-              </form>
-              <!-- Desktop Button -->
-              <form class="form-inline ms-2 mt-3 d-none d-md-block vl" style="border-left: solid 2px #ededed">
-                <!--koordinat y jarak 2, koordinat y layar gede gada jarak, d md block munculin blok di layar medium-->
-                <button class="btn btn-login btn-navbar-right ms-3">
-                  <!--my itu koordinat y berarti atas bawah dan px adalah padding koordinat x yaitu atas bawah-->
-                  Sign In
-                </button>
-              </form>
-            </div>
-          </div>
-        </nav>
-      </div>
-    </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Neop General</title>
+  <link rel="stylesheet" href="css/bootstrap.css" />
+  <!--bootstrap harus tetep di atas file css-->
+  <link rel="stylesheet" href="css/custom.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet" />
+</head>
 
-    <!-- E-Learning -->
-    <section class="section-popular mt-5" id="popular">
-      <div class="container">
-        <div class="row">
-          <div class="col text-center section-popular-heading">
-            <h2>Neop General</h2>
+<body class="body-elearning">
+  <!-- NAVBAR -->
+  <div class="">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <img src="assets/logo.png" alt="" width="322" height="98" class="d-inline-block align-text-top" />
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <!--ms itu margin kiri-->
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="e-learning.html">E-Learning</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="policy.html">Policy</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="podtret.html">Podtret</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="ensight.html">Ensight</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Community</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Aplication
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">HRIS Pro Int</a></li>
+                  <li><a class="dropdown-item" href="#">LOAN Online</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">FPTK Online</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Assesment Online</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Administrasi Assesment</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">AP & PA Online</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">MPP Online</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Orens</a>
+                  </li>
+                </ul>
+              </li>
+
+              <!-- <a class="btn btn-login ms-2" href="#" role="button">Sign Up</a> -->
+            </ul>
+            <form class="form-inline d-sm-block d-md-none">
+              <!--d sm block itu buat layar small yaitu hp jadi dia ngeblok buttonnya, klo d md none itu buat layar medium yaitu tablet, klo tablet dia bakal sama ky desktop-->
+              <button class="btn btn-login my-2 my-sm-0">Sign In</button>
+            </form>
+            <!-- Desktop Button -->
+            <form class="form-inline ms-2 mt-3 d-none d-md-block vl" style="border-left: solid 2px #ededed">
+              <!--koordinat y jarak 2, koordinat y layar gede gada jarak, d md block munculin blok di layar medium-->
+              <button class="btn btn-login btn-navbar-right ms-3">
+                <!--my itu koordinat y berarti atas bawah dan px adalah padding koordinat x yaitu atas bawah-->
+                Sign In
+              </button>
+            </form>
           </div>
         </div>
-      </div>
-    </section>
+      </nav>
+    </div>
+  </div>
 
-    <!-- Floating Button -->
-    <button
-    type="button"
-    class="btn btn-danger btn-floating btn-lg"
-    id="btn-back-to-top"
-  >
+  <!-- E-Learning -->
+  <section class="section-popular mt-5" id="popular">
+    <div class="container">
+      <div class="row">
+        <div class="col text-center section-popular-heading">
+          <h2>Neop General</h2>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Floating Button -->
+  <button type="button" class="btn btn-danger btn-floating btn-lg" id="btn-back-to-top">
     <img src="assets/ic-arrow-up.png" alt="" width="24" />
     <!-- <i class="fas fa-arrow-up"
       ><img src="assets/Arrow up.svg" alt="" width="18"
@@ -149,61 +118,43 @@
   </button>
   <!-- Floating Button -->
 
-    <section class="section-popular-neop" id="popularNeop">
-      <div class="container">
-        <div class="section-popular-neop row justify-content-center mt-5">
-          <button
-            class="btn-collapse-neop"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#collapseExample"
-            aria-expanded="false"
-            aria-controls="collapseExample"
-            onclick="toggleCollapse(event)"
-          >
-            Neop General
-            <i class="fa-chevron-up fa arrow-button"></i>
-          </button>
-          <div class="collapse show" id="collapseExample">
-            <div class="card card-neop-general mt-5">
-              <div class="row">
-                <div class="col-lg-4 text-center align-self-center">
-                  <img
-                    src="images/Neop Video New.png"
-                    alt=""
-                    class="py-4 ms-2"
-                    width="300"
-                    height="200"
-                  />
-                </div>
-                <div
-                  class="col card-title-neop align-self-lg-center flex-column flex-lg-row mt-4 ms-2"
-                >
-                  <a href=""><h3>Neop Video New</h3></a>
-                  <p class="mt-3">180500450</p>
-                  <ul class="d-lg-flex list-nilai-test">
-                    
-                    <li class="percobaan-non-test">
-                      <p> My Attempts : 3</p>
-                    </li>
-                    
-                    
-                    <a href="video-learning.html"
-                    ><button
-                      type="button"
-                      class="btn btn-start-resp-non-test"
-                      
-                    >
+  <section class="section-popular-neop" id="popularNeop">
+    <div class="container">
+      <div class="section-popular-neop row justify-content-center mt-5">
+        <button class="btn-collapse-neop" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample"
+          aria-expanded="false" aria-controls="collapseExample" onclick="toggleCollapse(event)">
+          Neop General
+          <i class="fa-chevron-up fa arrow-button"></i>
+        </button>
+        <div class="collapse show" id="collapseExample">
+          <div class="card card-neop-general mt-5">
+            <div class="row">
+              <div class="col-lg-4 text-center align-self-center">
+                <img src="images/Neop Video New.png" alt="" class="py-4 ms-2" width="300" height="200" />
+              </div>
+              <div class="col card-title-neop align-self-lg-center flex-column flex-lg-row mt-4 ms-2">
+                <a href="">
+                  <h3>Neop Video New</h3>
+                </a>
+                <p class="mt-3">180500450</p>
+                <ul class="d-lg-flex list-nilai-test">
+
+                  <li class="percobaan-non-test">
+                    <p> My Attempts : 3</p>
+                  </li>
+
+
+                  <a href="video-learning.html"><button type="button" class="btn btn-start-resp-non-test">
                       Start
                     </button></a>
 
-                    <!-- <a href="video-learning.html" class="btn-start-resp-non-test"
+                  <!-- <a href="video-learning.html" class="btn-start-resp-non-test"
                     >Start</a> -->
-                    
-                  </ul>
-                </div>
+
+                </ul>
               </div>
-              <!-- <img
+            </div>
+            <!-- <img
                 src="images/Neop Video New.png"
                 alt=""
                 width="274"
@@ -211,895 +162,618 @@
               />
 
               <a href=""><h5>Neop Video New</h5></a> -->
-            </div>
-            <div class="card card-neop-general mt-5">
-              <div class="row">
-                <div class="col-lg-4 text-center align-self-center">
-                  <img
-                    src="images/Pembelajaran 5R.png"
-                    alt=""
-                    class="py-4 ms-2"
-                    width="300"
-                    height="200"
-                  />
-                </div>
-                <div
-                  class="col card-title-neop align-self-lg-center flex-column flex-lg-row mt-4 ms-2"
-                >
-                  <a href=""><h3>Pembelajaran 5R</h3></a>
-                  <p class="mt-3">180500450</p>
-                  <ul class="d-lg-flex list-nilai-test">
-                    
-                    <li class="percobaan-non-test">
-                      <p> My Attempts : 3</p>
-                    </li>
-                    
-                    
-                    <a href=""
-                    ><button
-                      type="button"
-                      class="btn btn-start-resp-non-test"
-                      
-                    >
+          </div>
+          <div class="card card-neop-general mt-5">
+            <div class="row">
+              <div class="col-lg-4 text-center align-self-center">
+                <img src="images/Pembelajaran 5R.png" alt="" class="py-4 ms-2" width="300" height="200" />
+              </div>
+              <div class="col card-title-neop align-self-lg-center flex-column flex-lg-row mt-4 ms-2">
+                <a href="">
+                  <h3>Pembelajaran 5R</h3>
+                </a>
+                <p class="mt-3">180500450</p>
+                <ul class="d-lg-flex list-nilai-test">
+
+                  <li class="percobaan-non-test">
+                    <p> My Attempts : 3</p>
+                  </li>
+
+
+                  <a href=""><button type="button" class="btn btn-start-resp-non-test">
                       Start
                     </button></a>
-                    
-                  </ul>
-                </div>
+
+                </ul>
               </div>
             </div>
-            <div class="card card-neop-general mt-5">
-              <div class="row">
-                <div class="col-lg-4 text-center align-self-center">
-                  <img
-                    src="images/Neop Video New2.png"
-                    alt=""
-                    class="py-4 ms-2"
-                    width="300"
-                    height="200"
-                  />
-                </div>
-                <div
-                  class="col card-title-neop align-self-lg-center flex-column flex-lg-row mt-4 ms-2"
-                >
-                  <a href=""><h3>Neop Video New</h3></a>
-                  <p class="mt-3">180500450</p>
-                  <ul class="d-lg-flex list-nilai-test">
-                    
-                    <li class="percobaan-non-test">
-                      <p> My Attempts : 3</p>
-                    </li>
-                    
-                    
-                    <a href=""
-                    ><button
-                      type="button"
-                      class="btn btn-start-resp-non-test"
-                      
-                    >
+          </div>
+          <div class="card card-neop-general mt-5">
+            <div class="row">
+              <div class="col-lg-4 text-center align-self-center">
+                <img src="images/Neop Video New2.png" alt="" class="py-4 ms-2" width="300" height="200" />
+              </div>
+              <div class="col card-title-neop align-self-lg-center flex-column flex-lg-row mt-4 ms-2">
+                <a href="">
+                  <h3>Neop Video New</h3>
+                </a>
+                <p class="mt-3">180500450</p>
+                <ul class="d-lg-flex list-nilai-test">
+
+                  <li class="percobaan-non-test">
+                    <p> My Attempts : 3</p>
+                  </li>
+
+
+                  <a href=""><button type="button" class="btn btn-start-resp-non-test">
                       Start
                     </button></a>
-                    
-                  </ul>
-                </div>
+
+                </ul>
               </div>
             </div>
-            <div class="card card-neop-general mt-5">
-              <div class="row">
-                <div class="col-lg-4 text-center align-self-center">
-                  <img
-                    src="images/post test.png"
-                    alt=""
-                    class="py-4 ms-2"
-                    width="300"
-                    height="200"
-                  />
-                </div>
-                <div
-                  class="col card-title-neop align-self-lg-center flex-column flex-lg-row mt-4 ms-2"
-                >
-                  <a href=""><h3>Neop Post Test</h3></a>
-                  <p class="mt-3">180500450</p>
-                  <ul class="d-lg-flex list-nilai-test">
-                    <li class="nilai">
-                      <p> My Score : 90</p>
-                    </li>
-                    <li class="percobaan">
-                      <p> My Attempts : 3</p>
-                    </li>
-                    <li class="kondisi">
-                      <p> My Status : <span>Lulus</span></p>
-                    </li>
-                    
-                    <a href=""
-                    ><button
-                      type="button"
-                      class="btn btn-start-resp"
-                      
-                    >
+          </div>
+          <div class="card card-neop-general mt-5">
+            <div class="row">
+              <div class="col-lg-4 text-center align-self-center">
+                <img src="images/post test.png" alt="" class="py-4 ms-2" width="300" height="200" />
+              </div>
+              <div class="col card-title-neop align-self-lg-center flex-column flex-lg-row mt-4 ms-2">
+                <a href="">
+                  <h3>Neop Post Test</h3>
+                </a>
+                <p class="mt-3">180500450</p>
+                <ul class="d-lg-flex list-nilai-test">
+                  <li class="nilai">
+                    <p> My Score : 90</p>
+                  </li>
+                  <li class="percobaan">
+                    <p> My Attempts : 3</p>
+                  </li>
+                  <li class="kondisi">
+                    <p> My Status : <span>Lulus</span></p>
+                  </li>
+
+                  <a href=""><button type="button" class="btn btn-start-resp">
                       Start
                     </button></a>
-                    
-                  </ul>
-                </div>
+
+                </ul>
               </div>
             </div>
           </div>
         </div>
       </div>
+    </div>
 
-      <div class="container" style="margin-top: 70px">
-        <div
-          class="section-popular-neop row justify-content-center"
-          style="margin-top: 120px"
-        >
-          <button
-            class="btn-collapse-neop"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#collapseGrooming"
-            aria-expanded="false"
-            aria-controls="collapseGrooming"
-            onclick="toggleCollapse(event)"
-          >
-            Neop Peraturan Perusahaan & Grooming
-            <i class="fa-chevron-up fa arrow-button"></i>
-          </button>
-          <div class="collapse show" id="collapseGrooming">
-            <div class="card card-neop-general mt-5">
-              <div class="row">
-                <div class="col-lg-4 text-center align-self-center">
-                  <img
-                    src="images/post test.png"
-                    alt=""
-                    class="py-4 ms-2"
-                    width="300"
-                    height="200"
-                  />
-                </div>
-                <div
-                  class="col card-title-neop align-self-lg-center flex-column flex-lg-row mt-4 ms-2"
-                >
-                  <a href=""><h3>Peraturan Perusahaan</h3></a>
-                  <p class="mt-3">180500450</p>
-                  <ul class="d-lg-flex list-nilai-test">
-                    
-                    <li class="percobaan-non-test">
-                      <p> My Attempts : 3</p>
-                    </li>
-                    
-                    
-                    <a href=""
-                    ><button
-                      type="button"
-                      class="btn btn-start-resp-non-test"
-                      
-                    >
+    <div class="container" style="margin-top: 70px">
+      <div class="section-popular-neop row justify-content-center" style="margin-top: 120px">
+        <button class="btn-collapse-neop" type="button" data-bs-toggle="collapse" data-bs-target="#collapseGrooming"
+          aria-expanded="false" aria-controls="collapseGrooming" onclick="toggleCollapse(event)">
+          Neop Peraturan Perusahaan & Grooming
+          <i class="fa-chevron-up fa arrow-button"></i>
+        </button>
+        <div class="collapse show" id="collapseGrooming">
+          <div class="card card-neop-general mt-5">
+            <div class="row">
+              <div class="col-lg-4 text-center align-self-center">
+                <img src="images/post test.png" alt="" class="py-4 ms-2" width="300" height="200" />
+              </div>
+              <div class="col card-title-neop align-self-lg-center flex-column flex-lg-row mt-4 ms-2">
+                <a href="">
+                  <h3>Peraturan Perusahaan</h3>
+                </a>
+                <p class="mt-3">180500450</p>
+                <ul class="d-lg-flex list-nilai-test">
+
+                  <li class="percobaan-non-test">
+                    <p> My Attempts : 3</p>
+                  </li>
+
+
+                  <a href=""><button type="button" class="btn btn-start-resp-non-test">
                       Start
                     </button></a>
-                    
-                  </ul>
-                </div>
+
+                </ul>
               </div>
             </div>
-            <div class="card card-neop-general mt-5">
-              <div class="row">
-                <div class="col-lg-4 text-center align-self-center">
-                  <img
-                    src="images/Grooming.png"
-                    alt=""
-                    class="py-4 ms-2"
-                    width="300"
-                    height="200"
-                  />
-                </div>
-                <div
-                  class="col card-title-neop align-self-lg-center flex-column flex-lg-row mt-4 ms-2"
-                >
-                  <a href=""><h3>Gooming</h3></a>
-                  <p class="mt-3">180500450</p>
-                  <ul class="d-lg-flex list-nilai-test">
-                    
-                    <li class="percobaan-non-test">
-                      <p> My Attempts : 3</p>
-                    </li>
-                    
-                    
-                    <a href=""
-                    ><button
-                      type="button"
-                      class="btn btn-start-resp-non-test"
-                      
-                    >
+          </div>
+          <div class="card card-neop-general mt-5">
+            <div class="row">
+              <div class="col-lg-4 text-center align-self-center">
+                <img src="images/Grooming.png" alt="" class="py-4 ms-2" width="300" height="200" />
+              </div>
+              <div class="col card-title-neop align-self-lg-center flex-column flex-lg-row mt-4 ms-2">
+                <a href="">
+                  <h3>Gooming</h3>
+                </a>
+                <p class="mt-3">180500450</p>
+                <ul class="d-lg-flex list-nilai-test">
+
+                  <li class="percobaan-non-test">
+                    <p> My Attempts : 3</p>
+                  </li>
+
+
+                  <a href=""><button type="button" class="btn btn-start-resp-non-test">
                       Start
                     </button></a>
-                    
-                  </ul>
-                </div>
+
+                </ul>
               </div>
             </div>
-            <div class="card card-neop-general mt-5">
-              <div class="row">
-                <div class="col-lg-4 text-center align-self-center">
-                  <img
-                    src="images/post test.png"
-                    alt=""
-                    class="py-4 ms-2"
-                    width="300"
-                    height="200"
-                  />
-                </div>
-                <div
-                  class="col card-title-neop align-self-lg-center flex-column flex-lg-row mt-4 ms-2"
-                >
-                  <a href=""><h3>Post Test Peraturan Perusahaan dan Grooming</h3></a>
-                  <p class="mt-3">180500450</p>
-                  <ul class="d-lg-flex list-nilai-test">
-                    <li class="nilai">
-                      <p> My Score : 90</p>
-                    </li>
-                    <li class="percobaan">
-                      <p> My Attempts : 3</p>
-                    </li>
-                    <li class="kondisi">
-                      <p> My Status : <span>Lulus</span></p>
-                    </li>
-                    
-                    <a href=""
-                    ><button
-                      type="button"
-                      class="btn btn-start-resp"
-                      
-                    >
+          </div>
+          <div class="card card-neop-general mt-5">
+            <div class="row">
+              <div class="col-lg-4 text-center align-self-center">
+                <img src="images/post test.png" alt="" class="py-4 ms-2" width="300" height="200" />
+              </div>
+              <div class="col card-title-neop align-self-lg-center flex-column flex-lg-row mt-4 ms-2">
+                <a href="">
+                  <h3>Post Test Peraturan Perusahaan dan Grooming</h3>
+                </a>
+                <p class="mt-3">180500450</p>
+                <ul class="d-lg-flex list-nilai-test">
+                  <li class="nilai">
+                    <p> My Score : 90</p>
+                  </li>
+                  <li class="percobaan">
+                    <p> My Attempts : 3</p>
+                  </li>
+                  <li class="kondisi">
+                    <p> My Status : <span>Lulus</span></p>
+                  </li>
+
+                  <a href=""><button type="button" class="btn btn-start-resp">
                       Start
                     </button></a>
-                    
-                  </ul>
-                </div>
+
+                </ul>
               </div>
             </div>
           </div>
         </div>
       </div>
+    </div>
 
-      <div class="container" style="margin-top: 70px">
-        <div
-          class="section-popular-neop row justify-content-center"
-          style="margin-top: 120px"
-        >
-          <button
-            class="btn-collapse-neop"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#collapseAwarenessNeop"
-            aria-expanded="false"
-            aria-controls="collapseAwarenessNeop"
-            onclick="toggleCollapse(event)"
-          >
-            Digital Awareness Neop General Video
-            <i class="fa-chevron-up fa arrow-button"></i>
-          </button>
-          <div class="collapse show" id="collapseAwarenessNeop">
-            <div class="card card-neop-general mt-4">
-              <div class="row">
-                <div class="col-lg-4 text-center align-self-center">
-                  <img
-                    src="images/Digital Awareness.png"
-                    alt=""
-                    class="py-4 ms-2"
-                    width="300"
-                    height="200"
-                  />
-                </div>
-                <div
-                  class="col card-title-neop align-self-lg-center flex-column flex-lg-row mt-4 ms-2"
-                >
-                  <a href=""><h3>Digital Awareness Neop General Video</h3></a>
-                  <p class="mt-3">180500450</p>
-                  <ul class="d-lg-flex list-nilai-test">
-                    
-                    <li class="percobaan-non-test">
-                      <p> My Attempts : 3</p>
-                    </li>
-                    
-                    
-                    <a href=""
-                    ><button
-                      type="button"
-                      class="btn btn-start-resp-non-test"
-                      
-                    >
+    <div class="container" style="margin-top: 70px">
+      <div class="section-popular-neop row justify-content-center" style="margin-top: 120px">
+        <button class="btn-collapse-neop" type="button" data-bs-toggle="collapse"
+          data-bs-target="#collapseAwarenessNeop" aria-expanded="false" aria-controls="collapseAwarenessNeop"
+          onclick="toggleCollapse(event)">
+          Digital Awareness Neop General Video
+          <i class="fa-chevron-up fa arrow-button"></i>
+        </button>
+        <div class="collapse show" id="collapseAwarenessNeop">
+          <div class="card card-neop-general mt-4">
+            <div class="row">
+              <div class="col-lg-4 text-center align-self-center">
+                <img src="images/Digital Awareness.png" alt="" class="py-4 ms-2" width="300" height="200" />
+              </div>
+              <div class="col card-title-neop align-self-lg-center flex-column flex-lg-row mt-4 ms-2">
+                <a href="">
+                  <h3>Digital Awareness Neop General Video</h3>
+                </a>
+                <p class="mt-3">180500450</p>
+                <ul class="d-lg-flex list-nilai-test">
+
+                  <li class="percobaan-non-test">
+                    <p> My Attempts : 3</p>
+                  </li>
+
+
+                  <a href=""><button type="button" class="btn btn-start-resp-non-test">
                       Start
                     </button></a>
-                    
-                  </ul>
-                </div>
+
+                </ul>
               </div>
             </div>
-            <div class="card card-neop-general mt-4">
-              <div class="row">
-                <div class="col-lg-4 text-center align-self-center">
-                  <img
-                    src="images/post test.png"
-                    alt=""
-                    class="py-4 ms-2"
-                    width="300"
-                    height="200"
-                  />
-                </div>
-                <div
-                  class="col card-title-neop align-self-lg-center flex-column flex-lg-row mt-4 ms-2"
-                >
-                  <a href=""><h3>Digital Awareness Neop Post Test</h3></a>
-                  <p class="mt-3">180500450</p>
-                  <ul class="d-lg-flex list-nilai-test">
-                    <li class="nilai">
-                      <p> My Score : 90</p>
-                    </li>
-                    <li class="percobaan">
-                      <p> My Attempts : 3</p>
-                    </li>
-                    <li class="kondisi">
-                      <p> My Status : <span>Lulus</span></p>
-                    </li>
-                    
-                    <a href=""
-                    ><button
-                      type="button"
-                      class="btn btn-start-resp"
-                      
-                    >
+          </div>
+          <div class="card card-neop-general mt-4">
+            <div class="row">
+              <div class="col-lg-4 text-center align-self-center">
+                <img src="images/post test.png" alt="" class="py-4 ms-2" width="300" height="200" />
+              </div>
+              <div class="col card-title-neop align-self-lg-center flex-column flex-lg-row mt-4 ms-2">
+                <a href="">
+                  <h3>Digital Awareness Neop Post Test</h3>
+                </a>
+                <p class="mt-3">180500450</p>
+                <ul class="d-lg-flex list-nilai-test">
+                  <li class="nilai">
+                    <p> My Score : 90</p>
+                  </li>
+                  <li class="percobaan">
+                    <p> My Attempts : 3</p>
+                  </li>
+                  <li class="kondisi">
+                    <p> My Status : <span>Lulus</span></p>
+                  </li>
+
+                  <a href=""><button type="button" class="btn btn-start-resp">
                       Start
                     </button></a>
-                    
-                  </ul>
-                </div>
-                </div>
+
+                </ul>
               </div>
             </div>
           </div>
         </div>
       </div>
+    </div>
+    </div>
 
-      <div class="container" style="margin-top: 70px">
-        <div
-          class="section-popular-neop row justify-content-center"
-          style="margin-top: 120px"
-        >
-          <button
-            class="btn-collapse-neop"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#collapseAwarenessNeop2"
-            aria-expanded="false"
-            aria-controls="collapseAwarenessNeop2"
-            onclick="toggleCollapse(event)"
-          >
-            Digital Awareness Series 2 Neop General Video
-            <i class="fa-chevron-up fa arrow-button"></i>
-          </button>
-          <div class="collapse show" id="collapseAwarenessNeop2">
-            <div class="card card-neop-general mt-4">
-              <div class="row">
-                <div class="col-lg-4 text-center align-self-center">
-                  <img
-                    src="images/Video Digital Awareness S2.png"
-                    alt=""
-                    class="py-4 ms-2"
-                    width="300"
-                    height="200"
-                  />
-                </div>
-                <div
-                  class="col card-title-neop align-self-lg-center flex-column flex-lg-row mt-3 ms-2"
-                >
-                  <a href=""><h3>Video Digital Awareness Series 2</h3></a>
-                  <p class="mt-3">180500450</p>
-                  <ul class="d-lg-flex list-nilai-test">
-                    
-                    <li class="percobaan-non-test">
-                      <p> My Attempts : 3</p>
-                    </li>
-                    
-                    
-                    <a href=""
-                    ><button
-                      type="button"
-                      class="btn btn-start-resp-non-test"
-                      
-                    >
-                      Start
-                    </button></a>
-                    
-                  </ul>
-                </div>
-
+    <div class="container" style="margin-top: 70px">
+      <div class="section-popular-neop row justify-content-center" style="margin-top: 120px">
+        <button class="btn-collapse-neop" type="button" data-bs-toggle="collapse"
+          data-bs-target="#collapseAwarenessNeop2" aria-expanded="false" aria-controls="collapseAwarenessNeop2"
+          onclick="toggleCollapse(event)">
+          Digital Awareness Series 2 Neop General Video
+          <i class="fa-chevron-up fa arrow-button"></i>
+        </button>
+        <div class="collapse show" id="collapseAwarenessNeop2">
+          <div class="card card-neop-general mt-4">
+            <div class="row">
+              <div class="col-lg-4 text-center align-self-center">
+                <img src="images/Video Digital Awareness S2.png" alt="" class="py-4 ms-2" width="300" height="200" />
               </div>
-            </div>
-            <div class="card card-neop-general mt-4">
-              <div class="row">
-                <div class="col-lg-4 text-center align-self-center">
-                  <img
-                    src="images/post test.png"
-                    alt=""
-                    class="py-4 ms-2"
-                    width="300"
-                    height="200"
-                  />
-                </div>
-                <div
-                  class="col card-title-neop align-self-lg-center flex-column flex-lg-row mt-3 ms-2"
-                >
-                  <a href=""><h3>Post Test Digital Awareness Series 2</h3></a>
-                  <p class="mt-3">180500450</p>
-                  <ul class="d-lg-flex list-nilai-test">
-                    <li class="nilai">
-                      <p> My Score : 90</p>
-                    </li>
-                    <li class="percobaan">
-                      <p> My Attempts : 3</p>
-                    </li>
-                    <li class="kondisi">
-                      <p> My Status : <span>Lulus</span></p>
-                    </li>
-                    
-                    <a href=""
-                    ><button
-                      type="button"
-                      class="btn btn-start-resp"
-                      
-                    >
+              <div class="col card-title-neop align-self-lg-center flex-column flex-lg-row mt-3 ms-2">
+                <a href="">
+                  <h3>Video Digital Awareness Series 2</h3>
+                </a>
+                <p class="mt-3">180500450</p>
+                <ul class="d-lg-flex list-nilai-test">
+
+                  <li class="percobaan-non-test">
+                    <p> My Attempts : 3</p>
+                  </li>
+
+
+                  <a href=""><button type="button" class="btn btn-start-resp-non-test">
                       Start
                     </button></a>
-                    
-                  </ul>
-                </div>
+
+                </ul>
+              </div>
+
+            </div>
+          </div>
+          <div class="card card-neop-general mt-4">
+            <div class="row">
+              <div class="col-lg-4 text-center align-self-center">
+                <img src="images/post test.png" alt="" class="py-4 ms-2" width="300" height="200" />
+              </div>
+              <div class="col card-title-neop align-self-lg-center flex-column flex-lg-row mt-3 ms-2">
+                <a href="">
+                  <h3>Post Test Digital Awareness Series 2</h3>
+                </a>
+                <p class="mt-3">180500450</p>
+                <ul class="d-lg-flex list-nilai-test">
+                  <li class="nilai">
+                    <p> My Score : 90</p>
+                  </li>
+                  <li class="percobaan">
+                    <p> My Attempts : 3</p>
+                  </li>
+                  <li class="kondisi">
+                    <p> My Status : <span>Lulus</span></p>
+                  </li>
+
+                  <a href=""><button type="button" class="btn btn-start-resp">
+                      Start
+                    </button></a>
+
+                </ul>
               </div>
             </div>
           </div>
         </div>
       </div>
+    </div>
 
-      <div class="container" style="margin-top: 70px">
-        <div
-          class="section-popular-neop row justify-content-center"
-          style="margin-top: 120px"
-        >
-          <button
-            class="btn-collapse-neop"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#collapseSafetySecurity"
-            aria-expanded="false"
-            aria-controls="collapseSafetySecurity"
-            onclick="toggleCollapse(event)"
-          >
-            Safety Security 2018
-            <i class="fa-chevron-up fa arrow-button"></i>
-          </button>
-          <div class="collapse show" id="collapseSafetySecurity">
-            <div class="card card-neop-general mt-4">
-              <div class="row">
-                <div class="col-lg-4 text-center align-self-center">
-                  <img
-                    src="images/post test.png"
-                    alt=""
-                    class="py-4 ms-2"
-                    width="300"
-                    height="200"
-                  />
-                </div>
-                <div
-                  class="col card-title-neop align-self-lg-center flex-column flex-lg-row mt-3 ms-2"
-                >
-                  <a href=""><h3>Buku Saku</h3></a>
-                  <p class="mt-3">180500450</p>
-                  <ul class="d-lg-flex list-nilai-test">
-                    
-                    <li class="percobaan-non-test">
-                      <p> My Attempts : 3</p>
-                    </li>
-                    
-                    
-                    <a href=""
-                    ><button
-                      type="button"
-                      class="btn btn-start-resp-non-test"
-                      
-                    >
+    <div class="container" style="margin-top: 70px">
+      <div class="section-popular-neop row justify-content-center" style="margin-top: 120px">
+        <button class="btn-collapse-neop" type="button" data-bs-toggle="collapse"
+          data-bs-target="#collapseSafetySecurity" aria-expanded="false" aria-controls="collapseSafetySecurity"
+          onclick="toggleCollapse(event)">
+          Safety Security 2018
+          <i class="fa-chevron-up fa arrow-button"></i>
+        </button>
+        <div class="collapse show" id="collapseSafetySecurity">
+          <div class="card card-neop-general mt-4">
+            <div class="row">
+              <div class="col-lg-4 text-center align-self-center">
+                <img src="images/post test.png" alt="" class="py-4 ms-2" width="300" height="200" />
+              </div>
+              <div class="col card-title-neop align-self-lg-center flex-column flex-lg-row mt-3 ms-2">
+                <a href="">
+                  <h3>Buku Saku</h3>
+                </a>
+                <p class="mt-3">180500450</p>
+                <ul class="d-lg-flex list-nilai-test">
+
+                  <li class="percobaan-non-test">
+                    <p> My Attempts : 3</p>
+                  </li>
+
+
+                  <a href=""><button type="button" class="btn btn-start-resp-non-test">
                       Start
                     </button></a>
-                    
-                  </ul>
-                </div>
+
+                </ul>
               </div>
             </div>
-            <div class="card card-neop-general mt-4">
-              <div class="row">
-                <div class="col-lg-4 text-center align-self-center">
-                  <img
-                    src="images/post test.png"
-                    alt=""
-                    class="py-4 ms-2"
-                    width="300"
-                    height="200"
-                  />
-                </div>
-                <div
-                  class="col card-title-neop align-self-lg-center flex-column flex-lg-row mt-3 ms-2"
-                >
-                  <a href=""><h3>Post Test Safety Security 2018</h3></a>
-                  <p class="mt-3">180500450</p>
-                  <ul class="d-lg-flex list-nilai-test">
-                    <li class="nilai">
-                      <p> My Score : 90</p>
-                    </li>
-                    <li class="percobaan">
-                      <p> My Attempts : 3</p>
-                    </li>
-                    <li class="kondisi">
-                      <p> My Status : <span>Lulus</span></p>
-                    </li>
-                    
-                    <a href=""
-                    ><button
-                      type="button"
-                      class="btn btn-start-resp"
-                      
-                    >
+          </div>
+          <div class="card card-neop-general mt-4">
+            <div class="row">
+              <div class="col-lg-4 text-center align-self-center">
+                <img src="images/post test.png" alt="" class="py-4 ms-2" width="300" height="200" />
+              </div>
+              <div class="col card-title-neop align-self-lg-center flex-column flex-lg-row mt-3 ms-2">
+                <a href="">
+                  <h3>Post Test Safety Security 2018</h3>
+                </a>
+                <p class="mt-3">180500450</p>
+                <ul class="d-lg-flex list-nilai-test">
+                  <li class="nilai">
+                    <p> My Score : 90</p>
+                  </li>
+                  <li class="percobaan">
+                    <p> My Attempts : 3</p>
+                  </li>
+                  <li class="kondisi">
+                    <p> My Status : <span>Lulus</span></p>
+                  </li>
+
+                  <a href=""><button type="button" class="btn btn-start-resp">
                       Start
                     </button></a>
-                    
-                  </ul>
-                </div>
+
+                </ul>
               </div>
             </div>
           </div>
         </div>
       </div>
+    </div>
 
-      <div class="container" style="margin-top: 70px">
-        <div
-          class="section-popular-neop row justify-content-center"
-          style="margin-top: 120px"
-        >
-          <button
-            class="btn-collapse-neop"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#collapsePancaSradha"
-            aria-expanded="false"
-            aria-controls="collapsePancaSradha"
-            onclick="toggleCollapse(event)"
-          >
-            Kalbe Panca Shrada
-            <i class="fa-chevron-up fa arrow-button"></i>
-          </button>
-          <div class="collapse show" id="collapsePancaSradha">
-            <div class="card card-neop-general mt-4">
-              <div class="row">
-                <div class="col-lg-4 text-center align-self-center">
-                  <img
-                    src="images/Trus is the glue of life.png"
-                    alt=""
-                    class="py-4 ms-2"
-                    width="300"
-                    height="200"
-                  />
-                </div>
-                <div
-                  class="col card-title-neop align-self-lg-center flex-column flex-lg-row mt-3 ms-2"
-                >
-                  <a href=""><h3>Trust is The Glue of Life</h3></a>
-                  <p class="mt-3">180500450</p>
-                  <ul class="d-lg-flex list-nilai-test">
-                    
-                    <li class="percobaan-non-test">
-                      <p> My Attempts : 3</p>
-                    </li>
-                    
-                    
-                    <a href=""
-                    ><button
-                      type="button"
-                      class="btn btn-start-resp-non-test"
-                      
-                    >
+    <div class="container" style="margin-top: 70px">
+      <div class="section-popular-neop row justify-content-center" style="margin-top: 120px">
+        <button class="btn-collapse-neop" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePancaSradha"
+          aria-expanded="false" aria-controls="collapsePancaSradha" onclick="toggleCollapse(event)">
+          Kalbe Panca Shrada
+          <i class="fa-chevron-up fa arrow-button"></i>
+        </button>
+        <div class="collapse show" id="collapsePancaSradha">
+          <div class="card card-neop-general mt-4">
+            <div class="row">
+              <div class="col-lg-4 text-center align-self-center">
+                <img src="images/Trus is the glue of life.png" alt="" class="py-4 ms-2" width="300" height="200" />
+              </div>
+              <div class="col card-title-neop align-self-lg-center flex-column flex-lg-row mt-3 ms-2">
+                <a href="">
+                  <h3>Trust is The Glue of Life</h3>
+                </a>
+                <p class="mt-3">180500450</p>
+                <ul class="d-lg-flex list-nilai-test">
+
+                  <li class="percobaan-non-test">
+                    <p> My Attempts : 3</p>
+                  </li>
+
+
+                  <a href=""><button type="button" class="btn btn-start-resp-non-test">
                       Start
                     </button></a>
-                    
-                  </ul>
-                </div>
+
+                </ul>
               </div>
             </div>
-            <div class="card card-neop-general mt-4">
-              <div class="row">
-                <div class="col-lg-4 text-center align-self-center">
-                  <img
-                    src="images/putihaja.png"
-                    alt=""
-                    class="py-4 ms-2"
-                    width="300"
-                    height="200"
-                  />
-                </div>
-                <div
-                  class="col card-title-neop align-self-lg-center flex-column flex-lg-row mt-3 ms-2"
-                >
-                  <a href=""><h3>Mindfulness Is The Foundation Of Our Action</h3></a>
-                  <p class="mt-3">180500450</p>
-                  <ul class="d-lg-flex list-nilai-test">
-                    
-                    <li class="percobaan-non-test">
-                      <p> My Attempts : 3</p>
-                    </li>
-                    
-                    
-                    <a href=""
-                    ><button
-                      type="button"
-                      class="btn btn-start-resp-non-test"
-                      
-                    >
+          </div>
+          <div class="card card-neop-general mt-4">
+            <div class="row">
+              <div class="col-lg-4 text-center align-self-center">
+                <img src="images/putihaja.png" alt="" class="py-4 ms-2" width="300" height="200" />
+              </div>
+              <div class="col card-title-neop align-self-lg-center flex-column flex-lg-row mt-3 ms-2">
+                <a href="">
+                  <h3>Mindfulness Is The Foundation Of Our Action</h3>
+                </a>
+                <p class="mt-3">180500450</p>
+                <ul class="d-lg-flex list-nilai-test">
+
+                  <li class="percobaan-non-test">
+                    <p> My Attempts : 3</p>
+                  </li>
+
+
+                  <a href=""><button type="button" class="btn btn-start-resp-non-test">
                       Start
                     </button></a>
-                    
-                  </ul>
-                </div>
+
+                </ul>
               </div>
             </div>
-            <div class="card card-neop-general mt-4">
-              <div class="row">
-                <div class="col-lg-4 text-center align-self-center">
-                  <img
-                    src="images/putihaja.png"
-                    alt=""
-                    class="py-4 ms-2"
-                    width="300"
-                    height="200"
-                  />
-                </div>
-                <div
-                  class="col card-title-neop align-self-lg-center flex-column flex-lg-row mt-3 ms-2"
-                >
-                  <a href=""><h3>Innovation Is The Key To Our Success</h3></a>
-                  <p class="mt-3">180500450</p>
-                  <ul class="d-lg-flex list-nilai-test">
-                    
-                    <li class="percobaan-non-test">
-                      <p> My Attempts : 3</p>
-                    </li>
-                    
-                    
-                    <a href=""
-                    ><button
-                      type="button"
-                      class="btn btn-start-resp-non-test"
-                      
-                    >
+          </div>
+          <div class="card card-neop-general mt-4">
+            <div class="row">
+              <div class="col-lg-4 text-center align-self-center">
+                <img src="images/putihaja.png" alt="" class="py-4 ms-2" width="300" height="200" />
+              </div>
+              <div class="col card-title-neop align-self-lg-center flex-column flex-lg-row mt-3 ms-2">
+                <a href="">
+                  <h3>Innovation Is The Key To Our Success</h3>
+                </a>
+                <p class="mt-3">180500450</p>
+                <ul class="d-lg-flex list-nilai-test">
+
+                  <li class="percobaan-non-test">
+                    <p> My Attempts : 3</p>
+                  </li>
+
+
+                  <a href=""><button type="button" class="btn btn-start-resp-non-test">
                       Start
                     </button></a>
-                    
-                  </ul>
-                </div>
+
+                </ul>
               </div>
             </div>
-            <div class="card card-neop-general mt-4">
-              <div class="row">
-                <div class="col-lg-4 text-center align-self-center">
-                  <img
-                    src="images/putihaja.png"
-                    alt=""
-                    class="py-4 ms-2"
-                    width="300"
-                    height="200"
-                  />
-                </div>
-                <div
-                  class="col card-title-neop align-self-lg-center flex-column flex-lg-row mt-3 ms-2"
-                >
-                  <a href=""><h3>Strive To Be The Best</h3></a>
-                  <p class="mt-3">180500450</p>
-                  <ul class="d-lg-flex list-nilai-test">
-                    
-                    <li class="percobaan-non-test">
-                      <p> My Attempts : 3</p>
-                    </li>
-                    
-                    
-                    <a href=""
-                    ><button
-                      type="button"
-                      class="btn btn-start-resp-non-test"
-                      
-                    >
+          </div>
+          <div class="card card-neop-general mt-4">
+            <div class="row">
+              <div class="col-lg-4 text-center align-self-center">
+                <img src="images/putihaja.png" alt="" class="py-4 ms-2" width="300" height="200" />
+              </div>
+              <div class="col card-title-neop align-self-lg-center flex-column flex-lg-row mt-3 ms-2">
+                <a href="">
+                  <h3>Strive To Be The Best</h3>
+                </a>
+                <p class="mt-3">180500450</p>
+                <ul class="d-lg-flex list-nilai-test">
+
+                  <li class="percobaan-non-test">
+                    <p> My Attempts : 3</p>
+                  </li>
+
+
+                  <a href=""><button type="button" class="btn btn-start-resp-non-test">
                       Start
                     </button></a>
-                    
-                  </ul>
-                </div>
+
+                </ul>
               </div>
             </div>
-            <div class="card card-neop-general mt-4">
-              <div class="row">
-                <div class="col-lg-4 text-center align-self-center">
-                  <img
-                    src="images/putihaja.png"
-                    alt=""
-                    class="py-4 ms-2"
-                    width="300"
-                    height="200"
-                  />
-                </div>
-                <div
-                  class="col card-title-neop align-self-lg-center flex-column flex-lg-row mt-3 ms-2"
-                >
-                  <a href=""><h3>Interconnectedness Is a Universal Way of Life</h3></a>
-                  <p class="mt-3">180500450</p>
-                  <ul class="d-lg-flex list-nilai-test">
-                    
-                    <li class="percobaan-non-test">
-                      <p> My Attempts : 3</p>
-                    </li>
-                    
-                    
-                    <a href=""
-                    ><button
-                      type="button"
-                      class="btn btn-start-resp-non-test"
-                      
-                    >
+          </div>
+          <div class="card card-neop-general mt-4">
+            <div class="row">
+              <div class="col-lg-4 text-center align-self-center">
+                <img src="images/putihaja.png" alt="" class="py-4 ms-2" width="300" height="200" />
+              </div>
+              <div class="col card-title-neop align-self-lg-center flex-column flex-lg-row mt-3 ms-2">
+                <a href="">
+                  <h3>Interconnectedness Is a Universal Way of Life</h3>
+                </a>
+                <p class="mt-3">180500450</p>
+                <ul class="d-lg-flex list-nilai-test">
+
+                  <li class="percobaan-non-test">
+                    <p> My Attempts : 3</p>
+                  </li>
+
+
+                  <a href=""><button type="button" class="btn btn-start-resp-non-test">
                       Start
                     </button></a>
-                    
-                  </ul>
-                </div>
+
+                </ul>
               </div>
             </div>
-            <div class="card card-neop-general mt-4">
-              <div class="row">
-                <div class="col-lg-4 text-center align-self-center">
-                  <img
-                    src="images/post test.png"
-                    alt=""
-                    class="py-4 ms-2"
-                    width="300"
-                    height="200"
-                  />
-                </div>
-                <div
-                  class="col card-title-neop align-self-lg-center flex-column flex-lg-row mt-3 ms-2"
-                >
-                  <a href=""><h3>Post Test Panca Sradha</h3></a>
-                  <p class="mt-3">180500450</p>
-                  <ul class="d-lg-flex list-nilai-test">
-                    <li class="nilai">
-                      <p> My Score : 90</p>
-                    </li>
-                    <li class="percobaan">
-                      <p> My Attempts : 3</p>
-                    </li>
-                    <li class="kondisi">
-                      <p> My Status : <span>Lulus</span></p>
-                    </li>
-                    
-                    <a href=""
-                    ><button
-                      type="button"
-                      class="btn btn-start-resp"
-                      
-                    >
+          </div>
+          <div class="card card-neop-general mt-4">
+            <div class="row">
+              <div class="col-lg-4 text-center align-self-center">
+                <img src="images/post test.png" alt="" class="py-4 ms-2" width="300" height="200" />
+              </div>
+              <div class="col card-title-neop align-self-lg-center flex-column flex-lg-row mt-3 ms-2">
+                <a href="">
+                  <h3>Post Test Panca Sradha</h3>
+                </a>
+                <p class="mt-3">180500450</p>
+                <ul class="d-lg-flex list-nilai-test">
+                  <li class="nilai">
+                    <p> My Score : 90</p>
+                  </li>
+                  <li class="percobaan">
+                    <p> My Attempts : 3</p>
+                  </li>
+                  <li class="kondisi">
+                    <p> My Status : <span>Lulus</span></p>
+                  </li>
+
+                  <a href=""><button type="button" class="btn btn-start-resp">
                       Start
                     </button></a>
-                    
-                  </ul>
-                </div>
+
+                </ul>
               </div>
             </div>
           </div>
         </div>
       </div>
+    </div>
 
-      <div class="container" style="margin-top: 70px">
-        <div
-          class="section-popular-neop row justify-content-center"
-          style="margin-top: 120px"
-        >
-          <button
-            class="btn-collapse-neop"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#collapseEtikaBisnis"
-            aria-expanded="false"
-            aria-controls="collapseEtikaBisnis"
-            onclick="toggleCollapse(event)"
-          >
-            Etika Bisnis
-            <i class="fa-chevron-up fa arrow-button"></i>
-          </button>
-          <div class="collapse show" id="collapseEtikaBisnis">
-            <div class="card card-neop-general mt-4">
-              <div class="row">
-                <div class="col-lg-4 text-center align-self-center">
-                  <img
-                    src="images/post test.png"
-                    alt=""
-                    class="py-4 ms-2"
-                    width="300"
-                    height="200"
-                  />
-                </div>
-                <div
-                  class="col card-title-neop align-self-lg-center flex-column flex-lg-row mt-3 ms-2"
-                >
-                  <a href=""><h3>Etika Bisnis PDF</h3></a>
-                  <p class="mt-3">180500450</p>
-                  <ul class="d-lg-flex list-nilai-test">
-                    
-                    <li class="percobaan-non-test">
-                      <p> My Attempts : 3</p>
-                    </li>
-                    
-                    
-                    <a href=""
-                    ><button
-                      type="button"
-                      class="btn btn-start-resp-non-test"
-                      
-                    >
-                      Start
-                    </button></a>
-                    
-                  </ul>
-                </div>
-
+    <div class="container" style="margin-top: 70px">
+      <div class="section-popular-neop row justify-content-center" style="margin-top: 120px">
+        <button class="btn-collapse-neop" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEtikaBisnis"
+          aria-expanded="false" aria-controls="collapseEtikaBisnis" onclick="toggleCollapse(event)">
+          Etika Bisnis
+          <i class="fa-chevron-up fa arrow-button"></i>
+        </button>
+        <div class="collapse show" id="collapseEtikaBisnis">
+          <div class="card card-neop-general mt-4">
+            <div class="row">
+              <div class="col-lg-4 text-center align-self-center">
+                <img src="images/post test.png" alt="" class="py-4 ms-2" width="300" height="200" />
               </div>
-            </div>
-            <div class="card card-neop-general mt-4">
-              <div class="row">
-                <div class="col-lg-4 text-center align-self-center">
-                  <img
-                    src="images/post test.png"
-                    alt=""
-                    class="py-4 ms-2"
-                    width="300"
-                    height="200"
-                  />
-                </div>
-                <div
-                  class="col card-title-neop align-self-lg-center flex-column flex-lg-row mt-3 ms-2"
-                >
-                  <a href=""><h3>Post Test Etika</h3></a>
-                  <p class="mt-3">180500450</p>
-                  <ul class="d-lg-flex list-nilai-test">
-                    <li class="nilai">
-                      <p> My Score : 90</p>
-                    </li>
-                    <li class="percobaan">
-                      <p> My Attempts : 3</p>
-                    </li>
-                    <li class="kondisi">
-                      <p> My Status : <span>Lulus</span></p>
-                    </li>
-                    
-                    <a href=""
-                    ><button
-                      type="button"
-                      class="btn btn-start-resp"
-                      
-                    >
+              <div class="col card-title-neop align-self-lg-center flex-column flex-lg-row mt-3 ms-2">
+                <a href="">
+                  <h3>Etika Bisnis PDF</h3>
+                </a>
+                <p class="mt-3">180500450</p>
+                <ul class="d-lg-flex list-nilai-test">
+
+                  <li class="percobaan-non-test">
+                    <p> My Attempts : 3</p>
+                  </li>
+
+
+                  <a href=""><button type="button" class="btn btn-start-resp-non-test">
                       Start
                     </button></a>
-                    
-                  </ul>
-                </div>
+
+                </ul>
+              </div>
+
+            </div>
+          </div>
+          <div class="card card-neop-general mt-4">
+            <div class="row">
+              <div class="col-lg-4 text-center align-self-center">
+                <img src="images/post test.png" alt="" class="py-4 ms-2" width="300" height="200" />
+              </div>
+              <div class="col card-title-neop align-self-lg-center flex-column flex-lg-row mt-3 ms-2">
+                <a href="">
+                  <h3>Post Test Etika</h3>
+                </a>
+                <p class="mt-3">180500450</p>
+                <ul class="d-lg-flex list-nilai-test">
+                  <li class="nilai">
+                    <p> My Score : 90</p>
+                  </li>
+                  <li class="percobaan">
+                    <p> My Attempts : 3</p>
+                  </li>
+                  <li class="kondisi">
+                    <p> My Status : <span>Lulus</span></p>
+                  </li>
+
+                  <a href=""><button type="button" class="btn btn-start-resp">
+                      Start
+                    </button></a>
+
+                </ul>
               </div>
             </div>
           </div>
         </div>
       </div>
+    </div>
 
-      <!-- <div class="container" style="margin-top: 70px">
+    <!-- <div class="container" style="margin-top: 70px">
         <div
           class="section-popular-neop row justify-content-center"
           style="margin-top: 120px"
@@ -1303,36 +977,30 @@
           </div>
         </div>
       </div> -->
-    </section>
+  </section>
 
-    <!-- FOOTER -->
+  <!-- FOOTER -->
 
-    <footer class="section-footer mt-5 mb-4 border-top text-center">
+  <footer class="section-footer mt-5 mb-4 border-top text-center">
 
-      <div class="container-fluid">
-        <div
-          class="row border-top justify-content-center align-items-center pt-4"
-        >
-          <div class="col-auto font-weight-light" style="color: #ffffff">
-            2022 Copyright My Planet Enseval • All rights reserved • Made in
-            Jakarta
-          </div>
+    <div class="container-fluid">
+      <div class="row border-top justify-content-center align-items-center pt-4">
+        <div class="col-auto font-weight-light" style="color: #ffffff">
+          2022 Copyright My Planet Enseval • All rights reserved • Made in
+          Jakarta
         </div>
       </div>
-    </footer>
+    </div>
+  </footer>
 
-    <script
-      src="https://code.jquery.com/jquery-3.6.0.js"
-      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
-      integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
-      crossorigin="anonymous"
-    ></script>
-    <script src="js/collapse-learning.js"></script>
-    <script type="text/javascript" src="js/bootstrap.js"></script>
-    <script src="js/floating-btn.js"></script>
-  </body>
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+    integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+    crossorigin="anonymous"></script>
+  <script src="js/collapse-learning.js"></script>
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+  <script src="js/floating-btn.js"></script>
+</body>
+
 </html>
