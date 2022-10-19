@@ -2469,7 +2469,7 @@ p {
   background-color: #c4eef1;
   color: #000000;
   border-radius: 10px;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .sub-menu-categories {
@@ -2477,7 +2477,7 @@ p {
   background-color: #ededed;
   color: #7a7a7a;
   border-radius: 10px;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .card-leaderboard {
@@ -2848,7 +2848,7 @@ p {
 }
 
 .notification_wrap .dropdown .notify_item .notify_info p {
-  margin-bottom: 5px;
+  margin-bottom: -3px;
   color: #000000;
   font-weight: 500;
   /* margin-right: 40px; */
@@ -2866,6 +2866,11 @@ p {
 
 .notification_wrap .dropdown.active {
   display: block;
+}
+
+.btn-delete-inmore {
+  border-color: transparent;
+  background-color: transparent;
 }
 
 /* -------------------------- */
@@ -2980,6 +2985,13 @@ p {
   font-size: 15px;
 }
 
+.btn-load-more {
+  color: #707070;
+  font-weight: 600;
+  background-color: transparent;
+  border-color: transparent;
+}
+
 .postingan-konten .card-comment-section {
   border-color: transparent;
 }
@@ -3021,3 +3033,127 @@ p {
   border-radius: 0 10px 10px 0;
   padding: 10px;
 } */
+
+/* --------------------------------------------- */
+
+.image-1-posting {
+  width: 704px;
+  margin-bottom: 20px;
+}
+
+.image-secondary-posting {
+  width: 218px;
+  height: 218px;
+}
+
+.jurnal-pdf {
+  background-color: #e2f2f3;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.jurnal-pdf .picture-jurnal {
+  width: 120px;
+  height: 62px;
+}
+
+.jurnal-pdf .link-to-jurnal {
+  color: #000;
+  font-weight: 500;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+.text-create-event .event-name-input {
+  color: #7a7a7a;
+  margin-bottom: 5px;
+}
+
+.text-create-event .start-date p {
+  color: #7a7a7a;
+  font-weight: 400;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+.text-create-event .start-time p {
+  color: #7a7a7a;
+  font-weight: 400;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+.text-create-event .box-content {
+  background-color: #edeef9;
+  border-radius: 10px;
+  padding: 10px;
+  border-color: transparent;
+}
+
+.venue-name-input {
+  color: #7a7a7a;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+/* .ic-datepicker {
+  width: 20px;
+  margin-top: 10px;
+  margin-right: 10px;
+} */
+
+.gj-icon {
+  margin-top: 8px;
+  margin-right: 8px;
+}
+
+#datepicker {
+  width: 224px;
+}
+
+#timepicker {
+  width: 224px;
+}
+
+#datepicker2 {
+  width: 224px;
+}
+
+#timepicker2 {
+  width: 224px;
+}
+
+.title-career-post {
+  color: #7a7a7a;
+  margin-bottom: 5px;
+  font-weight: 400;
+}
+
+.description-career-post {
+  margin-top: 20px;
+  color: #7a7a7a;
+  margin-bottom: 5px;
+  font-weight: 400;
+}
+
+.career-title-form {
+  background-color: #edeef9;
+  border-radius: 10px;
+}
+
+.banner-post-event {
+  width: 704px;
+  border-radius: 10px;
+}
+
+.title-event-post {
+  color: #000;
+  font-weight: 500;
+  margin-top: 20px;
+}
+
+.date-event-post img {
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+}
