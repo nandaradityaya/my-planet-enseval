@@ -1,0 +1,449 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Community</title>
+  <link rel="stylesheet" href="css/bootstrap.css" />
+  <!--bootstrap harus tetep di atas file css-->
+  <link rel="stylesheet" href="css/custom.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  <script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body class="body-profile">
+  <!-- NAVBAR -->
+  <div class="">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <img src="assets/logo.png" alt="" class="d-inline-block align-text-top" />
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <!--ms itu margin kiri-->
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="e-learning.html">E-Learning</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="policy.html">Policy</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="podtret.html">Podtret</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Ensight</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Community</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Aplication
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">HRIS Pro Int</a></li>
+                  <li><a class="dropdown-item" href="#">LOAN Online</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">FPTK Online</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Assesment Online</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Administrasi Assesment</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">AP & PA Online</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">MPP Online</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Orens</a>
+                  </li>
+                </ul>
+              </li>
+              <!-- <a class="btn btn-login ms-2" href="#" role="button">Sign Up</a> -->
+            </ul>
+            <!-- Button trigger modal -->
+            <div class="vl ms-2" style="border-left: solid 2px #ededed">
+              <img src="images/image-profile.jpg" alt="" class="image-navbar ms-3" onclick="toggleMenu()" />
+              <span class="badge">1</span>
+
+              <div class="sub-menu-wrap" id="subMenu">
+                <div class="sub-menu">
+                  <div class="user-info">
+                    <a href="profile.html"><img src="images/image-profile.jpg" alt="" class="img-nav-submenu" /></a>
+                    <a href="profile.html">
+                      <h3>Harry Maguire</h3>
+                    </a>
+                  </div>
+                  <hr />
+
+                  <a href="edit-profile.html" class="sub-menu-link">
+                    <i class="fa fa-user"></i>
+                    <!-- <img src="assets/user-info.png" alt="" /> -->
+                    <p>Edit Profile</p>
+                    <span>></span>
+                  </a>
+
+                  <a href="" class="sub-menu-link" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <i class="fa fa-bell"><span class="badge-not">1</span></i>
+                    <!-- <img src="assets/user-info.png" alt="" /> -->
+                    <p>Notification</p>
+                    <span>></span>
+                  </a>
+
+                  <a href="" class="sub-menu-link">
+                    <i class="fa fa-sign-out"></i>
+                    <!-- <img src="assets/logout.png" alt="" /> -->
+                    <p>Log Out</p>
+                    <span>></span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </div>
+
+  <!-- Modal Notifikasi -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable">
+      <div class="modal-content modal-notification">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Notification</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="d-flex list-notification">
+            <a href="e-learning-neopgeneral.html"><img src="images/img-notif.jpg" alt="" class="img-nav-submenu" /></a>
+            <a href="e-learning-neopgeneral.html"></a>
+            <div class="berita">
+              <p>
+                Undangan! Kamu di undang untuk mengikuti kegiatan training
+                mengenai IT Security
+              </p>
+              <p1>18 September 2022</p1>
+              <a href=""><i class="fa fa-trash fa-lg trash-notification"></i></a>
+            </div>
+            </a>
+          </div>
+          <hr />
+          <div class="d-flex list-notification">
+            <a href="profile.html"><img src="images/img-notif.jpg" alt="" class="img-nav-submenu" /></a>
+            <a href="profile.html">
+              <div class="berita">
+                <p>
+                  Selamat! sertifikat anda sudah terbit, untuk melihat silahkan kunjungi halaman profile
+                </p>
+                <p1>12 September 2022</p1>
+                <a href=""><i class="fa fa-trash fa-lg trash-notification"></i></a>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+            Close
+          </button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col col-lg-6 d-sm-block">
+        <div class="title-table-leaderboard d-flex">
+          <img src="assets/icon/ic-trophy.png" alt="" style="width: 46px; height:46px;">
+          <h3>Top Leaderboard</h3>
+        </div>
+        <p class="ms-5">My Points: 21.581</p>
+      </div>
+      <div class="col-lg-4 d-sm-block">
+        <div class="box float-end" style="margin-top: 30px">
+          <input type="text" name="" placeholder="Search...">
+          <i class="fa fa-search" aria-hidden="true"></i>
+        </div>
+      </div>
+      <div class="col-lg-2 d-sm-block">
+        <div class="back-and-see float-end">
+          <a href="" class="d-block" style="float: right">Back Home</a>
+          <a href="" class="d-block mt-1" style="float: right" data-bs-toggle="modal"
+            data-bs-target="#modalSeeReward">See Reward</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="modalSeeReward" tabindex="-1" aria-labelledby="modalSeeRewardLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content modal-topleaderboard">
+          <div class="modal-header title-modal-leaderboard justify-content-center border-0">
+            <h1 class=" modal-title" id="modalSeeRewardLabel">Level on My Planet</h1>
+          </div>
+          <div class="modal-body border-0">
+            <div class="d-flex">
+              <img src="assets/icon/Platinum.png" alt="" class="badge-modal-leaderboard">
+              <div class="title-modal-leaderboard ms-2 mt-2">
+                <h5>Platinum</h5>
+                <p>karyawan dengan kategori Platinum akan mendapatkan reward berupa jalan-jalan bersama keluarga keluar
+                  kota selama 3 hari. Karyawan yang mencapai platinum akan mendapatkan predikat KM Champion, dan
+                  bertugas untuk memilih content dicabangnya.</p>
+              </div>
+            </div>
+            <div class="d-flex">
+              <img src="assets/icon/Gold.png" alt="" class="badge-modal-leaderboard">
+              <div class="title-modal-leaderboard ms-2 mt-2">
+                <h5>Gold</h5>
+                <p>karyawan dengan kategori gold akan mendapatkan reward berupa penambahan cuti 2 hari dan barang yang
+                  menunjang pekerjaannya.</p>
+              </div>
+            </div>
+            <div class="d-flex">
+              <img src="assets/icon/Silver.png" alt="" class="badge-modal-leaderboard">
+              <div class="title-modal-leaderboard ms-2 mt-2">
+                <h5>Silver</h5>
+                <p>karyawan dengan kategori silver akan mendapatkan reward berupa barang yang menunjang pekerjaannya.
+                </p>
+              </div>
+            </div>
+            <div class="d-flex">
+              <img src="assets/icon/Bronze.png" alt="" class="badge-modal-leaderboard">
+              <div class="title-modal-leaderboard ms-2 mt-2">
+                <h5>Bronze</h5>
+                <p>Karyawan baru dan karyawan yang di bawah 5000 point yang mendapatkan level ini. User hanya bisa
+                  memberikan
+                  comment, like, dan melihat fitur planet.</p>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer border-0">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <table class="table table-top-leaderboard">
+      <thead>
+        <tr class="table-secondary">
+          <th scope="col">#</th>
+          <th scope="col">Name</th>
+          <th scope="col" class="text-center">NIK</th>
+          <th scope="col" class="text-center hide-on-sm">Location</th>
+          <th scope="col" class="text-center hide-on-sm">Organization Name</th>
+          <th scope="col" class="text-center">Point</th>
+          <th scope="col" class="text-center">Level</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="table-light">
+          <th scope="row"><span class="rank-1">1</span></th>
+
+          <td class="d-flex kolom-nama-leaderboard"><img src="images/image-profile.jpg" alt="">
+            <a href="">
+              <p>Harry Maguire</p>
+            </a>
+          </td>
+          <td class="text-center">3201902</td>
+          <td class="text-center hide-on-sm">Jakarta, Indonesia</td>
+          <td class="text-center hide-on-sm">Human Resource Development</td>
+          <td class="text-center">21.581</td>
+          <td class="badge-leaderboard text-center"><img src="assets/icon/Platinum.png" alt=""></td>
+        </tr>
+        <tr class="table-light">
+          <th scope="row"><span class="rank-2">2</span></th>
+
+          <td class="d-flex kolom-nama-leaderboard"><img src="images/img-rank-one.png" alt="">
+            <a href="">
+              <p>Thomas Muller</p>
+            </a>
+          </td>
+          <td class="text-center">3201902</td>
+          <td class="text-center hide-on-sm">Cirebon, Indonesia</td>
+          <td class="text-center hide-on-sm">IT Development</td>
+          <td class="text-center">10.561</td>
+          <td class="badge-leaderboard text-center"><img src="assets/icon/Gold.png" alt=""></td>
+        </tr>
+        <tr class="table-light">
+          <th scope="row"><span class="rank-3">3</span></th>
+
+          <td class="d-flex kolom-nama-leaderboard"><img src="images/kevin-wijaya.jpg" alt="">
+            <a href="">
+              <p>Kevin Wijaya</p>
+            </a>
+          </td>
+          <td class="text-center">3201902</td>
+          <td class="text-center hide-on-sm">Bandung, Indonesia</td>
+          <td class="text-center hide-on-sm">Financial Accounting</td>
+          <td class="text-center">10.264</td>
+          <td class="badge-leaderboard text-center"><img src="assets/icon/Gold.png" alt=""></td>
+        </tr>
+
+        <tr class="table-light">
+          <th scope="row" class="text-center">4</th>
+
+          <td class="d-flex kolom-nama-leaderboard"><img src="images/annisa-az-zahra.jpg" alt="">
+            <a href="">
+              <p>Annisa Az-Zahra</p>
+            </a>
+          </td>
+          <td class="text-center">3201902</td>
+          <td class="text-center hide-on-sm">Samarinda, Kalimantan</td>
+          <td class="text-center hide-on-sm">Human Resource Development</td>
+          <td class="text-center">8.579</td>
+          <td class="badge-leaderboard text-center"><img src="assets/icon/Silver.png" alt=""></td>
+        </tr>
+        <tr class="table-light">
+          <th scope="row" class="text-center">5</th>
+
+          <td class="d-flex kolom-nama-leaderboard"><img src="images/angga-ramadhan.jpg" alt="">
+            <a href="">
+              <p>Angga Ramadhan</p>
+            </a>
+          </td>
+          <td class="text-center">3201902</td>
+          <td class="text-center hide-on-sm">Purwokerto, Jawa Tengah</td>
+          <td class="text-center hide-on-sm">IT Development</td>
+          <td class="text-center">7.579</td>
+          <td class="badge-leaderboard text-center"><img src="assets/icon/Silver.png" alt=""></td>
+        </tr>
+        <tr class="table-light">
+          <th scope="row" class="text-center">6</th>
+          <td class="d-flex kolom-nama-leaderboard"><img src="images/angga-ramadhan.jpg" alt="">
+            <a href="">
+              <p>Donna Visca</p>
+            </a>
+          </td>
+          <td class="text-center">3201902</td>
+          <td class="text-center hide-on-sm">Papua, Indonesia</td>
+          <td class="text-center hide-on-sm">IT Development</td>
+          <td class="text-center">7.512</td>
+          <td class="badge-leaderboard text-center"><img src="assets/icon/Silver.png" alt=""></td>
+        </tr>
+        <tr class="table-light">
+          <th scope="row" class="text-center">7</th>
+          <td class="d-flex kolom-nama-leaderboard"><img src="images/angga-ramadhan.jpg" alt="">
+            <a href="">
+              <p>Chris Evans</p>
+            </a>
+          </td>
+          <td class="text-center">3201902</td>
+          <td class="text-center hide-on-sm">Malang, Jawa Timur</td>
+          <td class="text-center hide-on-sm">Financial Accounting</td>
+          <td class="text-center">6.512</td>
+          <td class="badge-leaderboard text-center"><img src="assets/icon/Silver.png" alt=""></td>
+        </tr>
+        <tr class="table-light">
+          <th scope="row" class="text-center">8</th>
+          <td class="d-flex kolom-nama-leaderboard"><img src="images/angga-ramadhan.jpg" alt="">
+            <a href="">
+              <p>Jhony Depp</p>
+            </a>
+          </td>
+          <td class="text-center">3201902</td>
+          <td class="text-center hide-on-sm">Madiun, Jawa Tengah</td>
+          <td class="text-center hide-on-sm">Human Resource</td>
+          <td class="text-center">6.422</td>
+          <td class="badge-leaderboard text-center"><img src="assets/icon/Silver.png" alt=""></td>
+        </tr>
+        <tr class="table-light">
+          <th scope="row" class="text-center">9</th>
+          <td class="d-flex kolom-nama-leaderboard"><img src="images/angga-ramadhan.jpg" alt="">
+            <a href="">
+              <p>Bella Swan</p>
+            </a>
+          </td>
+          <td class="text-center">3201902</td>
+          <td class="text-center hide-on-sm">Jakarta, Indonesia</td>
+          <td class="text-center hide-on-sm">IT Development</td>
+          <td class="text-center">4.896</td>
+          <td class="badge-leaderboard text-center"><img src="assets/icon/Bronze.png" alt=""></td>
+        </tr>
+        <tr class="table-light">
+          <th scope="row" class="text-center">10</th>
+          <td class="d-flex kolom-nama-leaderboard"><img src="images/angga-ramadhan.jpg" alt="">
+            <a href="">
+              <p>Gigi Hadid</p>
+            </a>
+          </td>
+          <td class="text-center">3201902</td>
+          <td class="text-center hide-on-sm">Jakarta, Indonesia</td>
+          <td class="text-center hide-on-sm">Legal</td>
+          <td class="text-center">4.000</td>
+          <td class="badge-leaderboard text-center"><img src="assets/icon/Bronze.png" alt=""></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <nav aria-label="Page navigation example">
+      <ul class="pagination pagination-leaderboard justify-content-center">
+        <li class="page-item">
+          <a class="page-link" href="#" aria-label="Previous">
+            <span aria-hidden="true">&laquo;</span>
+          </a>
+        </li>
+        <li class="page-item"><a class="page-link active" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item">
+          <a class="page-link" href="#" aria-label="Next">
+            <span aria-hidden="true">&raquo;</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+  <!-- FOOTER -->
+
+  <footer class="section-footer mt-5 mb-4 border-top text-center">
+    <div class="container-fluid">
+      <div class="row border-top justify-content-center align-items-center pt-4">
+        <div class="col-auto font-weight-light" style="color: #ffffff">
+          2022 Copyright My Planet Enseval • All rights reserved • Made in
+          Jakarta
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+    integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+    crossorigin="anonymous"></script>
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+  <script src="js/floating-btn.js"></script>
+  <script src="js/submenu-profile.js"></script>
+  <script src="js/profile.js"></script>
+  <script src="js/popovers.js"></script>
+  <script src="js/delete-edit.js"></script>
+  <script src="js/muncul.js"></script>
+  <script src="libraries/gijgo/js/gijgo.min.js"></script>
+  <script src="js/datetimepicker.js"></script>
+</body>
+
+</html>
