@@ -175,7 +175,7 @@
   <!-- Section Left -->
 
   <div class="container d-flex mt-4">
-    <section class="section-left col-lg-4">
+    <section class="section-left col-lg-4 d-none d-lg-block">
       <div class="card card-profile-community text-center">
         <div class="user-avatar text-center mt-5">
           <a href="profile.html"><img src="images/image-profile.jpg" alt="" class="avatar-user-community" /></a>
@@ -299,6 +299,227 @@
 
     </section>
 
+    <!-- MODAL BOX PHOTO -->
+    <div class="modal fade" id="modalPhoto" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header justify-content-center">
+            <h1 class="modal-title fs-5" id="exampleModalLabel" style="font-weight: 600;">Make a Post</h1>
+          </div>
+          <div class="modal-body">
+            <div class="profile-user d-flex col-lg-10">
+              <a href=""><img src="images/image-profile.jpg" alt="" class="img-user"></a>
+              <a href="">
+                <p class="ms-3">Harry Maguire <br> <span>UI/UX Designer</span></p>
+              </a>
+            </div>
+            <div class="mb-3">
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                placeholder="Write about something" style="background-color: #EDEEF9; border-radius: 10px;"></textarea>
+            </div>
+            <div class="make-post">
+              <label class="label-make-post" for="inputTag">
+                Upload Photo/Video <br />
+                <!-- <i class="fa fa-2x fa-camera"></i> -->
+                <img src="assets/icon/ic-post.svg" alt="">
+                <input class="input-tag-post" id="inputTag" type="file" />
+                <br />
+                <span id="imageName"></span>
+              </label>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn-cancel" data-bs-dismiss="modal">Cancel</button>
+            <button type="button" class="btn-post">Post</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MODAL BOX VIDEO -->
+    <div class="modal fade" id="modalVideo" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header justify-content-center">
+            <h1 class="modal-title fs-5" id="exampleModalLabel" style="font-weight: 600;">Make a Post</h1>
+          </div>
+          <div class="modal-body">
+            <div class="profile-user d-flex col-lg-10">
+              <a href=""><img src="images/image-profile.jpg" alt="" class="img-user"></a>
+              <a href="">
+                <p class="ms-3">Harry Maguire <br> <span>UI/UX Designer</span></p>
+              </a>
+            </div>
+            <div class="mb-3">
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                placeholder="Write about something" style="background-color: #EDEEF9; border-radius: 10px;"></textarea>
+            </div>
+            <div class="make-post">
+              <label class="label-make-post" for="inputTag">
+                Upload Photo/Video <br />
+                <!-- <i class="fa fa-2x fa-camera"></i> -->
+                <img src="assets/icon/ic-post.svg" alt="">
+                <input class="input-tag-post" id="inputTag" type="file" />
+                <br />
+                <span id="imageName"></span>
+              </label>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn-cancel" data-bs-dismiss="modal">Cancel</button>
+            <button type="button" class="btn-post">Post</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MODAL BOX EVENT -->
+    <div class="modal fade" id="modalEvent" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header justify-content-center">
+            <h1 class="modal-title fs-5" id="exampleModalLabel" style="font-weight: 600;">Create an Event</h1>
+          </div>
+          <div class="modal-body">
+            <div class="profile-user d-flex col-lg-10">
+              <a href=""><img src="images/image-profile.jpg" alt="" class="img-user"></a>
+              <a href="">
+                <p class="ms-3">Harry Maguire <br> <span>UI/UX Designer</span></p>
+              </a>
+            </div>
+            <div class="make-post">
+              <label class="label-make-post" for="inputTag">
+                Upload Photo/Video <br />
+                <!-- <i class="fa fa-2x fa-camera"></i> -->
+                <img src="assets/icon/ic-post.svg" alt="">
+                <input class="input-tag-post" id="inputTag" type="file" />
+                <br />
+                <span id="imageName"></span>
+              </label>
+            </div>
+            <div class="text-create-event mt-3 mb-3">
+              <p class="event-name-input">Event Name</p>
+              <textarea class="form-control box-content" id="exampleFormControlTextarea1" rows="1"
+                placeholder="Event Name"></textarea>
+              <div class="d-flex">
+                <div class="start-date me-2">
+                  <p>Start Date</p>
+                  <input class="form-control box-content" id="datepicker" type="text" placeholder="Start Date"
+                    aria-label="default input example">
+                </div>
+                <div class="start-time">
+                  <p>Start Time</p>
+                  <input class="form-control box-content" id="timepicker" type="text" placeholder="Start Time"
+                    aria-label="default input example">
+                </div>
+              </div>
+              <div class="d-flex">
+                <div class="start-date me-2">
+                  <p>End Date</p>
+                  <input class="form-control box-content" id="datepicker2" type="text" placeholder="End Date"
+                    aria-label="default input example">
+                </div>
+                <div class="start-time">
+                  <p>End Time</p>
+                  <input class="form-control box-content" id="timepicker2" type="text" placeholder="End Time"
+                    aria-label="default input example">
+                </div>
+              </div>
+              <p class="venue-name-input">Venue</p>
+              <input class="form-control box-content" type="text" placeholder="Input venue name"
+                aria-label="default input example">
+              <p class="venue-name-input">Description</p>
+              <textarea class="form-control box-content" id="exampleFormControlTextarea1" rows="1"
+                placeholder="Description"></textarea>
+            </div>
+          </div>
+          <div class=" modal-footer">
+            <button type="button" class="btn-cancel" data-bs-dismiss="modal">Cancel</button>
+            <button type="button" class="btn-post">Post</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MODAL BOX ARTICLE -->
+    <div class="modal fade" id="modalArticle" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header justify-content-center">
+            <h1 class="modal-title fs-5" id="exampleModalLabel" style="font-weight: 600;">Make a Post</h1>
+          </div>
+          <div class="modal-body">
+            <div class="profile-user d-flex col-lg-10">
+              <a href=""><img src="images/image-profile.jpg" alt="" class="img-user"></a>
+              <a href="">
+                <p class="ms-3">Harry Maguire <br> <span>UI/UX Designer</span></p>
+              </a>
+            </div>
+            <div class="mb-3">
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                placeholder="Write about something" style="background-color: #EDEEF9; border-radius: 10px;"></textarea>
+            </div>
+            <div class="make-post">
+              <label class="label-make-post" for="inputTag">
+                Upload Article <br />
+                <!-- <i class="fa fa-2x fa-camera"></i> -->
+                <img src="assets/icon/ic-post.svg" alt="">
+                <input class="input-tag-post" id="inputTag" type="file" />
+                <br />
+                <span id="imageName"></span>
+              </label>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn-cancel" data-bs-dismiss="modal">Cancel</button>
+            <button type="button" class="btn-post">Post</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MODAL BOX CAREER -->
+    <div class="modal fade" id="modalCareer" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header justify-content-center">
+            <h1 class="modal-title fs-5" id="exampleModalLabel" style="font-weight: 600;">Make a Post</h1>
+          </div>
+          <div class="modal-body">
+            <div class="profile-user d-flex col-lg-10">
+              <a href=""><img src="images/image-profile.jpg" alt="" class="img-user"></a>
+              <a href="">
+                <p class="ms-3">Harry Maguire <br> <span>UI/UX Designer</span></p>
+              </a>
+            </div>
+
+            <div class="make-post">
+              <label class="label-make-post" for="inputTag">
+                Upload Cover Image <br />
+                <!-- <i class="fa fa-2x fa-camera"></i> -->
+                <img src="assets/icon/ic-post.svg" alt="">
+                <input class="input-tag-post" id="inputTag" type="file" />
+                <br />
+                <span id="imageName"></span>
+              </label>
+            </div>
+            <div class="mt-3">
+              <p class="title-career-post">Title</p>
+              <input class="form-control career-title-form" type="text" placeholder="Title"
+                aria-label="default input example">
+              <p class="description-career-post">Description</p>
+              <textarea class="form-control career-title-form" id="exampleFormControlTextarea1" rows="3"
+                placeholder="Write about something"></textarea>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn-cancel" data-bs-dismiss="modal">Cancel</button>
+            <button type="button" class="btn-post">Post</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- SECTION RIGHT -->
 
     <section class="section-right col-lg-8 ms-3">
@@ -319,6 +540,7 @@
         <ul class="d-flex list-status">
           <li><a href="" data-bs-toggle="modal" data-bs-target="#modalPhoto"><img src="assets/icon/ic-photo.png" alt=""
                 class="ic-status">Photo</a></li>
+
           <li><a href="" data-bs-toggle="modal" data-bs-target="#modalVideo"><img src="assets/icon/ic-video.png" alt=""
                 class="ic-status">Video</a></li>
           <li><a href="" data-bs-toggle="modal" data-bs-target="#modalEvent"><img src="assets/icon/ic-events.png" alt=""
@@ -330,230 +552,6 @@
         </ul>
       </div>
 
-      <!-- MODAL BOX PHOTO -->
-      <div class="modal fade" id="modalPhoto" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header justify-content-center">
-              <h1 class="modal-title fs-5" id="exampleModalLabel" style="font-weight: 600;">Make a Post</h1>
-            </div>
-            <div class="modal-body">
-              <div class="profile-user d-flex col-lg-10">
-                <a href=""><img src="images/image-profile.jpg" alt="" class="img-user"></a>
-                <a href="">
-                  <p class="ms-3">Harry Maguire <br> <span>UI/UX Designer</span></p>
-                </a>
-              </div>
-              <div class="mb-3">
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
-                  placeholder="Write about something"
-                  style="background-color: #EDEEF9; border-radius: 10px;"></textarea>
-              </div>
-              <div class="make-post">
-                <label class="label-make-post" for="inputTag">
-                  Upload Photo/Video <br />
-                  <!-- <i class="fa fa-2x fa-camera"></i> -->
-                  <img src="assets/icon/ic-post.svg" alt="">
-                  <input class="input-tag-post" id="inputTag" type="file" />
-                  <br />
-                  <span id="imageName"></span>
-                </label>
-              </div>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn-cancel" data-bs-dismiss="modal">Cancel</button>
-              <button type="button" class="btn-post">Post</button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- MODAL BOX VIDEO -->
-      <div class="modal fade" id="modalVideo" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header justify-content-center">
-              <h1 class="modal-title fs-5" id="exampleModalLabel" style="font-weight: 600;">Make a Post</h1>
-            </div>
-            <div class="modal-body">
-              <div class="profile-user d-flex col-lg-10">
-                <a href=""><img src="images/image-profile.jpg" alt="" class="img-user"></a>
-                <a href="">
-                  <p class="ms-3">Harry Maguire <br> <span>UI/UX Designer</span></p>
-                </a>
-              </div>
-              <div class="mb-3">
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
-                  placeholder="Write about something"
-                  style="background-color: #EDEEF9; border-radius: 10px;"></textarea>
-              </div>
-              <div class="make-post">
-                <label class="label-make-post" for="inputTag">
-                  Upload Photo/Video <br />
-                  <!-- <i class="fa fa-2x fa-camera"></i> -->
-                  <img src="assets/icon/ic-post.svg" alt="">
-                  <input class="input-tag-post" id="inputTag" type="file" />
-                  <br />
-                  <span id="imageName"></span>
-                </label>
-              </div>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn-cancel" data-bs-dismiss="modal">Cancel</button>
-              <button type="button" class="btn-post">Post</button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- MODAL BOX EVENT -->
-      <div class="modal fade" id="modalEvent" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header justify-content-center">
-              <h1 class="modal-title fs-5" id="exampleModalLabel" style="font-weight: 600;">Create an Event</h1>
-            </div>
-            <div class="modal-body">
-              <div class="profile-user d-flex col-lg-10">
-                <a href=""><img src="images/image-profile.jpg" alt="" class="img-user"></a>
-                <a href="">
-                  <p class="ms-3">Harry Maguire <br> <span>UI/UX Designer</span></p>
-                </a>
-              </div>
-              <div class="make-post">
-                <label class="label-make-post" for="inputTag">
-                  Upload Photo/Video <br />
-                  <!-- <i class="fa fa-2x fa-camera"></i> -->
-                  <img src="assets/icon/ic-post.svg" alt="">
-                  <input class="input-tag-post" id="inputTag" type="file" />
-                  <br />
-                  <span id="imageName"></span>
-                </label>
-              </div>
-              <div class="text-create-event mt-3 mb-3">
-                <p class="event-name-input">Event Name</p>
-                <textarea class="form-control box-content" id="exampleFormControlTextarea1" rows="1"
-                  placeholder="Event Name"></textarea>
-                <div class="d-flex">
-                  <div class="start-date me-2">
-                    <p>Start Date</p>
-                    <input class="form-control box-content" id="datepicker" type="text" placeholder="Start Date"
-                      aria-label="default input example">
-                  </div>
-                  <div class="start-time">
-                    <p>Start Time</p>
-                    <input class="form-control box-content" id="timepicker" type="text" placeholder="Start Time"
-                      aria-label="default input example">
-                  </div>
-                </div>
-                <div class="d-flex">
-                  <div class="start-date me-2">
-                    <p>End Date</p>
-                    <input class="form-control box-content" id="datepicker2" type="text" placeholder="End Date"
-                      aria-label="default input example">
-                  </div>
-                  <div class="start-time">
-                    <p>End Time</p>
-                    <input class="form-control box-content" id="timepicker2" type="text" placeholder="End Time"
-                      aria-label="default input example">
-                  </div>
-                </div>
-                <p class="venue-name-input">Venue</p>
-                <input class="form-control box-content" type="text" placeholder="Input venue name"
-                  aria-label="default input example">
-                <p class="venue-name-input">Description</p>
-                <textarea class="form-control box-content" id="exampleFormControlTextarea1" rows="1"
-                  placeholder="Description"></textarea>
-              </div>
-            </div>
-            <div class=" modal-footer">
-              <button type="button" class="btn-cancel" data-bs-dismiss="modal">Cancel</button>
-              <button type="button" class="btn-post">Post</button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- MODAL BOX ARTICLE -->
-      <div class="modal fade" id="modalArticle" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header justify-content-center">
-              <h1 class="modal-title fs-5" id="exampleModalLabel" style="font-weight: 600;">Make a Post</h1>
-            </div>
-            <div class="modal-body">
-              <div class="profile-user d-flex col-lg-10">
-                <a href=""><img src="images/image-profile.jpg" alt="" class="img-user"></a>
-                <a href="">
-                  <p class="ms-3">Harry Maguire <br> <span>UI/UX Designer</span></p>
-                </a>
-              </div>
-              <div class="mb-3">
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
-                  placeholder="Write about something"
-                  style="background-color: #EDEEF9; border-radius: 10px;"></textarea>
-              </div>
-              <div class="make-post">
-                <label class="label-make-post" for="inputTag">
-                  Upload Article <br />
-                  <!-- <i class="fa fa-2x fa-camera"></i> -->
-                  <img src="assets/icon/ic-post.svg" alt="">
-                  <input class="input-tag-post" id="inputTag" type="file" />
-                  <br />
-                  <span id="imageName"></span>
-                </label>
-              </div>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn-cancel" data-bs-dismiss="modal">Cancel</button>
-              <button type="button" class="btn-post">Post</button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- MODAL BOX CAREER -->
-      <div class="modal fade" id="modalCareer" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header justify-content-center">
-              <h1 class="modal-title fs-5" id="exampleModalLabel" style="font-weight: 600;">Make a Post</h1>
-            </div>
-            <div class="modal-body">
-              <div class="profile-user d-flex col-lg-10">
-                <a href=""><img src="images/image-profile.jpg" alt="" class="img-user"></a>
-                <a href="">
-                  <p class="ms-3">Harry Maguire <br> <span>UI/UX Designer</span></p>
-                </a>
-              </div>
-
-              <div class="make-post">
-                <label class="label-make-post" for="inputTag">
-                  Upload Cover Image <br />
-                  <!-- <i class="fa fa-2x fa-camera"></i> -->
-                  <img src="assets/icon/ic-post.svg" alt="">
-                  <input class="input-tag-post" id="inputTag" type="file" />
-                  <br />
-                  <span id="imageName"></span>
-                </label>
-              </div>
-              <div class="mt-3">
-                <p class="title-career-post">Title</p>
-                <input class="form-control career-title-form" type="text" placeholder="Title"
-                  aria-label="default input example">
-                <p class="description-career-post">Description</p>
-                <textarea class="form-control career-title-form" id="exampleFormControlTextarea1" rows="3"
-                  placeholder="Write about something"></textarea>
-              </div>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn-cancel" data-bs-dismiss="modal">Cancel</button>
-              <button type="button" class="btn-post">Post</button>
-            </div>
-          </div>
-        </div>
-      </div>
-
       <h5 class="mt-5">Categories</h5>
       <div class="d-flex menu-categories mt-3">
         <a href="community.html" class="sub-menu-categories">All</a>
@@ -561,7 +559,11 @@
         <a href="" class="sub-menu-categories ms-2">Events</a>
         <a href="" class="sub-menu-categories ms-2">Article</a>
         <a href="" class="sub-menu-categories ms-2">Career</a>
-        <a href="" class="sub-menu-categories active ms-2">Admin</a>
+        <a href="admin-community.html" class="sub-menu-categories active ms-2">Admin</a>
+      </div>
+      <div class="d-flex menu-categories mt-3">
+        <a href="" class="sub-menu-categories d-lg-none">Leaderboard</a>
+        <a href="" class="sub-menu-categories ms-2 d-lg-none">Games</a>
       </div>
 
       <div class="postingan-konten mt-4">

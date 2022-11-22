@@ -1,285 +1,227 @@
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Play Podtret</title>
-    <link rel="stylesheet" href="css/bootstrap.css" />
-    <!--bootstrap harus tetep di atas file css-->
-    <link rel="stylesheet" href="css/custom.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body class="video-play-podtret">
-    <!-- NAVBAR -->
-    <div class="">
-      <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-dark">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">
-              <img
-                src="assets/logo.png"
-                alt=""
-  
-                class="d-inline-block align-text-top"
-              />
-            </a>
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                <!--ms itu margin kiri-->
-                <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="index.html"
-                    >Home</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="e-learning.html">E-Learning</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="policy.html">Policy</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active" href="podtret.html">Podtret</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Ensight</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Community</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a
-                    class="nav-link dropdown-toggle"
-                    href="#"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    Aplication
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">HRIS Pro Int</a></li>
-                    <li><a class="dropdown-item" href="#">LOAN Online</a></li>
-                    <li>
-                      <a class="dropdown-item" href="#">FPTK Online</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">Assesment Online</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#"
-                        >Administrasi Assesment</a
-                      >
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">AP & PA Online</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">MPP Online</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">Orens</a>
-                    </li>
-                  </ul>
-                </li>
-                <!-- <a class="btn btn-login ms-2" href="#" role="button">Sign Up</a> -->
-              </ul>
-              <!-- Button trigger modal -->
-              <div class="vl ms-2" style="border-left: solid 2px #ededed">
-                <img
-                  src="images/image-profile.jpg"
-                  alt=""
-                  class="image-navbar ms-3"
-                  onclick="toggleMenu()"
-                />
-                <span class="badge">1</span>
 
-                <div class="sub-menu-wrap" id="subMenu">
-                  <div class="sub-menu">
-                    <div class="user-info">
-                      <a href="profile.html"
-                        ><img
-                          src="images/image-profile.jpg"
-                          alt=""
-                          class="img-nav-submenu"
-                      /></a>
-                      <a href="profile.html"><h3>Harry Maguire</h3></a>
-                    </div>
-                    <hr />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Play Podtret</title>
+  <link rel="stylesheet" href="css/bootstrap.css" />
+  <!--bootstrap harus tetep di atas file css-->
+  <link rel="stylesheet" href="css/custom.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet" />
+</head>
 
-                    <a href="edit-profile.html" class="sub-menu-link">
-                      <i class="fa fa-user"></i>
-                      <!-- <img src="assets/user-info.png" alt="" /> -->
-                      <p>Edit Profile</p>
-                      <span>></span>
-                    </a>
+<body class="video-play-podtret">
+  <!-- NAVBAR -->
+  <div class="">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <img src="assets/logo.png" alt="" class="d-inline-block align-text-top" />
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <!--ms itu margin kiri-->
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="e-learning.html">E-Learning</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="policy.html">Policy</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="podtret.html">Podtret</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Ensight</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Community</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Aplication
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">HRIS Pro Int</a></li>
+                  <li><a class="dropdown-item" href="#">LOAN Online</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">FPTK Online</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Assesment Online</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Administrasi Assesment</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">AP & PA Online</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">MPP Online</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Orens</a>
+                  </li>
+                </ul>
+              </li>
+              <!-- <a class="btn btn-login ms-2" href="#" role="button">Sign Up</a> -->
+            </ul>
+            <!-- Button trigger modal -->
+            <div class="vl ms-2" style="border-left: solid 2px #ededed">
+              <img src="images/image-profile.jpg" alt="" class="image-navbar ms-3" onclick="toggleMenu()" />
+              <span class="badge">1</span>
 
-                    <a
-                      href=""
-                      class="sub-menu-link"
-                      data-bs-toggle="modal"
-                      data-bs-target="#exampleModal"
-                    >
-                      <i class="fa fa-bell"><span class="badge-not">1</span></i>
-                      <!-- <img src="assets/user-info.png" alt="" /> -->
-                      <p>Notification</p>
-                      <span>></span>
-                    </a>
-
-                    <a href="" class="sub-menu-link">
-                      <i class="fa fa-sign-out"></i>
-                      <!-- <img src="assets/logout.png" alt="" /> -->
-                      <p>Log Out</p>
-                      <span>></span>
+              <div class="sub-menu-wrap" id="subMenu">
+                <div class="sub-menu">
+                  <div class="user-info">
+                    <a href="profile.html"><img src="images/image-profile.jpg" alt="" class="img-nav-submenu" /></a>
+                    <a href="profile.html">
+                      <h3>Harry Maguire</h3>
                     </a>
                   </div>
+                  <hr />
+
+                  <a href="edit-profile.html" class="sub-menu-link">
+                    <i class="fa fa-user"></i>
+                    <!-- <img src="assets/user-info.png" alt="" /> -->
+                    <p>Edit Profile</p>
+                    <span>></span>
+                  </a>
+
+                  <a href="" class="sub-menu-link" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <i class="fa fa-bell"><span class="badge-not">1</span></i>
+                    <!-- <img src="assets/user-info.png" alt="" /> -->
+                    <p>Notification</p>
+                    <span>></span>
+                  </a>
+
+                  <a href="" class="sub-menu-link">
+                    <i class="fa fa-sign-out"></i>
+                    <!-- <img src="assets/logout.png" alt="" /> -->
+                    <p>Log Out</p>
+                    <span>></span>
+                  </a>
                 </div>
               </div>
             </div>
           </div>
-        </nav>
-      </div>
+        </div>
+      </nav>
     </div>
+  </div>
 
-    <!-- Modal Notifikasi -->
-    <div
-      class="modal fade"
-      id="exampleModal"
-      tabindex="-1"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-dialog-scrollable">
-        <div class="modal-content modal-notification">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Notification</h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body">
-            <div class="d-flex list-notification">
-              <a href="e-learning-neopgeneral.html"
-                ><img src="images/img-notif.jpg" alt="" class="img-nav-submenu"
-              /></a>
-              <a href="e-learning-neopgeneral.html"></a>
-                <div class="berita">
-                  <p>
-                    Undangan! Kamu di undang untuk mengikuti kegiatan training
-                    mengenai IT Security
-                  </p>
-                  <p1>18 September 2022</p1>
-                  <a href=""><i class="fa fa-trash fa-lg trash-notification"></i></a>
-                </div>
-              </a>
+  <!-- Modal Notifikasi -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable">
+      <div class="modal-content modal-notification">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Notification</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="d-flex list-notification">
+            <a href="e-learning-neopgeneral.html"><img src="images/img-notif.jpg" alt="" class="img-nav-submenu" /></a>
+            <a href="e-learning-neopgeneral.html"></a>
+            <div class="berita">
+              <p>
+                Undangan! Kamu di undang untuk mengikuti kegiatan training
+                mengenai IT Security
+              </p>
+              <p1>18 September 2022</p1>
+              <a href=""><i class="fa fa-trash fa-lg trash-notification"></i></a>
             </div>
-            <hr />
-            <div class="d-flex list-notification">
-              <a href="profile.html"
-                ><img src="images/img-notif.jpg" alt="" class="img-nav-submenu"
-              /></a>
-              <a href="profile.html"
-                >
-                <div class="berita">
-                  <p>
-                    Selamat! sertifikat anda sudah terbit, untuk melihat silahkan kunjungi halaman profile
-                  </p>
-                  <p1>12 September 2022</p1>
-                  <a href=""><i class="fa fa-trash fa-lg trash-notification"></i></a>
-                </div>
-              </a>
-            </div>
+            </a>
           </div>
-          <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-secondary"
-              data-bs-dismiss="modal"
-            >
-              Close
-            </button>
-            
+          <hr />
+          <div class="d-flex list-notification">
+            <a href="profile.html"><img src="images/img-notif.jpg" alt="" class="img-nav-submenu" /></a>
+            <a href="profile.html">
+              <div class="berita">
+                <p>
+                  Selamat! sertifikat anda sudah terbit, untuk melihat silahkan kunjungi halaman profile
+                </p>
+                <p1>12 September 2022</p1>
+                <a href=""><i class="fa fa-trash fa-lg trash-notification"></i></a>
+              </div>
+            </a>
           </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+            Close
+          </button>
+
         </div>
       </div>
     </div>
+  </div>
 
-    <div class="container mt-5">
-      <div class="container video-play">
-        <video src=""></video>
-        <button class="btn-opsi-play"><i class="fa fa-desktop fa-lg" style="color: black;"></i></button>
-        <button class="btn-opsi-play me-2"><i class="fa fa-headphones fa-lg" style="color: black;"></i></button>
-        <h3 class="mt-3">Episode 27 : Pesulap Merah </h3>
-        <h5>Premiere : 02 September 2022</h5>
-        <p>129 views</p>
-        <!-- <div class="description">
+  <div class="container mt-5">
+    <div class="container video-play">
+      <video src=""></video>
+      <a href=""><img src="assets/Button Nonton MP4.png" alt="" class="btn-opsi-play"></a>
+      <a href=""><img src="assets/Button Nonton MP3.png" alt="" class="btn-opsi-play me-2"></a>
+      <h3 class="mt-3">Episode 27 : Pesulap Merah </h3>
+      <h5>Premiere : 02 September 2022</h5>
+      <p>129 views</p>
+      <!-- <div class="description">
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci ab possimus nihil, dolores beatae eius excepturi vero accusamus, aliquid ullam aliquam, cupiditate quaerat recusandae maxime dicta? Quod maiores quos eius?</p>
         </div> -->
-        <div class="d-flex">
-          <!-- <button class="btn btn-like">
+      <div class="d-flex">
+        <!-- <button class="btn btn-like">
             <img src="assets/icon-yet-like.png" alt="" width="20" /> Like
           </button> -->
-          <button class="btn-like"><i class="fa fa-thumbs-up pe-2" style="color: #ededed; width: 20px;"></i>Like</button>
-          <!-- <button class="ms-2 btn-comment">Comment</button> -->
-        </div>
-        
-        <div class="form-floating">
-          <textarea
-            class="form-control mt-3"
-            placeholder="Leave a comment here"
-            id="floatingTextarea"
-          ></textarea>
-          <label for="floatingTextarea">Comments</label>
-        </div>
-        <div class="d-flex justify-content-end mt-2">
-          <button type="submit" class="btn btn-comment mb-3">Comment</button>
-        </div>
-        
-        <div class="pre-scrollable mt-3">
-          <div class="section-comment">
-            <div class="d-flex user-comment mt-3">
-              <img src="images/image-profile.jpg" alt="" class="img-comment"/>
-              <h5 class="ms-3 mt-2">
-                Jonas Blue
-              </h5>
-              <p class="ms-2 mt-2">2 hari lalu</p>
-            </div>
-            <p class="mt-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit totam accusamus maxime eum nobis delectus architecto ad quod, voluptatem cupiditate voluptatum suscipit enim dolorem optio aspernatur earum cumque recusandae harum!</p>
-            <p>
-              <button class="btn btn-reply" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                Reply
-              </button>
-            </p>
-            <div class="collapse" id="collapseExample">
-              <div class="form-floating">
-                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
-                <label for="floatingTextarea">Comments</label>
-              </div>
+        <button class="btn-like"><i class="fa fa-thumbs-up pe-2" style="color: #ededed; width: 20px;"></i>Like</button>
+        <!-- <button class="ms-2 btn-comment">Comment</button> -->
+      </div>
+
+      <div class="form-floating">
+        <textarea class="form-control mt-3" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+        <label for="floatingTextarea">Comments</label>
+      </div>
+      <div class="d-flex justify-content-end mt-2">
+        <button type="submit" class="btn btn-comment mb-3">Comment</button>
+      </div>
+
+      <div class="pre-scrollable mt-3">
+        <div class="section-comment">
+          <div class="d-flex user-comment mt-3">
+            <img src="images/image-profile.jpg" alt="" class="img-comment" />
+            <h5 class="ms-3 mt-2">
+              Jonas Blue
+            </h5>
+            <p class="ms-2 mt-2">2 hari lalu</p>
+          </div>
+          <p class="mt-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit totam accusamus maxime eum
+            nobis delectus architecto ad quod, voluptatem cupiditate voluptatum suscipit enim dolorem optio aspernatur
+            earum cumque recusandae harum!</p>
+          <p>
+            <button class="btn btn-reply" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample"
+              aria-expanded="false" aria-controls="collapseExample">
+              Reply
+            </button>
+          </p>
+          <div class="collapse" id="collapseExample">
+            <div class="form-floating">
+              <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+              <label for="floatingTextarea">Comments</label>
             </div>
           </div>
-          <!-- <div class="p-3 bg-white mt-2 rounded">
+        </div>
+        <!-- <div class="p-3 bg-white mt-2 rounded">
             <div>
               <div class="d-flex justify-content-between">
                   <div class="d-flex flex-row user"><img class="img-fluid img-responsive img-comment" src="images/image-profile.jpg" width="40">
@@ -294,15 +236,18 @@
         </div> -->
         <div class="section-comment mt-5">
           <div class="d-flex user-comment mt-3">
-            <img src="images/image-profile.jpg" alt="" class="img-comment"/>
+            <img src="images/image-profile.jpg" alt="" class="img-comment" />
             <h5 class="ms-3 mt-2">
               Jonas Blue
             </h5>
             <p class="ms-2 mt-2">2 hari lalu</p>
           </div>
-          <p class="mt-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit totam accusamus maxime eum nobis delectus architecto ad quod, voluptatem cupiditate voluptatum suscipit enim dolorem optio aspernatur earum cumque recusandae harum!</p>
+          <p class="mt-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit totam accusamus maxime eum
+            nobis delectus architecto ad quod, voluptatem cupiditate voluptatum suscipit enim dolorem optio aspernatur
+            earum cumque recusandae harum!</p>
           <p>
-            <button class="btn btn-reply" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+            <button class="btn btn-reply" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample"
+              aria-expanded="false" aria-controls="collapseExample">
               Reply
             </button>
           </p>
@@ -315,15 +260,18 @@
         </div>
         <div class="section-comment mt-5">
           <div class="d-flex user-comment mt-3">
-            <img src="images/image-profile.jpg" alt="" class="img-comment"/>
+            <img src="images/image-profile.jpg" alt="" class="img-comment" />
             <h5 class="ms-3 mt-2">
               Jonas Blue
             </h5>
             <p class="ms-2 mt-2">2 hari lalu</p>
           </div>
-          <p class="mt-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit totam accusamus maxime eum nobis delectus architecto ad quod, voluptatem cupiditate voluptatum suscipit enim dolorem optio aspernatur earum cumque recusandae harum!</p>
+          <p class="mt-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit totam accusamus maxime eum
+            nobis delectus architecto ad quod, voluptatem cupiditate voluptatum suscipit enim dolorem optio aspernatur
+            earum cumque recusandae harum!</p>
           <p>
-            <button class="btn btn-reply" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+            <button class="btn btn-reply" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample"
+              aria-expanded="false" aria-controls="collapseExample">
               Reply
             </button>
           </p>
@@ -336,15 +284,18 @@
         </div>
         <div class="section-comment mt-5">
           <div class="d-flex user-comment mt-3">
-            <img src="images/image-profile.jpg" alt="" class="img-comment"/>
+            <img src="images/image-profile.jpg" alt="" class="img-comment" />
             <h5 class="ms-3 mt-2">
               Jonas Blue
             </h5>
             <p class="ms-2 mt-2">2 hari lalu</p>
           </div>
-          <p class="mt-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit totam accusamus maxime eum nobis delectus architecto ad quod, voluptatem cupiditate voluptatum suscipit enim dolorem optio aspernatur earum cumque recusandae harum!</p>
+          <p class="mt-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit totam accusamus maxime eum
+            nobis delectus architecto ad quod, voluptatem cupiditate voluptatum suscipit enim dolorem optio aspernatur
+            earum cumque recusandae harum!</p>
           <p>
-            <button class="btn btn-reply" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+            <button class="btn btn-reply" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample"
+              aria-expanded="false" aria-controls="collapseExample">
               Reply
             </button>
           </p>
@@ -357,15 +308,18 @@
         </div>
         <div class="section-comment mt-5">
           <div class="d-flex user-comment mt-3">
-            <img src="images/image-profile.jpg" alt="" class="img-comment"/>
+            <img src="images/image-profile.jpg" alt="" class="img-comment" />
             <h5 class="ms-3 mt-2">
               Jonas Blue
             </h5>
             <p class="ms-2 mt-2">2 hari lalu</p>
           </div>
-          <p class="mt-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit totam accusamus maxime eum nobis delectus architecto ad quod, voluptatem cupiditate voluptatum suscipit enim dolorem optio aspernatur earum cumque recusandae harum!</p>
+          <p class="mt-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit totam accusamus maxime eum
+            nobis delectus architecto ad quod, voluptatem cupiditate voluptatum suscipit enim dolorem optio aspernatur
+            earum cumque recusandae harum!</p>
           <p>
-            <button class="btn btn-reply" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+            <button class="btn btn-reply" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample"
+              aria-expanded="false" aria-controls="collapseExample">
               Reply
             </button>
           </p>
@@ -378,15 +332,18 @@
         </div>
         <div class="section-comment mt-5">
           <div class="d-flex user-comment mt-3">
-            <img src="images/image-profile.jpg" alt="" class="img-comment"/>
+            <img src="images/image-profile.jpg" alt="" class="img-comment" />
             <h5 class="ms-3 mt-2">
               Jonas Blue
             </h5>
             <p class="ms-2 mt-2">2 hari lalu</p>
           </div>
-          <p class="mt-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit totam accusamus maxime eum nobis delectus architecto ad quod, voluptatem cupiditate voluptatum suscipit enim dolorem optio aspernatur earum cumque recusandae harum!</p>
+          <p class="mt-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit totam accusamus maxime eum
+            nobis delectus architecto ad quod, voluptatem cupiditate voluptatum suscipit enim dolorem optio aspernatur
+            earum cumque recusandae harum!</p>
           <p>
-            <button class="btn btn-reply" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+            <button class="btn btn-reply" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample"
+              aria-expanded="false" aria-controls="collapseExample">
               Reply
             </button>
           </p>
@@ -404,9 +361,7 @@
 
     <footer class="section-footer mt-5 mb-4 border-top">
       <div class="container-fluid text-center">
-        <div
-          class="row border-top justify-content-center align-items-center pt-4"
-        >
+        <div class="row border-top justify-content-center align-items-center pt-4">
           <div class="col-auto font-weight-light" style="color: #ffffff">
             2022 Copyright My Planet Enseval • All rights reserved • Made in
             Jakarta
@@ -414,14 +369,14 @@
         </div>
       </div>
     </footer>
-    <script
-      src="https://code.jquery.com/jquery-3.6.0.js"
-      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+      integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+      crossorigin="anonymous"></script>
     <script type="text/javascript" src="js/bootstrap.js"></script>
     <script src="js/floating-btn.js"></script>
     <script src="js/submenu-profile.js"></script>
-  </body>
+</body>
+
 </html>
