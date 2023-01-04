@@ -81,7 +81,9 @@
             </ul>
             <!-- Button trigger modal -->
             <div class="vl ms-2" style="border-left: solid 2px #ededed">
-              <img src="images/image-profile.jpg" alt="" class="image-navbar ms-3" onclick="toggleMenu()" />
+              <img src="images/image-profile.jpg" alt="" class="image-navbar rounded-circle ms-3"
+                onclick="toggleMenu()" />
+              <!-- <div class="image-navbar ms-3" onclick="toggleMenu()" id="imgNav"></div> -->
               <span class="badge">1</span>
 
               <div class="sub-menu-wrap" id="subMenu">
@@ -2251,6 +2253,13 @@
   <script src="js/profile.js"></script>
   <script src="js/delete-edit.js"></script>
 
+  <!-- <script>
+    // Function avatar pada navbar
+    $(document).ready(function () {
+      var imgNavbar = "images/john.jpg" // dari backend kesini ya pak
+      document.getElementById("imgNav").style = "background: url(" + imgNavbar + ") no-repeat center;"
+    });
+  </script> -->
 </body>
 
 </html>
