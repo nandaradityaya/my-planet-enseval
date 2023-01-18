@@ -198,161 +198,82 @@
         <button type="submit" class="btn btn-comment mb-3">Comment</button>
       </div>
 
-      <div class="pre-scrollable mt-3">
-        <div class="section-comment">
-          <div class="d-flex user-comment mt-3">
-            <img src="images/image-profile.jpg" alt="" class="img-comment" />
-            <h5 class="ms-3 mt-2">
-              Jonas Blue
-            </h5>
-            <p class="ms-2 mt-2">2 hari lalu</p>
-          </div>
-          <p class="mt-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit totam accusamus maxime eum
-            nobis delectus architecto ad quod, voluptatem cupiditate voluptatum suscipit enim dolorem optio aspernatur
-            earum cumque recusandae harum!</p>
-          <p>
-            <button class="btn btn-reply" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample"
-              aria-expanded="false" aria-controls="collapseExample">
-              Reply
-            </button>
-          </p>
-          <div class="collapse" id="collapseExample">
-            <div class="form-floating">
-              <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
-              <label for="floatingTextarea">Comments</label>
+      <div class="container wrap-section-comment pt-5 pb-5 ps-5 pe-0">
+        <div class="pre-scrollable" id="commentPodtret">
+          <div class="section-comment mb-4">
+            <div class="d-flex user-comment align-items-center">
+              <img src="images/image-profile.jpg" alt="" class="img-comment" />
+              <h5 class="ms-3">
+                Jonas Blue
+              </h5>
+              <p class="ms-2 mt-2">1 hari lalu</p>
             </div>
-          </div>
-        </div>
-        <!-- <div class="p-3 bg-white mt-2 rounded">
-            <div>
-              <div class="d-flex justify-content-between">
-                  <div class="d-flex flex-row user"><img class="img-fluid img-responsive img-comment" src="images/image-profile.jpg" width="40">
-                      <div class="d-flex flex-column ml-2"><span class="font-weight-bold">Jonas Blue</span></div>
-                  </div>
-                  
+            <p class="mt-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit totam accusamus maxime eum
+              nobis delectus architecto ad quod, voluptatem cupiditate voluptatum suscipit enim dolorem optio aspernatur
+              earum cumque recusandae harum!</p>
+            <!-- Section Komen Balasan -->
+            <div class="section-comment ms-5">
+              <div class="d-flex user-reply-comment align-items-center mt-3">
+                <img src="images/nanda.jpg" alt="" class="img-reply-comment" />
+                <h5 class="ms-3">
+                  Nanda Raditya
+                </h5>
+                <p class="ms-2 mt-2">1 hari lalu</p>
               </div>
-              <div class="comment-text text-justify mt-2">
-                  <p>Awesome Content</p><p class="timecomment">2 hari lalu</p>
+              <p class="mt-1">ini adalah contoh balasan komen dari komentar diatas</p>
+            </div>
+            <!-- End Section Komen Balasan -->
+            <p>
+              <button class="btn btn-reply" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample"
+                aria-expanded="false" aria-controls="collapseExample" id="hideBtnReply">
+                Reply
+              </button>
+            </p>
+
+            <div class="collapse" id="collapseExample">
+              <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Comments" aria-label="Comments"
+                  aria-describedby="button-addon2">
+                <button class="btn-post-comments me-2" type="button" id="btnAddon">Reply</button>
               </div>
             </div>
-        </div> -->
-        <div class="section-comment mt-5">
-          <div class="d-flex user-comment mt-3">
-            <img src="images/image-profile.jpg" alt="" class="img-comment" />
-            <h5 class="ms-3 mt-2">
-              Jonas Blue
-            </h5>
-            <p class="ms-2 mt-2">2 hari lalu</p>
           </div>
-          <p class="mt-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit totam accusamus maxime eum
-            nobis delectus architecto ad quod, voluptatem cupiditate voluptatum suscipit enim dolorem optio aspernatur
-            earum cumque recusandae harum!</p>
-          <p>
-            <button class="btn btn-reply" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample"
-              aria-expanded="false" aria-controls="collapseExample">
-              Reply
-            </button>
-          </p>
-          <div class="collapse" id="collapseExample">
-            <div class="form-floating">
-              <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
-              <label for="floatingTextarea">Comments</label>
+          <div class="section-comment mb-4">
+            <div class="d-flex user-comment align-items-center">
+              <img src="images/image-profile.jpg" alt="" class="img-comment" />
+              <h5 class="ms-3">
+                Jonas Blue
+              </h5>
+              <p class="ms-2 mt-2">1 hari lalu</p>
             </div>
-          </div>
-        </div>
-        <div class="section-comment mt-5">
-          <div class="d-flex user-comment mt-3">
-            <img src="images/image-profile.jpg" alt="" class="img-comment" />
-            <h5 class="ms-3 mt-2">
-              Jonas Blue
-            </h5>
-            <p class="ms-2 mt-2">2 hari lalu</p>
-          </div>
-          <p class="mt-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit totam accusamus maxime eum
-            nobis delectus architecto ad quod, voluptatem cupiditate voluptatum suscipit enim dolorem optio aspernatur
-            earum cumque recusandae harum!</p>
-          <p>
-            <button class="btn btn-reply" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample"
-              aria-expanded="false" aria-controls="collapseExample">
-              Reply
-            </button>
-          </p>
-          <div class="collapse" id="collapseExample">
-            <div class="form-floating">
-              <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
-              <label for="floatingTextarea">Comments</label>
+            <p class="mt-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit totam accusamus maxime eum
+              nobis delectus architecto ad quod, voluptatem cupiditate voluptatum suscipit enim dolorem optio aspernatur
+              earum cumque recusandae harum!</p>
+            <!-- Section Komen Balasan -->
+            <div class="section-comment ms-5">
+              <div class="d-flex user-reply-comment align-items-center mt-3">
+                <img src="images/nanda.jpg" alt="" class="img-reply-comment" />
+                <h5 class="ms-3">
+                  Nanda Raditya
+                </h5>
+                <p class="ms-2 mt-2">1 hari lalu</p>
+              </div>
+              <p class="mt-1">ini adalah contoh balasan komen dari komentar diatas</p>
             </div>
-          </div>
-        </div>
-        <div class="section-comment mt-5">
-          <div class="d-flex user-comment mt-3">
-            <img src="images/image-profile.jpg" alt="" class="img-comment" />
-            <h5 class="ms-3 mt-2">
-              Jonas Blue
-            </h5>
-            <p class="ms-2 mt-2">2 hari lalu</p>
-          </div>
-          <p class="mt-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit totam accusamus maxime eum
-            nobis delectus architecto ad quod, voluptatem cupiditate voluptatum suscipit enim dolorem optio aspernatur
-            earum cumque recusandae harum!</p>
-          <p>
-            <button class="btn btn-reply" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample"
-              aria-expanded="false" aria-controls="collapseExample">
-              Reply
-            </button>
-          </p>
-          <div class="collapse" id="collapseExample">
-            <div class="form-floating">
-              <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
-              <label for="floatingTextarea">Comments</label>
-            </div>
-          </div>
-        </div>
-        <div class="section-comment mt-5">
-          <div class="d-flex user-comment mt-3">
-            <img src="images/image-profile.jpg" alt="" class="img-comment" />
-            <h5 class="ms-3 mt-2">
-              Jonas Blue
-            </h5>
-            <p class="ms-2 mt-2">2 hari lalu</p>
-          </div>
-          <p class="mt-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit totam accusamus maxime eum
-            nobis delectus architecto ad quod, voluptatem cupiditate voluptatum suscipit enim dolorem optio aspernatur
-            earum cumque recusandae harum!</p>
-          <p>
-            <button class="btn btn-reply" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample"
-              aria-expanded="false" aria-controls="collapseExample">
-              Reply
-            </button>
-          </p>
-          <div class="collapse" id="collapseExample">
-            <div class="form-floating">
-              <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
-              <label for="floatingTextarea">Comments</label>
-            </div>
-          </div>
-        </div>
-        <div class="section-comment mt-5">
-          <div class="d-flex user-comment mt-3">
-            <img src="images/image-profile.jpg" alt="" class="img-comment" />
-            <h5 class="ms-3 mt-2">
-              Jonas Blue
-            </h5>
-            <p class="ms-2 mt-2">2 hari lalu</p>
-          </div>
-          <p class="mt-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit totam accusamus maxime eum
-            nobis delectus architecto ad quod, voluptatem cupiditate voluptatum suscipit enim dolorem optio aspernatur
-            earum cumque recusandae harum!</p>
-          <p>
-            <button class="btn btn-reply" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample"
-              aria-expanded="false" aria-controls="collapseExample">
-              Reply
-            </button>
-          </p>
-          <div class="collapse" id="collapseExample">
-            <div class="form-floating">
-              <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
-              <label for="floatingTextarea">Comments</label>
+            <!-- End Section Komen Balasan -->
+            <p>
+              <button class="btn btn-reply" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample"
+                aria-expanded="false" aria-controls="collapseExample" id="hideBtnReply">
+                Reply
+              </button>
+            </p>
+
+            <div class="collapse" id="collapseExample">
+              <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Comments" aria-label="Comments"
+                  aria-describedby="button-addon2">
+                <button class="btn-post-comments me-2" type="button" id="btnAddon">Reply</button>
+              </div>
             </div>
           </div>
         </div>
@@ -379,6 +300,7 @@
     <script type="text/javascript" src="js/bootstrap.js"></script>
     <script src="js/floating-btn.js"></script>
     <script src="js/submenu-profile.js"></script>
+    <script src="js/hideButton.js"></script>
 </body>
 
 </html>
