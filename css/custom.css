@@ -4180,3 +4180,50 @@ p {
   border-radius: 0px 5px 5px 0px;
   border-color: transparent;
 }
+
+/* QUIZ POST TEST */
+
+.header-post-test {
+  background-color: #0396a6;
+}
+
+.header-post-test p {
+  color: #ffffff;
+}
+
+.opsi {
+  padding: 10px;
+  background: Aliceblue;
+  border-radius: 10px;
+  border: 1px Solid #84c5fe;
+  margin-bottom: 10px;
+  cursor: Pointer;
+}
+
+.form-post-test label {
+  color: #000000;
+}
+
+.post-test-start {
+  transform: scaleY(0);
+  opacity: 0;
+  height: 0;
+}
+.transition {
+  transition: all 0.2s linear;
+}
+
+#startPostTest h3,
+p {
+  color: #fff;
+}
+
+#startPostTest {
+  background: linear-gradient(
+    to right,
+    rgba(32, 107, 146, 0.6),
+    rgba(157, 54, 187, 0.8)
+  );
+  /* background: rgba(0, 0, 0, 0.4); */
+  /* background: rgba(255, 255, 255, 0.4); */
+}
