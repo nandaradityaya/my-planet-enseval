@@ -4269,3 +4269,20 @@ p {
   );
   color: #fff;
 }
+
+.bg-light-success {
+  background-color: rgb(41 204 57 / 15%) !important;
+}
+
+.bg-light-danger {
+  background-color: rgb(255 0 0 / 15%) !important;
+}
+
+.btn-planet {
+  background-color: #0396a6;
+  color: #fff;
+}
+.btn-planet:hover {
+  background-color: #03a8ba;
+  color: #fff;
+}
