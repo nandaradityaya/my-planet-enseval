@@ -20,29 +20,52 @@
       <h3>POST TEST PERATURAN PERUSAHAAN DAN GROOMING</h3>
       <h5>NIK : NK9512</h5>
 
-      <div class="card transition mt-4" id="startPostTest" style="height: 450px;">
-        <div class="card-body mt-5">
-          <h3 class="card-title mb-5">Selamat Datang di Post Test <br> Peraturan Perusahaan & Grooming</h3>
-          <p class="card-text">Klik Start untuk memulai quiz</p>
-          <button type="button" class="btn btn-primary" onclick="startClick()">Start</button>
+      <div class="card mb-4 mt-4">
+        <div class="card-header header-post-test">
+          <h6 class="text-white">Finish Post Test</h6>
+        </div>
+        <div class="card-body">
+          <div class="row">
+            <div class="col">
+              <table class="table">
+                <tbody>
+                  <tr>
+                    <th scope="row">Status</th>
+                    <td class="table-success">Lulus</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Grading Status</th>
+                    <td>90</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Passing Grade</th>
+                    <td>75</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Correct Answer</th>
+                    <td>1, 2, 4, 5, 6, 8, 9, 10</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Wrong Answer</th>
+                    <td>3, 7</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
         </div>
       </div>
 
-      <div class="card mb-4 mt-4 transition post-test-start" id="quiz" style="height: 450px;">
-        <div class="card-header header-post-test d-flex">
-          <p class=" mb-0">Question 1 of 20</p>
-          <!-- <p class="ms-auto mb-0">Point Value: 5</p> -->
-          <i class="fa fa-clock-o ms-auto text-white"></i>
-          <p class="ms-2" style="margin-top: -3px;" id="demo"></p>
-
-
+      <div class="card mb-4">
+        <div class="card-header header-post-test">
+          <h6 class="text-white">Post Test</h6>
         </div>
-        <div class="card-body text-start">
-          <div id="question-1" class="question-container">
-            <h6 class="mt-2 mb-4">Setiap karyawan yang sudah bekerja selama 12 bulan secara
+        <div class="card-body">
+          <div id="answer" class="text-start">
+            <h6 class=" mt-2 mb-4">Setiap karyawan yang sudah bekerja selama 12 bulan secara
               terus menerus berhak mendapatkan cuti tahunan sebanyak (Pasal 11 Ayat 1)</h6>
             <div class="jawaban mb-4">
-              <div class="opsi-primary">
+              <div class="opsi">
                 <div class="form-check form-post-test">
                   <input class="form-check-input" type="radio" name="opsiRadio" id="opsiRadio1">
                   <label class="form-check-label" for="opsiRadio1">
@@ -50,7 +73,7 @@
                   </label>
                 </div>
               </div>
-              <div class="opsi-primary">
+              <div class="opsi-success">
                 <div class="form-check form-post-test">
                   <input class="form-check-input" type="radio" name="opsiRadio" id="opsiRadio2">
                   <label class="form-check-label" for="opsiRadio2">
@@ -58,7 +81,7 @@
                   </label>
                 </div>
               </div>
-              <div class="opsi-primary">
+              <div class="opsi">
                 <div class="form-check form-post-test">
                   <input class="form-check-input" type="radio" name="opsiRadio" id="opsiRadio3">
                   <label class="form-check-label" for="opsiRadio3">
@@ -66,7 +89,7 @@
                   </label>
                 </div>
               </div>
-              <div class="opsi-primary">
+              <div class="opsi">
                 <div class="form-check form-post-test">
                   <input class="form-check-input" type="radio" name="opsiRadio" id="opsiRadio4">
                   <label class="form-check-label" for="opsiRadio4">
@@ -75,89 +98,50 @@
                 </div>
               </div>
             </div>
-            <div class="d-flex">
-              <button type="button" class="btn btn-outline-primary prev-button">Previous</button>
-              <button type="button" class="btn btn-primary ms-auto next-button">Next</button>
-            </div>
           </div>
-          <div id="question-2" class="question-container">
-            <h6 class="mt-2 mb-4">ini adalah contoh pertanyaan nomor 2</h6>
+          <hr>
+          <div id="answer" class="text-start">
+            <h6 class=" mt-2 mb-4">Contoh soal nomor 2</h6>
             <div class="jawaban mb-4">
-              <div class="opsi-primary">
+              <div class="opsi">
                 <div class="form-check form-post-test">
                   <input class="form-check-input" type="radio" name="opsiRadio" id="opsiRadio1">
                   <label class="form-check-label" for="opsiRadio1">
-                    15 hari
+                    Jawaban 1
                   </label>
                 </div>
               </div>
-              <div class="opsi-primary">
+              <div class="opsi">
                 <div class="form-check form-post-test">
                   <input class="form-check-input" type="radio" name="opsiRadio" id="opsiRadio2">
                   <label class="form-check-label" for="opsiRadio2">
-                    14 hari
+                    Jawaban 2
                   </label>
                 </div>
               </div>
-              <div class="opsi-primary">
+              <div class="opsi-danger">
                 <div class="form-check form-post-test">
                   <input class="form-check-input" type="radio" name="opsiRadio" id="opsiRadio3">
                   <label class="form-check-label" for="opsiRadio3">
-                    12 hari
+                    Jawaban 3
                   </label>
                 </div>
               </div>
-              <div class="opsi-primary">
+              <div class="opsi">
                 <div class="form-check form-post-test">
                   <input class="form-check-input" type="radio" name="opsiRadio" id="opsiRadio4">
                   <label class="form-check-label" for="opsiRadio4">
-                    13 hari
+                    Jawaban 4
                   </label>
                 </div>
               </div>
             </div>
-            <div class="d-flex">
-              <button type="button" class="btn btn-outline-primary prev-button">Previous</button>
-              <a href="post-test-finish.html" type="button" class="btn btn-primary ms-auto next-button">Finish</a>
-            </div>
           </div>
-          <!-- <div id="finish-question" class="question-container">
-            <h4 class="text-center mt-2 mb-4">Finish!</h4>
-            <div class="row">
-              <div class="col">
-                <table class="table">
-                  <tbody>
-                    <tr>
-                      <th scope="row">Status</th>
-                      <td class="table-success">Lulus</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Grading Status</th>
-                      <td>90</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Passing Grade</th>
-                      <td>75</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Correct Answer</th>
-                      <td>1, 2, 4, 5, 6, 8, 9, 10</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Wrong Answer</th>
-                      <td>3, 7</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-            <div class="d-flex justify-content-center">
-              <a type="button" href="e-learning-neopgeneral.html" class="btn btn-primary ms-auto next-button">Back
-                E-learning</a>
-            </div>
-          </div> -->
         </div>
       </div>
+
+
+
     </div>
   </div>
 

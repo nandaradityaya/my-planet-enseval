@@ -4193,9 +4193,34 @@ p {
 
 .opsi {
   padding: 10px;
+  background: rgb(255, 255, 255);
+  border-radius: 10px;
+  border: 1px Solid #e3e3e3;
+  margin-bottom: 10px;
+  cursor: Pointer;
+}
+.opsi-primary {
+  padding: 10px;
   background: Aliceblue;
   border-radius: 10px;
   border: 1px Solid #84c5fe;
+  margin-bottom: 10px;
+  cursor: Pointer;
+}
+.opsi-success {
+  padding: 10px;
+  background: #d4edda;
+  border-radius: 10px;
+  border: 1px Solid #008a27;
+  margin-bottom: 10px;
+  cursor: Pointer;
+}
+
+.opsi-danger {
+  padding: 10px;
+  background: #f8d7da;
+  border-radius: 10px;
+  border: 1px Solid #dc3545;
   margin-bottom: 10px;
   cursor: Pointer;
 }
@@ -4234,4 +4259,13 @@ p {
 
 .question-container.active {
   display: block;
+}
+
+.card-bg-gradient {
+  background: linear-gradient(
+    to right,
+    rgba(32, 107, 146, 0.6),
+    rgba(157, 54, 187, 0.8)
+  );
+  color: #fff;
 }
