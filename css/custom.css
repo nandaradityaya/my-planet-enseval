@@ -4156,6 +4156,15 @@ p {
   position: absolute; */
 }
 
+.badge-course-secondary {
+  color: #ffffff !important;
+  background-color: #6c757d;
+  font-size: 60%;
+  /* top: 28px;
+  right: 27px;
+  position: absolute; */
+}
+
 /* @media (max-width: 575px) {
   .badge-course-warning {
     color: #ffc107 !important;
@@ -4285,4 +4294,24 @@ p {
 .btn-planet:hover {
   background-color: #03a8ba;
   color: #fff;
+}
+
+/* Update Podtret */
+
+.like-button {
+  cursor: pointer;
+}
+
+.like-button svg path {
+  fill: #333;
+  transition: fill 2s ease-out;
+}
+
+.like-button.animated {
+  -webkit-animation: pop 0.9s both;
+  animation: pop 0.9s both;
+}
+
+.like-button.active svg path {
+  fill: #2196f3;
 }
