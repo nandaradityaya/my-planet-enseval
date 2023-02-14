@@ -593,7 +593,7 @@ body {
   font-weight: 500;
   height: 60px;
   border-radius: 20px;
-  z-index: 1;
+  /* z-index: 1; */
 }
 
 .btn-collapse-neop:hover {
@@ -4348,4 +4348,24 @@ p {
   background-color: #ededed;
   border-radius: 5px;
   color: #0396a6;
+}
+
+.thumbnail-lesson {
+  border-radius: 10px;
+  width: 300px;
+  height: 200px;
+}
+
+/* Mini Simulator */
+
+.mini-simulator-open {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-color: rgba(255, 255, 255, 0.4);
+  border-radius: 20px;
+}
+
+.mini-simulator-open:hover {
+  transform: translateY(-2px);
+  transition: all 0.1s ease-in;
+  background-color: rgba(0, 0, 0, 0.6);
 }

@@ -283,7 +283,6 @@
                   <a href=""><button type="button" class="btn btn-start-resp-non-test">
                       Start
                     </button></a>
-
                 </ul>
               </div>
             </div>
@@ -343,13 +342,32 @@
                     <p>11 January 2022</p>
                   </li>
 
-                  <a href=""><button type="button" class="btn btn-start-resp">
+                  <a href="" data-bs-toggle="modal" data-bs-target="#modalWarning"><button type="button"
+                      class="btn btn-start-resp">
                       Start
                     </button></a>
                 </ul>
                 <!-- End Codingan lama -->
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Warning -->
+    <div class="modal fade" id="modalWarning" tabindex="-1" aria-labelledby="modalWarningLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="modalWarningLabel">Warning!</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            Post Test anda sudah melebihi batas masximal percobaan, silahkan hubungi admin untuk mengulang kembali
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
           </div>
         </div>
       </div>
