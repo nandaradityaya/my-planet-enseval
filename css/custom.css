@@ -194,6 +194,7 @@ body {
 
 .card-img-top {
   border-radius: 25px;
+  height: 200px;
 }
 
 .btn-go {
