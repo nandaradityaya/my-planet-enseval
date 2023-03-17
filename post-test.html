@@ -169,6 +169,13 @@
   <script type="text/javascript" src="js/bootstrap.js"></script>
   <script src="js/floating-btn.js"></script>
   <script src="js/startClick.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('.opsi-primary').click(function () {
+        $(this).find('input[type="radio"]').prop('checked', true);
+      });
+    });
+  </script>
 </body>
 
 </html>

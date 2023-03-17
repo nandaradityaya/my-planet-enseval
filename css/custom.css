@@ -630,7 +630,7 @@ body {
 } */
 
 .card-title-neop a {
-  font-size: 20px;
+  /* font-size: 20px; */
   font-weight: 500;
   text-decoration: none;
   color: #ededed;
@@ -647,15 +647,6 @@ body {
   font-weight: 400;
   color: #ededed;
 }
-
-/* .card-title-neop p1 {
-  font-size: 15px;
-  font-weight: 500;
-  color: #ededed;
-  border: 1px solid #ededed;
-  padding: 10px;
-  border-radius: 10px;
-} */
 
 .btn-start {
   background-color: #0396a6;
@@ -2186,6 +2177,54 @@ p {
   filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.4));
 }
 
+.btn-start-lesson {
+  background-color: #0396a6;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 15px;
+  width: 120px;
+  margin-top: 69px;
+  border-radius: 10px;
+  border-color: transparent;
+  filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.4));
+}
+
+.btn-start-lesson:hover {
+  background-color: #03a8ba;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 15px;
+  width: 120px;
+  margin-top: 69px;
+  border-radius: 10px;
+  border-color: transparent;
+  filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.4));
+}
+
+.btn-start-post-test {
+  background-color: #0396a6;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 15px;
+  width: 120px;
+  margin-top: 26px;
+  border-radius: 10px;
+  border-color: transparent;
+  filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.4));
+}
+
+.btn-start-post-test:hover {
+  background-color: #03a8ba;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 15px;
+  width: 120px;
+  margin-top: 26px;
+  border-radius: 10px;
+  border-color: transparent;
+  filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.4));
+}
+
 .btn-start-resp:hover {
   background-color: #03a8ba;
   color: #ffffff;
@@ -2349,6 +2388,14 @@ p {
 
   .card-title-neop p {
     text-align: center;
+  }
+
+  .btn-start-lesson {
+    margin-top: 0px;
+  }
+
+  .btn-start-post-test {
+    margin-top: 0px;
   }
 }
 
