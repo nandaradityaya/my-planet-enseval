@@ -23,12 +23,14 @@
       <div class="card transition mt-4" id="startPostTest" style="height: 450px;">
         <div class="card-body mt-5">
           <h3 class="card-title mb-5">Selamat Datang di Post Test <br> Peraturan Perusahaan & Grooming</h3>
+          <p class="card-text">Silahkan mengerjakan quiz dengan tenang tanpa gangguan</p>
+          <p class="card-text">Waktu Quiz : <br> 60 Menit</p>
           <p class="card-text">Klik Start untuk memulai quiz</p>
-          <button type="button" class="btn btn-primary" onclick="startClick()">Start</button>
+          <button type="button" class="btn btn-planet" onclick="startClick()">Start</button>
         </div>
       </div>
 
-      <div class="card mb-4 mt-4 transition post-test-start" id="quiz" style="height: 450px;">
+      <div class="card mb-4 mt-4 transition post-test-start" id="quiz">
         <div class="card-header header-post-test d-flex">
           <p class=" mb-0">Question 1 of 20</p>
           <!-- <p class="ms-auto mb-0">Point Value: 5</p> -->
@@ -76,49 +78,52 @@
               </div>
             </div>
             <div class="d-flex">
-              <button type="button" class="btn btn-outline-primary prev-button">Previous</button>
-              <button type="button" class="btn btn-primary ms-auto next-button">Next</button>
+              <button type="button" class="btn btn-outline-planet prev-button">Previous</button>
+              <button type="button" class="btn btn-planet ms-auto next-button">Next</button>
             </div>
           </div>
           <div id="question-2" class="question-container">
+            <div class="picture-question mb-3">
+              <img src="images/banner-career.jpg" alt="">
+            </div>
             <h6 class="mt-2 mb-4">ini adalah contoh pertanyaan nomor 2</h6>
             <div class="jawaban mb-4">
               <div class="opsi-primary">
                 <div class="form-check form-post-test">
-                  <input class="form-check-input" type="radio" name="opsiRadio" id="opsiRadio1">
-                  <label class="form-check-label" for="opsiRadio1">
+                  <input class="form-check-input" type="radio" name="questionTwo" id="questionTwo1">
+                  <label class="form-check-label" for="questionTwo1">
                     15 hari
                   </label>
                 </div>
               </div>
               <div class="opsi-primary">
                 <div class="form-check form-post-test">
-                  <input class="form-check-input" type="radio" name="opsiRadio" id="opsiRadio2">
-                  <label class="form-check-label" for="opsiRadio2">
+                  <input class="form-check-input" type="radio" name="questionTwo" id="questionTwo2">
+                  <label class="form-check-label" for="questionTwo2">
                     14 hari
                   </label>
                 </div>
               </div>
               <div class="opsi-primary">
                 <div class="form-check form-post-test">
-                  <input class="form-check-input" type="radio" name="opsiRadio" id="opsiRadio3">
-                  <label class="form-check-label" for="opsiRadio3">
+                  <input class="form-check-input" type="radio" name="questionTwo" id="questionTwo3">
+                  <label class="form-check-label" for="questionTwo3">
                     12 hari
                   </label>
                 </div>
               </div>
               <div class="opsi-primary">
                 <div class="form-check form-post-test">
-                  <input class="form-check-input" type="radio" name="opsiRadio" id="opsiRadio4">
-                  <label class="form-check-label" for="opsiRadio4">
+                  <input class="form-check-input" type="radio" name="questionTwo" id="questionTwo4">
+                  <label class="form-check-label" for="questionTwo4">
                     13 hari
                   </label>
                 </div>
               </div>
             </div>
             <div class="d-flex">
-              <button type="button" class="btn btn-outline-primary prev-button">Previous</button>
-              <a href="post-test-finish.html" type="button" class="btn btn-primary ms-auto next-button">Finish</a>
+              <button type="button" class="btn btn-outline-planet prev-button">Previous</button>
+              <a href="post-test-finish.html" type="button" class="btn btn-planet ms-auto next-button">Finish</a>
             </div>
           </div>
           <!-- <div id="finish-question" class="question-container">

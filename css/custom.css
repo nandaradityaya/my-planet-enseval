@@ -19,6 +19,111 @@ body {
   padding-top: 1px;
 } */
 
+/* .bg-sertifikat {
+  background-image: url("../images/certif.jpeg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  min-height: 500px;
+} */
+
+#download-btn {
+  background-color: #0396a6;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.bg-sertifikat img {
+  width: 100%;
+  height: 100%;
+}
+
+.bg-sertifikat .name {
+  position: absolute;
+  top: 36%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #14727c;
+}
+
+.bg-sertifikat .nik {
+  position: absolute;
+  top: 43%;
+  left: 51%;
+  transform: translate(-50%, -50%);
+  color: #14727c;
+}
+
+.bg-sertifikat .title-learning {
+  position: absolute;
+  top: 57%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #14727c;
+}
+
+.bg-sertifikat-dewi img {
+  width: 100%;
+  height: 100%;
+}
+
+.bg-sertifikat-dewi .name {
+  position: absolute;
+  top: 46%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ffffff;
+}
+
+.bg-sertifikat-dewi .nik {
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #296dff;
+}
+
+.bg-sertifikat-dewi .title-learning {
+  position: absolute;
+  top: 86%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #296dff;
+}
+
+.bg-sertifikat-dewi .skor-total {
+  position: absolute;
+  top: 80%;
+  right: 27%;
+  transform: translate(-50%, -50%);
+  color: #296dff;
+}
+
+.bg-sertifikat-dewi .periode {
+  position: absolute;
+  top: 80%;
+  left: 29%;
+  transform: translate(-50%, -50%);
+  color: #296dff;
+}
+
+.bg-sertifikat-dewi .no-sertif {
+  position: absolute;
+  top: 9.5%;
+  right: 10.5%;
+  font-size: 8px;
+  transform: translate(-50%, -50%);
+  color: #fff;
+}
+
 .bg-home {
   /* background-image: url("../images/bg-home-conect.png");
   background-repeat: no-repeat;
@@ -4301,13 +4406,19 @@ p {
 }
 
 #startPostTest {
-  background: linear-gradient(
+  /* background: linear-gradient(
     to right,
     rgba(32, 107, 146, 0.6),
     rgba(157, 54, 187, 0.8)
-  );
-  /* background: rgba(0, 0, 0, 0.4); */
+  ); */
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
   /* background: rgba(255, 255, 255, 0.4); */
+}
+
+.picture-question img {
+  border-radius: 5px;
+  width: 50%;
 }
 
 .question-container {
@@ -4342,6 +4453,18 @@ p {
 .btn-planet:hover {
   background-color: #03a8ba;
   color: #fff;
+  border-color: transparent;
+}
+
+.btn-outline-planet {
+  background-color: transparent;
+  color: #03a8ba;
+  border-color: #03a8ba;
+}
+.btn-outline-planet:hover {
+  background-color: #03a8ba;
+  color: #fff;
+  border-color: #03a8ba;
 }
 
 /* Update Podtret */

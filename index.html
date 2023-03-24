@@ -50,7 +50,7 @@
                 <a class="nav-link" href="ensight.html">Ensight</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Community</a>
+                <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#modalComingSoon">Community</a>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -564,7 +564,8 @@
         </div>
         <img src="images/community-2.png" alt="" />
         <div class="text-center">
-          <button type="button" class="btn btn-discover btn-lg">
+          <button type="button" class="btn btn-discover btn-lg" data-bs-toggle="modal"
+            data-bs-target="#modalComingSoon">
             Discover
           </button>
         </div>
@@ -572,6 +573,35 @@
     </div>
   </section>
 
+  <!-- ComingSoon Modal -->
+  <div class="modal fade" id="modalComingSoon" tabindex="-1" aria-labelledby="modalComingSoonLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h6 class="modal-title text-black" id="modalComingSoonLabel">Community</h6>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="text-center">
+            <!-- <div id="comingsoon" style="width: 80%; height: 80%; margin: auto;"></div> -->
+            <!-- <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_ukkmrz6p.json" background="transparent"
+              speed="1" style="width: 300px; height: 150px; margin: auto;" loop autoplay></lottie-player> -->
+            <!-- <lottie-player src="https://assets8.lottiefiles.com/packages/lf20_AWZL1ojR63.json" background="transparent"
+              speed="1" style="width: 300px; height: 150px; margin: auto;" loop autoplay></lottie-player>
+            <lottie-player src="https://assets8.lottiefiles.com/datafiles/EkoZpNsbNMU956i/data.json"
+              background="transparent" speed="1" style="width: 300px; height: 150px; margin: auto;" loop
+              autoplay></lottie-player> -->
+            <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_miikvucn.json" background="transparent"
+              speed="1" style="width: 80%; height: 80%; margin: auto; margin-top: -20px;" loop autoplay></lottie-player>
+            <lottie-player src="https://assets8.lottiefiles.com/datafiles/EkoZpNsbNMU956i/data.json"
+              background="transparent" speed="1" style="width: 300px; height: 150px; margin: auto;" loop
+              autoplay></lottie-player>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- FOOTER -->
 
@@ -632,10 +662,13 @@
     integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
     crossorigin="anonymous"></script>
   <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+
   <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script> -->
   <script type="text/javascript" src="js/bootstrap.js"></script>
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
   <script src="js/floating-btn.js"></script>
   <script src="js/aos.js"></script>
+  <script src="js/comingsoon.js"></script>
 </body>
 
 </html>

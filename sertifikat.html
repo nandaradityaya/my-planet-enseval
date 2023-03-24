@@ -1,0 +1,51 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sertifikat</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <!--bootstrap harus tetep di atas file css-->
+    <link rel="stylesheet" href="css/custom.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+
+<body class="d-flex justify-content-center">
+    <div class="bg-sertifikat">
+        <img src="images/certif.jpeg" alt="">
+        <h2 class="name">Nanda Raditya</h2>
+        <h5 class="nik">230100022</h5>
+        <h5 class="title-learning">Leadership</h5>
+
+        <button id="download-btn" class="mt-3" style="float:right;"><i class="fa fa-download"></i>
+            Download</button>
+    </div>
+
+
+
+    <script>
+        const downloadBtn = document.getElementById('download-btn');
+        const certificateImg = document.querySelector('.bg-sertifikat img');
+
+        downloadBtn.addEventListener('click', () => {
+            const pdf = new jsPDF();
+            pdf.addImage(certificateImg.src, 'JPEG', 0, 0);
+            pdf.save('certificate.pdf');
+        });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.3.1/jspdf.umd.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    <script src="js/floating-btn.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+</body>
+
+</html>
