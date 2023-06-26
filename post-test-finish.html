@@ -62,6 +62,10 @@
                   <th class="col-6">Passing Grade</th>
                   <td class="col-6">75</td>
                 </tr>
+                <tr class="row ps-2 pe-2">
+                  <th class="col-6">Rating</th>
+                  <td class="col-6">75</td>
+                </tr>
               </tbody>
             </table>
           </div>
@@ -73,6 +77,233 @@
           </div>
         </div>
       </div>
+
+      <div class="card mb-3">
+        <div class="card-header header-post-test">
+          <h6 class="text-white">Feedback</h6>
+        </div>
+        <div class="card-body">
+          <!-- <div class="mb-3">
+            <p class="text-paragraph-2 text-start text-black mb-0">Category Penilaian</p>
+            <div class="d-flex"><span class="text-paragraph-2 text-start text-black me-3">4 = Sangat
+                Puas</span><span class="text-paragraph-2 text-start text-black me-3">3 = Puas</span><span
+                class="text-paragraph-2 text-start text-black me-3">2 = Tidak Puas</span><span
+                class="text-paragraph-2 text-start text-black">1 = Sangat Tidak Puas</span></div>
+          </div> -->
+          <div class="" style="text-align: end;">
+            <a data-bs-toggle="modal" data-bs-target="#modalGuideline" type="button"
+              class="text-black text-paragraph"><span style="color: #ffc107"><i
+                  class="fa fa-exclamation-circle me-1 font-18"></i></span>Guideline
+            </a>
+          </div>
+          <div class="question-1">
+            <p class="text-paragraph-2 text-start text-black mb-0">1. Kesesuaian materi training dengan kebutuhan
+              peserta
+            </p>
+            <div class="d-flex">
+              <div class="rate">
+
+                <input type="radio" id="star41" name="rate1" value="4" />
+                <label for="star41" title="text">4 stars</label>
+                <input type="radio" id="star31" name="rate1" value="3" />
+                <label for="star31" title="text">3 stars</label>
+                <input type="radio" id="star21" name="rate1" value="2" />
+                <label for="star21" title="text">2 stars</label>
+                <input type="radio" id="star11" name="rate1" value="1" />
+                <label for="star11" title="text">1 star</label>
+              </div>
+            </div>
+          </div>
+          <div class="question-2">
+            <p class="text-paragraph-2 text-start text-black mb-0">2. Sejauhmana materi memberikan pengetahuan/manfaat
+              bagi peserta
+            </p>
+            <div class="d-flex">
+              <div class="rate">
+
+                <input type="radio" id="star42" name="rate2" value="4" />
+                <label for="star42" title="text">4 stars</label>
+                <input type="radio" id="star32" name="rate2" value="3" />
+                <label for="star32" title="text">3 stars</label>
+                <input type="radio" id="star22" name="rate2" value="2" />
+                <label for="star22" title="text">2 stars</label>
+                <input type="radio" id="star12" name="rate2" value="1" />
+                <label for="star12" title="text">1 star</label>
+              </div>
+            </div>
+          </div>
+          <div class="question-3">
+            <p class="text-paragraph-2 text-start text-black mb-0">3. Penyampaian materi pelatihan
+            </p>
+            <div class="d-flex">
+              <div class="rate">
+
+                <input type="radio" id="star43" name="rate3" value="4" />
+                <label for="star43" title="text">4 stars</label>
+                <input type="radio" id="star33" name="rate3" value="3" />
+                <label for="star33" title="text">3 stars</label>
+                <input type="radio" id="star23" name="rate3" value="2" />
+                <label for="star23" title="text">2 stars</label>
+                <input type="radio" id="star13" name="rate3" value="1" />
+                <label for="star13" title="text">1 star</label>
+              </div>
+            </div>
+          </div>
+          <div class="question-4">
+            <p class="text-paragraph-2 text-start text-black mb-0">4. Kualitas Video jelas dan mudah untuk dilihat
+            </p>
+            <div class="d-flex">
+              <div class="rate">
+
+                <input type="radio" id="star44" name="rate4" value="4" />
+                <label for="star44" title="text">4 stars</label>
+                <input type="radio" id="star34" name="rate4" value="3" />
+                <label for="star34" title="text">3 stars</label>
+                <input type="radio" id="star24" name="rate4" value="2" />
+                <label for="star24" title="text">2 stars</label>
+                <input type="radio" id="star14" name="rate4" value="1" />
+                <label for="star14" title="text">1 star</label>
+              </div>
+            </div>
+          </div>
+          <div class="question-5 mt-3">
+            <div class="text-start mb-3">
+              <label for="formUlasan" class="form-label text-paragraph text-black">Komentar/ saran untuk materi
+                e-learning ini</label>
+              <textarea class="form-control text-paragraph text-black" id="formUlasan" rows="3"
+                placeholder="Beri ulasan agar kami dapat meningkatkan e-learning kami"></textarea>
+            </div>
+          </div>
+          <div class="d-flex justify-content-center mb-0">
+            <lottie-player src="https://assets8.lottiefiles.com/packages/lf20_sO9js3.json" background="transparent"
+              speed="1" style="width: 300px; height: 300px; margin-top: -85px;" loop autoplay></lottie-player>
+          </div>
+          <h5 class="text-black" style="margin-top: -78px;">Success</h5>
+          <button type="button" class="btn btn-planet">Submit</button>
+        </div>
+      </div>
+
+      <!-- Modal Guideline -->
+      <div class="modal fade" id="modalGuideline" tabindex="-1" aria-labelledby="modalGuidelineLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h6 class="modal-title fs-5 text-black" id="modalGuidelineLabel">Skor Penilaian</h6>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="d-flex"><span class="text-paragraph-2 text-start text-black me-2">4 = Sangat
+                  Puas</span><span class="text-paragraph-2 text-start text-black me-2">3 = Puas</span><span
+                  class="text-paragraph-2 text-start text-black me-2">2 = Tidak Puas</span><span
+                  class="text-paragraph-2 text-start text-black">1 = Sangat Tidak Puas</span></div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <!-- Modal -->
+      <!-- <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h6 class="text-black">Feedback</h6>
+            </div>
+            <div class="modal-body">
+              <div class="question-1">
+                <p class="text-paragraph-2 text-start text-black mb-0">1. Kesesuaian materi training dengan kebutuhan
+                  peserta
+                </p>
+                <div class="d-flex">
+                  <div class="rate">
+
+                    <input type="radio" id="star41" name="rate1" value="4" />
+                    <label for="star41" title="text">4 stars</label>
+                    <input type="radio" id="star31" name="rate1" value="3" />
+                    <label for="star31" title="text">3 stars</label>
+                    <input type="radio" id="star21" name="rate1" value="2" />
+                    <label for="star21" title="text">2 stars</label>
+                    <input type="radio" id="star11" name="rate1" value="1" />
+                    <label for="star11" title="text">1 star</label>
+                  </div>
+                </div>
+              </div>
+              <div class="question-2">
+                <p class="text-paragraph-2 text-start text-black mb-0">2. Sejauhmana materi memberikan
+                  pengetahuan/manfaat
+                  bagi peserta
+                </p>
+                <div class="d-flex">
+                  <div class="rate">
+
+                    <input type="radio" id="star42" name="rate2" value="4" />
+                    <label for="star42" title="text">4 stars</label>
+                    <input type="radio" id="star32" name="rate2" value="3" />
+                    <label for="star32" title="text">3 stars</label>
+                    <input type="radio" id="star22" name="rate2" value="2" />
+                    <label for="star22" title="text">2 stars</label>
+                    <input type="radio" id="star12" name="rate2" value="1" />
+                    <label for="star12" title="text">1 star</label>
+                  </div>
+                </div>
+              </div>
+              <div class="question-3">
+                <p class="text-paragraph-2 text-start text-black mb-0">3. Penyampaian materi pelatihan
+                </p>
+                <div class="d-flex">
+                  <div class="rate">
+
+                    <input type="radio" id="star43" name="rate3" value="4" />
+                    <label for="star43" title="text">4 stars</label>
+                    <input type="radio" id="star33" name="rate3" value="3" />
+                    <label for="star33" title="text">3 stars</label>
+                    <input type="radio" id="star23" name="rate3" value="2" />
+                    <label for="star23" title="text">2 stars</label>
+                    <input type="radio" id="star13" name="rate3" value="1" />
+                    <label for="star13" title="text">1 star</label>
+                  </div>
+                </div>
+              </div>
+              <div class="question-4">
+                <p class="text-paragraph-2 text-start text-black mb-0">4. Kualitas Video jelas dan mudah untuk dilihat
+                </p>
+                <div class="d-flex">
+                  <div class="rate">
+
+                    <input type="radio" id="star44" name="rate4" value="4" />
+                    <label for="star44" title="text">4 stars</label>
+                    <input type="radio" id="star34" name="rate4" value="3" />
+                    <label for="star34" title="text">3 stars</label>
+                    <input type="radio" id="star24" name="rate4" value="2" />
+                    <label for="star24" title="text">2 stars</label>
+                    <input type="radio" id="star14" name="rate4" value="1" />
+                    <label for="star14" title="text">1 star</label>
+                  </div>
+                </div>
+              </div>
+              <div class="question-5 mt-3">
+                <div class="text-start mb-3">
+                  <label for="formUlasan" class="form-label text-paragraph text-black">Komentar/ saran untuk materi
+                    e-learning ini</label>
+                  <textarea class="form-control text-paragraph text-black" id="formUlasan" rows="3"
+                    placeholder="Beri ulasan agar kami dapat meningkatkan e-learning kami"></textarea>
+                </div>
+              </div>
+              <div class="d-flex justify-content-center mb-0">
+                <lottie-player src="https://assets8.lottiefiles.com/packages/lf20_sO9js3.json" background="transparent"
+                  speed="1" style="width: 300px; height: 300px; margin-top: -85px;" loop autoplay></lottie-player>
+              </div>
+              <h5 class="text-black" style="margin-top: -78px;">Success</h5>
+              <button type="button" class="btn btn-planet">Submit</button>
+            </div>
+          </div>
+        </div>
+      </div> -->
 
       <div class="collapse" id="collapseResultTest">
         <div class="card">
@@ -100,16 +331,22 @@
         </div>
       </div>
     </div>
-  </div>
 
-  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
-    integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
-    crossorigin="anonymous"></script>
-  <script type="text/javascript" src="js/bootstrap.js"></script>
-  <script src="js/floating-btn.js"></script>
-  <script src="js/startClick.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+      integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+      crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script src="js/floating-btn.js"></script>
+    <script src="js/startClick.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script type="text/javascript">
+      $(window).on('load', function () {
+        $('#exampleModal').modal('show');
+      });
+    </script>
+
 </body>
 
 </html>

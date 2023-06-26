@@ -70,60 +70,6 @@ body {
   color: #14727c;
 }
 
-.bg-sertifikat-dewi img {
-  width: 100%;
-  height: 100%;
-}
-
-.bg-sertifikat-dewi .name {
-  position: absolute;
-  top: 46%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: #ffffff;
-}
-
-.bg-sertifikat-dewi .nik {
-  position: absolute;
-  top: 75%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: #296dff;
-}
-
-.bg-sertifikat-dewi .title-learning {
-  position: absolute;
-  top: 86%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: #296dff;
-}
-
-.bg-sertifikat-dewi .skor-total {
-  position: absolute;
-  top: 80%;
-  right: 27%;
-  transform: translate(-50%, -50%);
-  color: #296dff;
-}
-
-.bg-sertifikat-dewi .periode {
-  position: absolute;
-  top: 80%;
-  left: 29%;
-  transform: translate(-50%, -50%);
-  color: #296dff;
-}
-
-.bg-sertifikat-dewi .no-sertif {
-  position: absolute;
-  top: 9.5%;
-  right: 10.5%;
-  font-size: 8px;
-  transform: translate(-50%, -50%);
-  color: #fff;
-}
-
 .bg-home {
   /* background-image: url("../images/bg-home-conect.png");
   background-repeat: no-repeat;
@@ -348,6 +294,10 @@ body {
   margin-top: 4px;
   margin-right: 8px;
 
+  transition: all 0.2s ease;
+}
+
+.arrow-button {
   transition: all 0.2s ease;
 }
 
@@ -2318,7 +2268,8 @@ p {
   filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.4));
 }
 
-.btn-start-post-test:hover {
+.btn-start-post-test:hover,
+.btn-start-post-test:focus {
   background-color: #03a8ba;
   color: #ffffff;
   font-weight: 500;
@@ -2330,7 +2281,8 @@ p {
   filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.4));
 }
 
-.btn-start-resp:hover {
+.btn-start-resp:hover,
+.btn-start-resp:focus {
   background-color: #03a8ba;
   color: #ffffff;
   margin-bottom: 30px;
@@ -4288,6 +4240,24 @@ p {
   right: 27px;
   position: absolute; */
 }
+
+.badge-course-required {
+  color: #ffffff !important;
+  background-color: #df4759;
+  font-size: 60%;
+  top: 28px;
+  right: 27px;
+  position: absolute;
+}
+
+.badge-course-info {
+  color: #ffffff !important;
+  background-color: #0dcaf0;
+  font-size: 60%;
+  /* top: 28px;
+  right: 27px;
+  position: absolute; */
+}
 /* 
 @media (max-width: 575px) {
   .badge-course-success {
@@ -4446,6 +4416,14 @@ p {
   background-color: rgb(255 0 0 / 15%) !important;
 }
 
+.bg-light-warning {
+  background-color: rgb(255 193 7 / 0.11) !important;
+}
+
+.bg-light-info {
+  background-color: rgb(13 202 240 / 18%) !important;
+}
+
 .btn-planet {
   background-color: #0396a6;
   color: #fff;
@@ -4539,4 +4517,309 @@ p {
   transform: translateY(-2px);
   transition: all 0.1s ease-in;
   background-color: rgba(0, 0, 0, 0.6);
+}
+
+/* Mini Simulator */
+
+.mini-simulator-open {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-color: rgba(255, 255, 255, 0.4);
+  border-radius: 20px;
+}
+
+.mini-simulator-open:hover {
+  transform: translateY(-2px);
+  transition: all 0.1s ease-in;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.bg-gradient-cosmic {
+  background: linear-gradient(
+    to right,
+    rgb(142, 45, 226),
+    rgb(74, 0, 224)
+  ) !important;
+}
+
+.bg-gradient-burning {
+  background: linear-gradient(
+    to right,
+    rgb(255, 65, 108),
+    rgb(255, 75, 43)
+  ) !important;
+}
+
+.bg-gradient-lush {
+  background: linear-gradient(
+    to right,
+    rgb(86, 171, 47),
+    rgb(168, 224, 99)
+  ) !important;
+}
+
+.bg-gradient-Ohhappiness {
+  background: linear-gradient(
+    to right,
+    rgb(0, 176, 155),
+    rgb(150, 201, 61)
+  ) !important;
+}
+
+.bg-gradient-kyoto {
+  background: linear-gradient(
+    to right,
+    rgb(247, 151, 30),
+    rgb(255, 210, 0)
+  ) !important;
+}
+
+.bg-gradient-blues {
+  background: linear-gradient(
+    to right,
+    rgb(86, 204, 242),
+    rgb(47, 128, 237)
+  ) !important;
+}
+
+.bg-gradient-moonlit {
+  background: linear-gradient(
+    to right,
+    rgb(15, 32, 39),
+    rgb(32, 58, 67),
+    rgb(44, 83, 100)
+  ) !important;
+}
+
+.right-15 {
+  right: 15px !important;
+}
+
+.font-13 {
+  font-size: 13px;
+}
+
+.font-14 {
+  font-size: 14px;
+}
+
+.font-16 {
+  font-size: 16px;
+}
+
+.font-18 {
+  font-size: 18px;
+}
+
+.font-20 {
+  font-size: 20px;
+}
+
+.font-22 {
+  font-size: 22px;
+}
+
+.font-24 {
+  font-size: 24px;
+}
+
+.font-30 {
+  font-size: 30px;
+}
+
+.font-35 {
+  font-size: 35px;
+}
+
+.font-50 {
+  font-size: 50px;
+}
+
+.font-60 {
+  font-size: 60px;
+}
+
+.radius-20 {
+  border-radius: 20px;
+}
+
+.radius-30 {
+  border-radius: 30px;
+}
+
+.radius-10 {
+  border-radius: 10px;
+}
+
+.radius-15 {
+  border-radius: 15px;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.card-dashboard:hover {
+  transform: translateY(-2px);
+  transition: all 0.1s ease-in;
+}
+
+.card-mini-simulator {
+  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.text-paragraph {
+  font-size: 13px;
+  line-height: 1.7;
+  color: #fff;
+  text-align: justify;
+}
+
+.text-paragraph-2 {
+  font-size: 14px;
+  line-height: 1.7;
+  color: #fff;
+  text-align: justify;
+}
+
+.text-light {
+  font-weight: 300;
+}
+
+.text-reguler {
+  font-weight: 400;
+}
+
+.text-medium {
+  font-weight: 500;
+}
+
+.text-bold {
+  font-weight: 600;
+}
+
+.bg-white-2 {
+  background-color: rgb(255 255 255 / 12%) !important;
+}
+
+.btn-custom-show {
+  border-radius: 20px;
+  border-color: #2831f6;
+  color: #ffffff;
+  background-color: #0019ff;
+  padding: 10px 24px;
+}
+
+.btn-custom-show:hover,
+.btn-custom-show:focus {
+  border-radius: 20px;
+  border-color: #2831f6;
+  color: #ffffff;
+  background-color: #0215c7;
+  padding: 10px 24px;
+  transform: translateY(-2px);
+  transition: all 0.1s ease-in;
+}
+
+.section-popular-heading .nav-menu-learning a {
+  border-radius: 20px;
+  border: solid 1px rgba(112, 112, 112, 0.6);
+  background-color: rgba(112, 112, 112, 0.6);
+  color: #ffffff;
+}
+
+.section-popular-heading .nav-menu-learning a:hover {
+  border-radius: 20px;
+  border: solid 1px rgba(80, 80, 80, 0.6);
+  background-color: rgba(80, 80, 80, 0.6);
+  color: #ffffff;
+}
+
+.breadcrumb-title {
+  font-size: 20px;
+  border-right: 1.5px solid #aaa4a4;
+}
+
+.page-breadcrumb .breadcrumb li.breadcrumb-item {
+  font-size: 16px;
+}
+
+.bg-violet {
+  background-color: #6f42c1;
+}
+
+.rate {
+  float: left;
+  height: 46px;
+  /* padding: 0 10px; */
+}
+.rate:not(:checked) > input {
+  position: absolute;
+  top: -9999px;
+}
+.rate:not(:checked) > label {
+  float: right;
+  width: 1em;
+  overflow: hidden;
+  white-space: nowrap;
+  cursor: pointer;
+  font-size: 30px;
+  color: #ccc;
+}
+.rate:not(:checked) > label:before {
+  content: "★ ";
+}
+.rate > input:checked ~ label {
+  color: #ffc700;
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+  color: #deb217;
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+  color: #c59b08;
+}
+
+.rate input {
+  display: none;
+  vertical-align: middle; /* Tambahkan baris ini */
+}
+
+@media (min-width: 1200px) {
+  .modal-xl-custom {
+    --bs-modal-width: 1000px;
+  }
+}
+
+@media (min-width: 595px) {
+  .carousel-prev-custom {
+    left: -70px;
+  }
+
+  .carousel-next-custom {
+    right: -70px;
+  }
+}
+
+.close-button-modal {
+  background-color: #dc3545; /* atau gunakan warna merah yang sesuai dengan bootstrap */
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  cursor: pointer;
+  /* position: absolute; */
+  /* top: 10px; */
+}
+
+.close-icon {
+  color: #fff; /* warna teks ikon */
+  font-size: 18px;
 }

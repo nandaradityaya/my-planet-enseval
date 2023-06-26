@@ -1,0 +1,63 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sertifikat</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <!--bootstrap harus tetep di atas file css-->
+    <link rel="stylesheet" href="css/custom.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+
+<body>
+    <img id="myImg" src="images/certif.jpeg" alt="My Image">
+    <button onclick="downloadImage()">Download Image</button>
+
+
+
+    <script>
+        // JavaScript code to download <img> element as a PNG
+        function downloadImage() {
+            // Get the <img> element
+            const img = document.getElementById("myImg");
+
+            // Create a new canvas element
+            const canvas = document.createElement("canvas");
+            canvas.width = img.width;
+            canvas.height = img.height;
+
+            // Draw the <img> element on the canvas
+            const context = canvas.getContext("2d");
+            context.drawImage(img, 0, 0);
+
+            // Convert the canvas to a PNG data URL
+            const dataUrl = canvas.toDataURL("image/png");
+
+            // Create a download link and click it
+            const downloadLink = document.createElement("a");
+            downloadLink.href = dataUrl;
+            downloadLink.download = "image.png";
+            document.body.appendChild(downloadLink);
+            downloadLink.click();
+            document.body.removeChild(downloadLink);
+        }
+
+
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.3.1/jspdf.umd.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    <script src="js/floating-btn.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+</body>
+
+</html>

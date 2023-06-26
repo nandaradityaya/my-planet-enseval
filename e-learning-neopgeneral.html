@@ -127,7 +127,7 @@
           <i class="fa-chevron-up fa arrow-button"></i>
         </button>
         <div class="collapse show" id="collapseExample">
-          <div class="card card-neop-general mt-4">
+          <div class="card card-neop-general mt-4 mb-4">
             <div class="row align-items-center">
               <div class="col-lg-4 col-md-12 col-sm-12 text-center">
                 <img src="images/post test.png" alt="" class="py-4 ms-2" width="300" height="200" />
@@ -164,7 +164,27 @@
               </div>
             </div>
           </div>
-          <div class="card card-neop-general mt-4">
+
+          <!-- <div class="d-flex justify-content-end">
+            <div class="badge badge-course-info rounded-pill text-uppercase py-1 mb-2">
+              <p class="mb-0" style="display: block;
+              white-space: nowrap;
+              overflow: hidden;
+              text-overflow: ellipsis;"><i class="fa fa-edit me-1"></i>Created By : <span>Dedy Ardiansyah, Kusnadi
+                  Alim, Yohenes Baptista & Gomarus Andre</span></p>
+            </div>
+          </div> -->
+
+          <div class="card card-neop-general mb-4">
+            <div class="d-flex justify-content-end p-3" style="margin-bottom: -50px;">
+              <div class="badge badge-course-info rounded-pill text-uppercase py-1">
+                <p class="mb-0" style="display: block;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;"><i class="fa fa-edit me-1"></i>Created By : <span>Dedy Ardiansyah, Kusnadi
+                    Alim, Yohenes Baptista & Gomarus Andre</span></p>
+              </div>
+            </div>
             <div class="row align-items-center">
               <div class="col-lg-4 col-md-12 col-sm-12 text-center">
                 <img src="images/post test.png" alt="" class="py-4 ms-2" width="300" height="200" />
@@ -175,6 +195,16 @@
                     <h3>Test responsive</h3>
                   </a>
                 </div>
+                <!-- <div class="d-flex">
+                  <div class="mb-3">
+                    <a href="">
+                      <h3>Test responsive</h3>
+                    </a>
+                  </div>
+                  <div class="ms-auto text-white" style="margin-right: -50px;">Created By : <span>Dedy Ardiansyah,
+                      Kusnadi Alim,
+                      Yohenes Baptista & Gomarus Andre</span></div>
+                </div> -->
                 <!-- CODINGAN LAMA -->
                 <p class="mt-2 nik-post-test">180500450</p>
                 <!-- Pembatas -->
@@ -189,6 +219,8 @@
                 <!-- End Codingan lama -->
               </div>
               <div class="col-lg-2 col-md-12 col-sm-12 card-title-neop text-center py-4">
+                <!-- <p class="text-paragraph">Created By <span>Dedy Ardiansyah, Kusnadi Alim, Yohenes Baptista & Gomarus
+                    Andre</span></p> -->
                 <a href="" type="button" class="btn btn-start-lesson">Start</a>
               </div>
             </div>
@@ -421,16 +453,27 @@
     <!-- Modal Warning -->
     <div class="modal fade" id="modalWarning" tabindex="-1" aria-labelledby="modalWarningLabel" aria-hidden="true">
       <div class="modal-dialog">
-        <div class="modal-content">
+        <div class="modal-content bg-dark">
           <div class="modal-header">
-            <h1 class="modal-title fs-5" id="modalWarningLabel">Warning!</h1>
+            <h1 class="modal-title text-white fs-5" id="modalWarningLabel">Peringatan!</h1>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
-            Post Test anda sudah melebihi batas masximal percobaan, silahkan hubungi admin untuk mengulang kembali
+            <p class="text-paragraph text-white">Post Test anda sudah melebihi batas maksimal percobaan. <br><br> Mohon
+              untuk mengisi form alasan di bawah
+              ini guna memohon akses Post Test terbaru.</p>
+            <div class="mb-3">
+              <label for="reasonPostTest" class="form-label text-paragraph">Alasan</label>
+              <textarea class="form-control text-paragraph is-invalid" id="reasonPostTest" rows="3"
+                aria-describedby="reasonPostTestFeedback" required></textarea>
+              <div id="reasonPostTestFeedback" class="invalid-feedback">
+                Isi dengan alasan yang menyebabkan anda mengulang Post Test.
+              </div>
+            </div>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-warning">Submit</button>
           </div>
         </div>
       </div>
@@ -913,211 +956,6 @@
         </div>
       </div>
     </div>
-
-    <!-- <div class="container" style="margin-top: 70px">
-        <div
-          class="section-popular-neop row justify-content-center"
-          style="margin-top: 120px"
-        >
-          <button
-            class="btn btn-collapse-neop"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#collapseITSecurity"
-            aria-expanded="false"
-            aria-controls="collapseITSecurity"
-            onclick="toggleCollapse(event)"
-          >
-            IT Security
-            <i class="fa-chevron-up fa arrow-button"></i>
-          </button>
-          <div class="collapse show" id="collapseITSecurity">
-            <div class="card card-neop-general mt-4">
-              <div class="row">
-                <div class="col-lg-4 text-center align-self-center">
-                  <img
-                    src="images/black.png"
-                    alt=""
-                    class="py-4 ms-2"
-                    width="300"
-                    height="200"
-                  />
-                </div>
-                <div
-                  class="col card-title-neop align-self-lg-center flex-column flex-lg-row mt-3 ms-2"
-                >
-                  <a href="">NEOP IT Security 2020 Video Part 1 </a>
-                  <p class="mt-3">180500450</p>
-                  <p1 class="">My Attempts : 3</p1>
-                  <a href=""
-                    ><button
-                      type="button"
-                      class="btn btn-start"
-                      style="float: right"
-                    >
-                      Start
-                    </button></a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="container" style="margin-top: 70px">
-        <div
-          class="section-popular-neop row justify-content-center"
-          style="margin-top: 120px"
-        >
-          <button
-            class="btn btn-collapse-neop"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#collapseITSecurity2021"
-            aria-expanded="false"
-            aria-controls="collapseITSecurity2021"
-          >
-            IT Security
-          </button>
-          <div class="collapse show" id="collapseITSecurity2021">
-            <div class="card card-neop-general mt-4">
-              <div class="row">
-                <div class="col-lg-4 text-center align-self-center">
-                  <img
-                    src="images/Video IT Security 2021.png"
-                    class="py-4 ms-2"
-                    width="300"
-                    height="200"
-                  />
-                </div>
-                <div
-                  class="col card-title-neop align-self-lg-center flex-column flex-lg-row mt-3 ms-2"
-                >
-                  <a href="">Video IT Security 2021</a>
-                  <p class="mt-3">180500450</p>
-                  <p1 class="">My Attempts : 3</p1>
-                  <a href=""
-                    ><button
-                      type="button"
-                      class="btn btn-start"
-                      style="float: right"
-                    >
-                      Start
-                    </button></a
-                  >
-                </div>
-              </div>
-            </div>
-            <div class="card card-neop-general mt-4">
-              <div class="row">
-                <div class="col-lg-4 text-center align-self-center">
-                  <img
-                    src="images/post test.png"
-                    alt=""
-                    class="py-4 ms-2"
-                    width="300"
-                    height="200"
-                  />
-                </div>
-                <div
-                  class="col card-title-neop align-self-lg-center flex-column flex-lg-row mt-3 ms-2"
-                >
-                  <a href="">Post Test IT Security 2021</a>
-                  <p class="mt-3">180500450</p>
-                  <p1 class="">My Attempts : 3</p1>
-                  <a href=""
-                    ><button
-                      type="button"
-                      class="btn btn-start"
-                      style="float: right"
-                    >
-                      Start
-                    </button></a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="container" style="margin-top: 70px">
-        <div
-          class="section-popular-neop row justify-content-center"
-          style="margin-top: 120px"
-        >
-          <button
-            class="btn btn-collapse-neop"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#collapseITUpdateOSdanApps"
-            aria-expanded="false"
-            aria-controls="collapseITUpdateOSdanApps"
-          >
-            IT Update OS and Apps
-          </button>
-          <div class="collapse show" id="collapseITUpdateOSdanApps">
-            <div class="card card-neop-general mt-4">
-              <div class="row">
-                <div class="col-lg-4 text-center align-self-center">
-                  <img
-                    src="images/Video IT Security 2021.png"
-                    class="py-4 ms-2"
-                    width="300"
-                    height="200"
-                  />
-                </div>
-                <div
-                  class="col card-title-neop align-self-lg-center flex-column flex-lg-row mt-3 ms-2"
-                >
-                  <a href="">Video IT Security 2021</a>
-                  <p class="mt-3">180500450</p>
-                  <p1 class="">My Attempts : 3</p1>
-                  <a href=""
-                    ><button
-                      type="button"
-                      class="btn btn-start"
-                      style="float: right"
-                    >
-                      Start
-                    </button></a
-                  >
-                </div>
-              </div>
-            </div>
-            <div class="card card-neop-general mt-4">
-              <div class="row">
-                <div class="col-lg-4 text-center align-self-center">
-                  <img
-                    src="images/post test.png"
-                    alt=""
-                    class="py-4 ms-2"
-                    width="300"
-                    height="200"
-                  />
-                </div>
-                <div
-                  class="col card-title-neop align-self-lg-center flex-column flex-lg-row mt-3 ms-2"
-                >
-                  <a href="">Post Test IT Security 2021</a>
-                  <p class="mt-3">180500450</p>
-                  <p1 class="">My Attempts : 3</p1>
-                  <a href=""
-                    ><button
-                      type="button"
-                      class="btn btn-start"
-                      style="float: right"
-                    >
-                      Start
-                    </button></a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> -->
   </section>
 
   <!-- FOOTER -->

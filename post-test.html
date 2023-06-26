@@ -20,6 +20,23 @@
       <h3>POST TEST PERATURAN PERUSAHAAN DAN GROOMING</h3>
       <h5>NIK : NK9512</h5>
 
+      <div class="d-flex justify-content-center mt-3">
+        <div class="toast bg-danger" style="width: 80%;" role="alert" aria-live="assertive" aria-atomic="true"
+          data-bs-autohide="false">
+          <div class="toast-header">
+            <i class="fa fa-exclamation-circle me-2"></i>
+            <strong class="me-auto">Message</strong>
+            <small>from admin</small>
+            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+          </div>
+          <div class="toast-body text-paragraph">
+            Hallo, Starlyn! untuk mengerjakan post test selanjutnya di mohon untuk memahami materi yang telah di berikan
+            sebelumnya, dan kami anjurkan anda mengerjakan post test dengan menggunakan jaringan internet yang stabil.
+            Terima kasih.
+          </div>
+        </div>
+      </div>
+
       <div class="card transition mt-4" id="startPostTest" style="height: 450px;">
         <div class="card-body mt-5">
           <h3 class="card-title mb-5">Selamat Datang di Post Test <br> Peraturan Perusahaan & Grooming</h3>
@@ -179,6 +196,10 @@
       $('.opsi-primary').click(function () {
         $(this).find('input[type="radio"]').prop('checked', true);
       });
+    });
+
+    $(document).ready(function () {
+      $(".toast").toast('show');
     });
   </script>
 </body>
