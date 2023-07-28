@@ -1,0 +1,336 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Play Podtret</title>
+  <link rel="stylesheet" href="css/bootstrap.css" />
+  <!--bootstrap harus tetep di atas file css-->
+  <link rel="stylesheet" href="css/custom.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet" />
+</head>
+
+<body class="video-play-podtret">
+  <!-- NAVBAR -->
+  <div class="">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <img src="assets/logo.png" alt="" class="d-inline-block align-text-top" />
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <!--ms itu margin kiri-->
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="e-learning.html">E-Learning</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="policy.html">Policy</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="podtret.html">Podtret</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Ensight</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Community</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Aplication
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">HRIS Pro Int</a></li>
+                  <li><a class="dropdown-item" href="#">LOAN Online</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">FPTK Online</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Assesment Online</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Administrasi Assesment</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">AP & PA Online</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">MPP Online</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Orens</a>
+                  </li>
+                </ul>
+              </li>
+              <!-- <a class="btn btn-login ms-2" href="#" role="button">Sign Up</a> -->
+            </ul>
+            <!-- Button trigger modal -->
+            <div class="vl ms-2" style="border-left: solid 2px #ededed">
+              <img src="images/image-profile.jpg" alt="" class="image-navbar ms-3" onclick="toggleMenu()" />
+              <span class="badge">1</span>
+
+              <div class="sub-menu-wrap" id="subMenu">
+                <div class="sub-menu">
+                  <div class="user-info">
+                    <a href="profile.html"><img src="images/image-profile.jpg" alt="" class="img-nav-submenu" /></a>
+                    <a href="profile.html">
+                      <h3>Harry Maguire</h3>
+                    </a>
+                  </div>
+                  <hr />
+
+                  <a href="edit-profile.html" class="sub-menu-link">
+                    <i class="fa fa-user"></i>
+                    <!-- <img src="assets/user-info.png" alt="" /> -->
+                    <p>Edit Profile</p>
+                    <span>></span>
+                  </a>
+
+                  <a href="" class="sub-menu-link" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <i class="fa fa-bell"><span class="badge-not">1</span></i>
+                    <!-- <img src="assets/user-info.png" alt="" /> -->
+                    <p>Notification</p>
+                    <span>></span>
+                  </a>
+
+                  <a href="" class="sub-menu-link">
+                    <i class="fa fa-sign-out"></i>
+                    <!-- <img src="assets/logout.png" alt="" /> -->
+                    <p>Log Out</p>
+                    <span>></span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </div>
+
+  <!-- Modal Notifikasi -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable">
+      <div class="modal-content modal-notification">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Notification</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="d-flex list-notification">
+            <a href="e-learning-neopgeneral.html"><img src="images/img-notif.jpg" alt="" class="img-nav-submenu" /></a>
+            <a href="e-learning-neopgeneral.html"></a>
+            <div class="berita">
+              <p>
+                Undangan! Kamu di undang untuk mengikuti kegiatan training
+                mengenai IT Security
+              </p>
+              <p1>18 September 2022</p1>
+              <a href=""><i class="fa fa-trash fa-lg trash-notification"></i></a>
+            </div>
+            </a>
+          </div>
+          <hr />
+          <div class="d-flex list-notification">
+            <a href="profile.html"><img src="images/img-notif.jpg" alt="" class="img-nav-submenu" /></a>
+            <a href="profile.html">
+              <div class="berita">
+                <p>
+                  Selamat! sertifikat anda sudah terbit, untuk melihat silahkan kunjungi halaman profile
+                </p>
+                <p1>12 September 2022</p1>
+                <a href=""><i class="fa fa-trash fa-lg trash-notification"></i></a>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+            Close
+          </button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-12 col-lg-8">
+        <video class="video-podtret-new mb-3" src="assets/video/podtret_eps_71.mp4"></video>
+        <div class="row align-items-center">
+          <div class="col-10">
+            <h5 class="text-white">Eps 71 : Serem banget jangan ditonton!</h5>
+          </div>
+          <div class="col-2">
+            <div class="d-flex justify-content-end">
+              <a href="#" type="button" class="text-decoration-none bg-dark radius-50 p-2 me-2">
+                <i class="fa fa-headphones font-24" style="color: #fff;"></i>
+              </a>
+              <div class="bg-dark radius-50 p-2">
+                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"
+                  style="fill: #fff;"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                  <path
+                    d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64c9.8-6.5 22.4-7.2 32.9-1.6z" />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="text-white text-paragraph-2 mb-2">349x ditonton • 13 July 2023</p>
+        <button class="btn btn-dark radius-20 px-3 py-2 mb-3">
+          <svg class="like-in-active" xmlns="http://www.w3.org/2000/svg" height="1.25em" viewBox="0 0 512 512"
+            style="margin-right: 4px; padding-bottom: 2px;"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+            <path
+              d="M313.4 32.9c26 5.2 42.9 30.5 37.7 56.5l-2.3 11.4c-5.3 26.7-15.1 52.1-28.8 75.2H464c26.5 0 48 21.5 48 48c0 18.5-10.5 34.6-25.9 42.6C497 275.4 504 288.9 504 304c0 23.4-16.8 42.9-38.9 47.1c4.4 7.3 6.9 15.8 6.9 24.9c0 21.3-13.9 39.4-33.1 45.6c.7 3.3 1.1 6.8 1.1 10.4c0 26.5-21.5 48-48 48H294.5c-19 0-37.5-5.6-53.3-16.1l-38.5-25.7C176 420.4 160 390.4 160 358.3V320 272 247.1c0-29.2 13.3-56.7 36-75l7.4-5.9c26.5-21.2 44.6-51 51.2-84.2l2.3-11.4c5.2-26 30.5-42.9 56.5-37.7zM32 192H96c17.7 0 32 14.3 32 32V448c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32V224c0-17.7 14.3-32 32-32z" />
+          </svg>
+          43
+        </button>
+        <div class="comment mb-3">
+          <div class="form-floating mb-2">
+            <textarea class="form-control radius-10" placeholder="Tambahkan komentar..." id="floatingInput"
+              height="50"></textarea>
+            <label for="floatingInput">Komentar</label>
+          </div>
+          <div class="d-flex justify-content-end mt-2">
+            <button type="btn" class="btn btn-planet radius-10 mb-3 px-3">Komentar</button>
+          </div>
+        </div>
+
+        <div class="comments mb-3">
+          <div class="card card-dark-2">
+            <div class="card-body">
+              <div class="d-flex mb-3">
+                <div class="img-avatar me-3">
+                  <img src="images/nanda.jpg" alt="profile" class="img-comment-new" />
+                </div>
+                <div class="name-comment">
+                  <div class="d-flex align-items-center mb-1">
+                    <h6 class="font-16 text-white me-2 mb-0">Nanda Raditya</h6>
+                    <p class="text-paragraph text-secondary mb-0">13 July 2023</p>
+                  </div>
+                  <p class="text-paragraph-2 text-white mb-1">Makin cepet lagi uploadnya kita udah kangen ama tingkah
+                    bapa bapa ini ❤❤</p>
+                  <a class="text-decoration-none text-white text-bold font-14" data-bs-toggle="collapse"
+                    href="#replyComment" role="button" aria-expanded="false" aria-controls="replyComment">
+                    Balas
+                  </a>
+                  <div class="collapse mt-3" id="replyComment">
+                    <div class="form-floating mb-2">
+                      <textarea class="form-control radius-10" placeholder="Balas..." id="floatingInput"
+                        height="50"></textarea>
+                      <label for="floatingInput">Balas...</label>
+                    </div>
+                    <div class="d-flex justify-content-end mt-2">
+                      <button type="btn" class="btn btn-planet radius-10 mb-3 px-3">Balas</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="d-flex mb-3">
+                <div class="img-avatar me-3">
+                  <img src="images/nanda.jpg" alt="profile" class="img-comment-new" />
+                </div>
+                <div class="name-comment">
+                  <div class="d-flex align-items-center mb-1">
+                    <h6 class="font-16 text-white me-2 mb-0">Nanda Raditya</h6>
+                    <p class="text-paragraph text-secondary mb-0">13 July 2023</p>
+                  </div>
+                  <p class="text-paragraph-2 text-white mb-1">Makin cepet lagi uploadnya kita udah kangen ama tingkah
+                    bapa bapa ini ❤❤</p>
+                  <a class="text-decoration-none text-white text-bold font-14" data-bs-toggle="collapse"
+                    href="#replyComment" role="button" aria-expanded="false" aria-controls="replyComment">
+                    Balas
+                  </a>
+                  <div class="collapse mt-3" id="replyComment">
+                    <div class="form-floating mb-2">
+                      <textarea class="form-control radius-10" placeholder="Balas..." id="floatingInput"
+                        height="50"></textarea>
+                      <label for="floatingInput">Balas...</label>
+                    </div>
+                    <div class="d-flex justify-content-end mt-2">
+                      <button type="btn" class="btn btn-planet radius-10 mb-3 px-3">Balas</button>
+                    </div>
+                  </div>
+
+                  <div class="balasan-komen mt-2">
+                    <div class="d-flex mb-3">
+                      <div class="img-avatar me-3">
+                        <img src="images/nanda.jpg" alt="profile" class="img-comment-new" />
+                      </div>
+                      <div class="name-comment">
+                        <div class="d-flex align-items-center mb-1">
+                          <h6 class="font-16 text-white me-2 mb-0">Nanda Raditya</h6>
+                          <p class="text-paragraph text-secondary mb-0">13 July 2023</p>
+                        </div>
+                        <p class="text-paragraph-2 text-white mb-1">Makin cepet lagi uploadnya kita udah kangen ama
+                          tingkah
+                          bapa bapa ini ❤❤</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-4">
+        <a type="button" href="#" class="card card-dark-2 card-transition text-decoration-none">
+          <div class="d-flex p-2">
+            <div class="thumbnail-eps">
+              <img src="images/covereps26.jpeg" class="radius-10" alt="thumbnail" style="height: 70px;">
+            </div>
+            <div class="judul ms-2">
+              <h6 class="text-white font-14 mb-1 text-overflow-epspodtret">Eps 66 : Episode Paling Lucu</h6>
+              <p class="text-paragraph text-secondary mb-1">Ngobrol Santai</p>
+              <p class="text-paragraph text-secondary mb-0">349 x ditonton • 13 Juni 2023</p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+
+  <footer class="section-footer mt-5 mb-4 border-top">
+    <div class="container-fluid text-center">
+      <div class="row border-top justify-content-center align-items-center pt-4">
+        <div class="col-auto font-weight-light" style="color: #ffffff">
+          2022 Copyright My Planet Enseval • All rights reserved • Made in
+          Jakarta
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+    integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+    crossorigin="anonymous"></script>
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+  <script src="js/floating-btn.js"></script>
+  <script src="js/submenu-profile.js"></script>
+  <script src="js/hideButton.js"></script>
+</body>
+
+</html>

@@ -100,12 +100,23 @@ body {
   height: 49px;
 }
 
+.navbar-brand-emp img {
+  width: 169px;
+}
+
 .navbar-community {
   background-image: url("../images/web-background.jpg");
 }
 
 @media (max-width: 410px) {
   .navbar .navbar-brand img {
+    /* width: 165px;
+    height: 50px; */
+    margin-left: 0px;
+    margin-top: 0px;
+  }
+
+  .navbar .navbar-brand-emp img {
     /* width: 165px;
     height: 50px; */
     margin-left: 0px;
@@ -219,6 +230,11 @@ body {
   float: right;
   width: 568px;
   height: 426px;
+}
+
+.banner-emp {
+  float: right;
+  width: 568px;
 }
 
 .section-popular p {
@@ -4333,9 +4349,9 @@ p {
 }
 .opsi-primary {
   padding: 10px;
-  background: Aliceblue;
+  background-color: rgba(13, 202, 240, 0.2);
   border-radius: 10px;
-  border: 1px Solid #84c5fe;
+  border: 1px Solid #0dcaf0;
   margin-bottom: 10px;
   cursor: Pointer;
 }
@@ -4663,9 +4679,23 @@ p {
   transition: all 0.1s ease-in;
 }
 
+.card-transition:hover {
+  transform: translateY(-2px);
+  transition: all 0.1s ease-in;
+}
+
 .card-mini-simulator {
   background-color: rgba(0, 0, 0, 0.7);
   background-color: rgba(0, 0, 0, 0.7);
+}
+
+.card-dark {
+  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.card-dark-2 {
+  background-color: #32393f;
 }
 
 .text-paragraph {
@@ -4822,4 +4852,42 @@ p {
 .close-icon {
   color: #fff; /* warna teks ikon */
   font-size: 18px;
+}
+
+.video-podtret-new {
+  width: 100%;
+  border: solid 1px #000000;
+  border-radius: 10px;
+  display: flex;
+}
+
+.opsi-play-podtret {
+  border-radius: 10px;
+  width: 30px;
+}
+
+.radius-50 {
+  border-radius: 50%;
+}
+
+.img-comment-new {
+  width: 46px;
+  height: 46px;
+  border-radius: 100%;
+}
+
+.text-overflow-epspodtret {
+  display: block;
+  width: 200px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.like-active {
+  fill: #005eff;
+}
+
+.like-in-active {
+  fill: #fff;
 }
