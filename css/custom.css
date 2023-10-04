@@ -4610,6 +4610,10 @@ p {
   right: 15px !important;
 }
 
+.font-10 {
+  font-size: 13px !important;
+}
+
 .font-13 {
   font-size: 13px !important;
 }
@@ -4635,6 +4639,10 @@ p {
 }
 
 .font-24 {
+  font-size: 24px;
+}
+
+.font-28 {
   font-size: 24px;
 }
 
@@ -4726,6 +4734,10 @@ p {
 
 .text-bold {
   font-weight: 600;
+}
+
+.text-secondary {
+  color: #6c757d !important;
 }
 
 .bg-white-2 {
@@ -4890,4 +4902,52 @@ p {
 
 .like-in-active {
   fill: #fff;
+}
+
+.side-profile {
+  list-style: none;
+  margin-bottom: 1.75rem;
+}
+
+.side-profile .active-side-menu {
+  color: #0396a6;
+  fill: #0396a6;
+}
+
+.side-profile i {
+  color: #6c757d;
+}
+
+.side-profile:hover {
+  transform: translateY(-2px);
+  transition: all 0.1s ease-in;
+  color: #0396a6;
+}
+
+.card-transform:hover {
+  transform: translateY(-2px);
+  transition: all 0.1s ease-in;
+  color: #0396a6;
+}
+
+.widgets-icons {
+  width: 50px;
+
+  height: 50px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  background-color: #ededed;
+
+  font-size: 26px;
+
+  border-radius: 10px;
+}
+
+.bg-planet {
+  background-color: #0396a6;
 }
